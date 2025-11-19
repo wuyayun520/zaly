@@ -1,0 +1,59 @@
+{
+  "userId": "0000",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/0000/usericon.webp",
+    "nickname": "Alex",
+    "age": 28,
+    "gender": "male",
+    "location": "United States",
+    "description": "Creative content creator sharing life moments and emotions"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/0000/Dynamic.mp4",
+      "type": "video",
+      "title": "Behind the Scenes",
+      "content": "Sharing a moment from my creative space. This is where the real conversations happen. 🎙️",
+      "emotion": "authentic",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/0000/post_1.webp",
+      "type": "emotion_share",
+      "title": "Joyful Moment",
+      "content": "Sometimes you just need to smile wide and embrace the moment! 😊 Life is too short not to celebrate the small victories.",
+      "emotion": "joy",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/0000/post_2.webp",
+      "type": "emotion_share",
+      "title": "Reflective Thoughts",
+      "content": "Taking a moment to pause and reflect. Sometimes the quiet moments are when we find the most clarity. 🤔",
+      "emotion": "contemplative",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/0000/post_3.webp",
+      "type": "emotion_share",
+      "title": "Creative Space",
+      "content": "My creative corner where ideas come to life. Surrounded by art, plants, and good vibes. This is where the magic happens! ✨",
+      "emotion": "inspired",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/0000/post_4.webp",
+      "type": "emotion_share",
+      "title": "Writing Session",
+      "content": "Putting thoughts on paper. There's something therapeutic about writing by hand. What are you working on today? 📝",
+      "emotion": "focused",
+      "likes": 0
+    }
+  ]
+}
+

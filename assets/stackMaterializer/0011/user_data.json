@@ -1,0 +1,59 @@
+{
+  "userId": "0011",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/0011/usericon.webp",
+    "nickname": "Morgan",
+    "age": 29,
+    "gender": "male",
+    "location": "Australia",
+    "description": "Travel enthusiast and photographer documenting life's adventures and meaningful connections"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/0011/Dynamic.mp4",
+      "type": "video",
+      "title": "Adventure Unfolds",
+      "content": "Life's greatest stories are written in the moments we dare to explore. Here's a glimpse into today's journey. 🎥",
+      "emotion": "adventurous",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/0011/post_1.webp",
+      "type": "emotion_share",
+      "title": "City Lights",
+      "content": "Lost in the rhythm of the city. There's something magical about urban nights. 🌃",
+      "emotion": "nostalgic",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/0011/post_2.webp",
+      "type": "emotion_share",
+      "title": "Beach Vibes",
+      "content": "Salt in the air, sand in my shoes. The ocean has a way of washing away worries. 🏖️",
+      "emotion": "relaxed",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/0011/post_3.webp",
+      "type": "emotion_share",
+      "title": "Mountain Views",
+      "content": "Climbed high to see the world from a different perspective. The view from up here is worth every step. ⛰️",
+      "emotion": "accomplished",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/0011/post_4.webp",
+      "type": "emotion_share",
+      "title": "Golden Hour",
+      "content": "That perfect time of day when everything glows. Golden hour never fails to amaze me. 🌇",
+      "emotion": "awe",
+      "likes": 0
+    }
+  ]
+}
+

@@ -1,0 +1,59 @@
+{
+  "userId": "0100",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/0100/usericon.webp",
+    "nickname": "Riley",
+    "age": 27,
+    "gender": "female",
+    "location": "Germany",
+    "description": "Fitness enthusiast and wellness advocate sharing daily motivation and healthy lifestyle tips"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/0100/Dynamic.mp4",
+      "type": "video",
+      "title": "Workout Session",
+      "content": "Pushing through today's workout! Remember, progress over perfection. Every rep counts! 💪",
+      "emotion": "motivated",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/0100/post_1.webp",
+      "type": "emotion_share",
+      "title": "Morning Run",
+      "content": "Early morning runs clear the mind and energize the soul. How do you start your day? 🏃‍♀️",
+      "emotion": "energized",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/0100/post_2.webp",
+      "type": "emotion_share",
+      "title": "Healthy Choices",
+      "content": "Fueling my body with goodness. What we eat affects how we feel, think, and live. 🥗",
+      "emotion": "healthy",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/0100/post_3.webp",
+      "type": "emotion_share",
+      "title": "Yoga Flow",
+      "content": "Finding balance on and off the mat. Yoga teaches us to breathe through challenges. 🧘‍♀️",
+      "emotion": "balanced",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/0100/post_4.webp",
+      "type": "emotion_share",
+      "title": "Recovery Day",
+      "content": "Rest is just as important as training. Listening to my body and giving it what it needs. 😌",
+      "emotion": "peaceful",
+      "likes": 0
+    }
+  ]
+}
+

@@ -1,0 +1,59 @@
+{
+  "userId": "1000",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/1000/usericon.webp",
+    "nickname": "Blake",
+    "age": 31,
+    "gender": "male",
+    "location": "Netherlands",
+    "description": "Tech enthusiast and digital nomad sharing insights about technology and remote work lifestyle"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/1000/Dynamic.mp4",
+      "type": "video",
+      "title": "Tech Talk",
+      "content": "Exploring the latest in tech today. Innovation never stops, and neither should we! 💻",
+      "emotion": "curious",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/1000/post_1.webp",
+      "type": "emotion_share",
+      "title": "Workspace Setup",
+      "content": "A clean workspace equals a clear mind. Your environment shapes your productivity. 🖥️",
+      "emotion": "organized",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/1000/post_2.webp",
+      "type": "emotion_share",
+      "title": "Code & Coffee",
+      "content": "The perfect combination for a productive day. Coffee fuels the code, code fuels the dreams. ☕",
+      "emotion": "focused",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/1000/post_3.webp",
+      "type": "emotion_share",
+      "title": "Digital Minimalism",
+      "content": "Less is more in the digital world too. Simplifying for clarity and focus. 📱",
+      "emotion": "minimalist",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/1000/post_4.webp",
+      "type": "emotion_share",
+      "title": "Remote Life",
+      "content": "Working from anywhere, living everywhere. The freedom to choose your own adventure. 🌍",
+      "emotion": "free",
+      "likes": 0
+    }
+  ]
+}
+

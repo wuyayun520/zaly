@@ -1,0 +1,59 @@
+{
+  "userId": "1011",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/1011/usericon.webp",
+    "nickname": "Sage",
+    "age": 28,
+    "gender": "female",
+    "location": "Denmark",
+    "description": "Art therapist and mindfulness coach sharing wellness practices and mental health awareness"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/1011/Dynamic.mp4",
+      "type": "video",
+      "title": "Mindfulness Moment",
+      "content": "Taking time for mental wellness today. Self-care isn't selfish, it's necessary. 🧘",
+      "emotion": "centered",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/1011/post_1.webp",
+      "type": "emotion_share",
+      "title": "Meditation Space",
+      "content": "Creating a peaceful corner for daily practice. Your mind deserves a sanctuary. 🕯️",
+      "emotion": "peaceful",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/1011/post_2.webp",
+      "type": "emotion_share",
+      "title": "Art Therapy",
+      "content": "Expressing emotions through art. Sometimes words aren't enough, but colors speak volumes. 🎨",
+      "emotion": "expressive",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/1011/post_3.webp",
+      "type": "emotion_share",
+      "title": "Gratitude Practice",
+      "content": "Writing down what I'm grateful for today. Gratitude transforms ordinary moments into blessings. 🙏",
+      "emotion": "grateful",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/1011/post_4.webp",
+      "type": "emotion_share",
+      "title": "Self Reflection",
+      "content": "Taking time to check in with myself. Growth happens when we pause to reflect. 💭",
+      "emotion": "introspective",
+      "likes": 0
+    }
+  ]
+}
+

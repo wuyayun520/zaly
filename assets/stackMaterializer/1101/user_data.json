@@ -1,0 +1,59 @@
+{
+  "userId": "1101",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/1101/usericon.webp",
+    "nickname": "River",
+    "age": 24,
+    "gender": "female",
+    "location": "Ireland",
+    "description": "Pet lover and animal welfare advocate sharing moments with furry friends and rescue stories"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/1101/Dynamic.mp4",
+      "type": "video",
+      "title": "Pet Playtime",
+      "content": "Spending quality time with my furry friends today. Animals bring so much joy to our lives! 🐾",
+      "emotion": "joyful",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/1101/post_1.webp",
+      "type": "emotion_share",
+      "title": "Morning Cuddles",
+      "content": "The best way to start the day? With a warm cuddle from your pet companion. 🐕",
+      "emotion": "loving",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/1101/post_2.webp",
+      "type": "emotion_share",
+      "title": "Rescue Story",
+      "content": "Every rescue animal has a story. Today I'm sharing one that touched my heart. ❤️",
+      "emotion": "compassionate",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/1101/post_3.webp",
+      "type": "emotion_share",
+      "title": "Park Adventures",
+      "content": "Taking the dogs to the park. Watching them run free and happy is pure happiness! 🌳",
+      "emotion": "happy",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/1101/post_4.webp",
+      "type": "emotion_share",
+      "title": "Pet Portrait",
+      "content": "Capturing the personality of my pets. Each one is unique and special in their own way. 📸",
+      "emotion": "affectionate",
+      "likes": 0
+    }
+  ]
+}
+

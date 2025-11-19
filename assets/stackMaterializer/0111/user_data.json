@@ -1,0 +1,59 @@
+{
+  "userId": "0111",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/0111/usericon.webp",
+    "nickname": "Quinn",
+    "age": 23,
+    "gender": "female",
+    "location": "Italy",
+    "description": "Fashion enthusiast and style curator sharing outfit inspirations and fashion trends"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/0111/Dynamic.mp4",
+      "type": "video",
+      "title": "Style Diary",
+      "content": "Today's look! Fashion is a form of self-expression. What you wear tells your story. 👗",
+      "emotion": "confident",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/0111/post_1.webp",
+      "type": "emotion_share",
+      "title": "Outfit of the Day",
+      "content": "Putting together pieces that make me feel good. Style is personal and unique to each of us. ✨",
+      "emotion": "stylish",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/0111/post_2.webp",
+      "type": "emotion_share",
+      "title": "Vintage Finds",
+      "content": "There's something special about vintage pieces. They carry stories and timeless elegance. 👜",
+      "emotion": "nostalgic",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/0111/post_3.webp",
+      "type": "emotion_share",
+      "title": "Accessories Game",
+      "content": "The details make the difference. Sometimes it's the little things that complete the look. 💍",
+      "emotion": "detail-oriented",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/0111/post_4.webp",
+      "type": "emotion_share",
+      "title": "Seasonal Style",
+      "content": "Embracing the season with style. Fashion adapts, but personal expression remains constant. 🍂",
+      "emotion": "adaptable",
+      "likes": 0
+    }
+  ]
+}
+

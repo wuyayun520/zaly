@@ -1,0 +1,59 @@
+{
+  "userId": "1010",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/1010/usericon.webp",
+    "nickname": "Dakota",
+    "age": 26,
+    "gender": "male",
+    "location": "Norway",
+    "description": "Nature photographer and outdoor enthusiast capturing the beauty of landscapes and wildlife"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/1010/Dynamic.mp4",
+      "type": "video",
+      "title": "Nature Walk",
+      "content": "Exploring the great outdoors today. Nature has a way of resetting everything. 🌲",
+      "emotion": "refreshed",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/1010/post_1.webp",
+      "type": "emotion_share",
+      "title": "Mountain Peaks",
+      "content": "Reaching new heights, both literally and metaphorically. The view from the top is always worth it. ⛰️",
+      "emotion": "accomplished",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/1010/post_2.webp",
+      "type": "emotion_share",
+      "title": "Forest Paths",
+      "content": "Walking through ancient forests, feeling the history in every tree. Nature's cathedral. 🌳",
+      "emotion": "reverent",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/1010/post_3.webp",
+      "type": "emotion_share",
+      "title": "Wildlife Encounter",
+      "content": "Capturing moments with nature's creatures. Respect and wonder in every encounter. 🦌",
+      "emotion": "awestruck",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/1010/post_4.webp",
+      "type": "emotion_share",
+      "title": "Sunset Capture",
+      "content": "Chasing light and capturing moments. Sunsets remind us that endings can be beautiful. 🌅",
+      "emotion": "appreciative",
+      "likes": 0
+    }
+  ]
+}
+

@@ -1,0 +1,59 @@
+{
+  "userId": "1001",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/1001/usericon.webp",
+    "nickname": "Avery",
+    "age": 22,
+    "gender": "female",
+    "location": "Sweden",
+    "description": "Bookworm and literature lover sharing reading recommendations and literary thoughts"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/1001/Dynamic.mp4",
+      "type": "video",
+      "title": "Reading Corner",
+      "content": "Diving into a new book today. Books are portals to other worlds and other minds. 📚",
+      "emotion": "curious",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/1001/post_1.webp",
+      "type": "emotion_share",
+      "title": "Book Stack",
+      "content": "My current reading pile. So many stories, so little time. What are you reading? 📖",
+      "emotion": "excited",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/1001/post_2.webp",
+      "type": "emotion_share",
+      "title": "Quiet Reading",
+      "content": "The best part of reading? The silence that speaks volumes. Getting lost in words. 🤫",
+      "emotion": "peaceful",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/1001/post_3.webp",
+      "type": "emotion_share",
+      "title": "Library Visit",
+      "content": "There's something magical about libraries. Rows of stories waiting to be discovered. 🏛️",
+      "emotion": "inspired",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/1001/post_4.webp",
+      "type": "emotion_share",
+      "title": "Bookmark Collection",
+      "content": "Each bookmark marks a journey through pages. Collecting memories, one chapter at a time. 🔖",
+      "emotion": "nostalgic",
+      "likes": 0
+    }
+  ]
+}
+

@@ -1,0 +1,59 @@
+{
+  "userId": "1110",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/1110/usericon.webp",
+    "nickname": "Skyler",
+    "age": 27,
+    "gender": "male",
+    "location": "Belgium",
+    "description": "Gaming enthusiast and streamer sharing gameplay highlights and gaming community moments"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/1110/Dynamic.mp4",
+      "type": "video",
+      "title": "Gaming Session",
+      "content": "Streaming live today! Join me for some epic gameplay and good vibes. What games are you playing? 🎮",
+      "emotion": "excited",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/1110/post_1.webp",
+      "type": "emotion_share",
+      "title": "New Game Release",
+      "content": "Just got my hands on the latest release! The anticipation was worth it. Time to dive in! 🎯",
+      "emotion": "enthusiastic",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/1110/post_2.webp",
+      "type": "emotion_share",
+      "title": "Gaming Setup",
+      "content": "My battle station is ready! A good setup makes all the difference in the gaming experience. 💻",
+      "emotion": "prepared",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/1110/post_3.webp",
+      "type": "emotion_share",
+      "title": "Victory Moment",
+      "content": "That feeling when you finally beat that challenging level! Persistence pays off. 🏆",
+      "emotion": "triumphant",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/1110/post_4.webp",
+      "type": "emotion_share",
+      "title": "Gaming Community",
+      "content": "Gaming brings people together. The friendships made through games are real and lasting. 👥",
+      "emotion": "connected",
+      "likes": 0
+    }
+  ]
+}
+

@@ -1,0 +1,59 @@
+{
+  "userId": "0010",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/0010/usericon.webp",
+    "nickname": "Taylor",
+    "age": 24,
+    "gender": "female",
+    "location": "United Kingdom",
+    "description": "Art enthusiast and lifestyle blogger sharing authentic moments and creative inspiration"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/0010/Dynamic.mp4",
+      "type": "video",
+      "title": "Life in Motion",
+      "content": "Capturing the beauty of everyday moments. Life moves fast, but we can always pause to appreciate the journey. 🎬",
+      "emotion": "appreciative",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/0010/post_1.webp",
+      "type": "emotion_share",
+      "title": "Sunset Dreams",
+      "content": "Chasing sunsets and dreams. Every ending is just a new beginning in disguise. 🌅",
+      "emotion": "hopeful",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/0010/post_2.webp",
+      "type": "emotion_share",
+      "title": "Coffee & Thoughts",
+      "content": "Morning coffee, fresh thoughts. What's brewing in your mind today? ☕",
+      "emotion": "thoughtful",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/0010/post_3.webp",
+      "type": "emotion_share",
+      "title": "Nature's Beauty",
+      "content": "Finding inspiration in nature's simple elegance. Sometimes the best art is right outside our window. 🌸",
+      "emotion": "inspired",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/0010/post_4.webp",
+      "type": "emotion_share",
+      "title": "Cozy Evening",
+      "content": "Winding down with good vibes and warm thoughts. How do you like to spend your evenings? 🕯️",
+      "emotion": "cozy",
+      "likes": 0
+    }
+  ]
+}
+

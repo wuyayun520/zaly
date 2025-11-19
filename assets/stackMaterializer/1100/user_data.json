@@ -1,0 +1,59 @@
+{
+  "userId": "1100",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/1100/usericon.webp",
+    "nickname": "Phoenix",
+    "age": 29,
+    "gender": "male",
+    "location": "New Zealand",
+    "description": "Adventure photographer and extreme sports enthusiast capturing adrenaline-filled moments"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/1100/Dynamic.mp4",
+      "type": "video",
+      "title": "Adventure Time",
+      "content": "Living life on the edge! Today's adventure pushed me to new limits. What's your next challenge? 🏄",
+      "emotion": "thrilled",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/1100/post_1.webp",
+      "type": "emotion_share",
+      "title": "Surfing Waves",
+      "content": "Riding the waves and feeling alive! The ocean teaches you to go with the flow. 🌊",
+      "emotion": "exhilarated",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/1100/post_2.webp",
+      "type": "emotion_share",
+      "title": "Skydiving Experience",
+      "content": "Free falling through the clouds. Sometimes you need to take a leap of faith! ✈️",
+      "emotion": "liberated",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/1100/post_3.webp",
+      "type": "emotion_share",
+      "title": "Rock Climbing",
+      "content": "One handhold at a time, reaching new heights. Climbing teaches patience and persistence. 🧗",
+      "emotion": "determined",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/1100/post_4.webp",
+      "type": "emotion_share",
+      "title": "Campfire Stories",
+      "content": "Ending the day around the campfire. Adventure stories and good company under the stars. 🔥",
+      "emotion": "content",
+      "likes": 0
+    }
+  ]
+}
+

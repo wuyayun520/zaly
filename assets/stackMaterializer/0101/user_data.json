@@ -1,0 +1,59 @@
+{
+  "userId": "0101",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/0101/usericon.webp",
+    "nickname": "Casey",
+    "age": 25,
+    "gender": "male",
+    "location": "France",
+    "description": "Music lover and aspiring artist sharing melodies, emotions, and creative inspirations"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/0101/Dynamic.mp4",
+      "type": "video",
+      "title": "Music Studio",
+      "content": "Creating something new today. Music is the language of emotions. What's your favorite song right now? 🎵",
+      "emotion": "creative",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/0101/post_1.webp",
+      "type": "emotion_share",
+      "title": "Vinyl Collection",
+      "content": "There's something special about vinyl records. The crackle, the warmth, the ritual of playing music. 🎶",
+      "emotion": "nostalgic",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/0101/post_2.webp",
+      "type": "emotion_share",
+      "title": "Late Night Sessions",
+      "content": "Some of the best ideas come when the world is quiet. Late night creativity hits different. 🌙",
+      "emotion": "inspired",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/0101/post_3.webp",
+      "type": "emotion_share",
+      "title": "Concert Memories",
+      "content": "Live music has a way of bringing people together. Nothing beats the energy of a great concert! 🎸",
+      "emotion": "excited",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/0101/post_4.webp",
+      "type": "emotion_share",
+      "title": "Headphones On",
+      "content": "Getting lost in the music. Sometimes you just need to tune out the world and tune into yourself. 🎧",
+      "emotion": "introspective",
+      "likes": 0
+    }
+  ]
+}
+

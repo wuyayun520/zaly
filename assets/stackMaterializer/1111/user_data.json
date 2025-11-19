@@ -1,0 +1,59 @@
+{
+  "userId": "1111",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/1111/usericon.webp",
+    "nickname": "Emery",
+    "age": 25,
+    "gender": "female",
+    "location": "Switzerland",
+    "description": "Plant parent and gardening enthusiast sharing green thumb tips and botanical beauty"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/1111/Dynamic.mp4",
+      "type": "video",
+      "title": "Garden Tour",
+      "content": "Taking you through my plant collection today! Each plant has its own personality and needs. 🌿",
+      "emotion": "proud",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/1111/post_1.webp",
+      "type": "emotion_share",
+      "title": "New Plant Baby",
+      "content": "Welcome to the family! Adding a new plant to my collection. The joy of watching them grow! 🌱",
+      "emotion": "delighted",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/1111/post_2.webp",
+      "type": "emotion_share",
+      "title": "Blooming Beauty",
+      "content": "My plants are blooming! There's something magical about seeing flowers open. 🌸",
+      "emotion": "blissful",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/1111/post_3.webp",
+      "type": "emotion_share",
+      "title": "Plant Care Routine",
+      "content": "Sunday plant care day! Watering, pruning, and checking on all my green friends. 🌿",
+      "emotion": "nurturing",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/1111/post_4.webp",
+      "type": "emotion_share",
+      "title": "Indoor Jungle",
+      "content": "My home is slowly becoming a jungle, and I love it! Plants bring life to every space. 🪴",
+      "emotion": "satisfied",
+      "likes": 0
+    }
+  ]
+}
+

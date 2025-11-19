@@ -1,0 +1,59 @@
+{
+  "userId": "0110",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/0110/usericon.webp",
+    "nickname": "Sam",
+    "age": 30,
+    "gender": "male",
+    "location": "Spain",
+    "description": "Food blogger and culinary explorer sharing delicious recipes and dining experiences"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/0110/Dynamic.mp4",
+      "type": "video",
+      "title": "Cooking Adventure",
+      "content": "Today's kitchen experiment! Cooking is an art form that brings people together. What are you making? 👨‍🍳",
+      "emotion": "passionate",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/0110/post_1.webp",
+      "type": "emotion_share",
+      "title": "Fresh Ingredients",
+      "content": "The best meals start with the best ingredients. There's something beautiful about fresh produce. 🥬",
+      "emotion": "appreciative",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/0110/post_2.webp",
+      "type": "emotion_share",
+      "title": "Homemade Comfort",
+      "content": "Nothing beats a home-cooked meal made with love. Comfort food for the soul. 🍲",
+      "emotion": "comfortable",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/0110/post_3.webp",
+      "type": "emotion_share",
+      "title": "Dessert Time",
+      "content": "Life is short, eat dessert first! Sometimes you need a little sweetness in your day. 🍰",
+      "emotion": "indulgent",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/0110/post_4.webp",
+      "type": "emotion_share",
+      "title": "Dining Out",
+      "content": "Exploring new flavors and cuisines. Every restaurant tells a story through its food. 🍽️",
+      "emotion": "curious",
+      "likes": 0
+    }
+  ]
+}
+

@@ -1,0 +1,59 @@
+{
+  "userId": "0001",
+  "userInfo": {
+    "avatar": "assets/stackMaterializer/0001/usericon.webp",
+    "nickname": "Jordan",
+    "age": 26,
+    "gender": "male",
+    "location": "Canada",
+    "description": "Passionate storyteller exploring life's beautiful moments through visual expression"
+  },
+  "posts": [
+    {
+      "postId": "dynamic_video",
+      "video": "assets/stackMaterializer/0001/Dynamic.mp4",
+      "type": "video",
+      "title": "Daily Vibe",
+      "content": "Capturing the essence of today. Every moment tells a story worth sharing. 📹",
+      "emotion": "energetic",
+      "likes": 0
+    },
+    {
+      "postId": "post_1",
+      "image": "assets/stackMaterializer/0001/post_1.webp",
+      "type": "emotion_share",
+      "title": "Morning Energy",
+      "content": "Starting the day with positive vibes! What's your morning routine? ☀️",
+      "emotion": "energetic",
+      "likes": 0
+    },
+    {
+      "postId": "post_2",
+      "image": "assets/stackMaterializer/0001/post_2.webp",
+      "type": "emotion_share",
+      "title": "Peaceful Moment",
+      "content": "Finding peace in the simple things. Sometimes less is more. 🌿",
+      "emotion": "peaceful",
+      "likes": 0
+    },
+    {
+      "postId": "post_3",
+      "image": "assets/stackMaterializer/0001/post_3.webp",
+      "type": "emotion_share",
+      "title": "Adventure Awaits",
+      "content": "Life is an adventure waiting to be explored. Where will your journey take you next? 🗺️",
+      "emotion": "adventurous",
+      "likes": 0
+    },
+    {
+      "postId": "post_4",
+      "image": "assets/stackMaterializer/0001/post_4.webp",
+      "type": "emotion_share",
+      "title": "Evening Reflection",
+      "content": "Ending the day with gratitude. What are you grateful for today? 🙏",
+      "emotion": "grateful",
+      "likes": 0
+    }
+  ]
+}
+
