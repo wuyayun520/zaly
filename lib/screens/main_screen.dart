@@ -9,10 +9,25 @@ class MainScreen extends StatefulWidget {
 
   @override
   State<MainScreen> createState() => _MainScreenState();
+  
+  // 静态方法用于切换标签页
+  static _MainScreenState? of(BuildContext context) {
+    return context.findAncestorStateOfType<_MainScreenState>();
+  }
 }
 
 class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
+  
+  // 公开方法用于切换标签页
+  void switchToTab(int index) {
+    setState(() {
+      _currentIndex = index;
+    });
+    if (index == 3) {
+      MeScreen.refresh();
+    }
+  }
 
   final List<Widget> _screens = [
     const HomeScreen(),

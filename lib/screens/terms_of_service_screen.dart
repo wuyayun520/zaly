@@ -42,12 +42,12 @@ class TermsOfServiceScreen extends StatelessWidget {
             _buildSection(
               context,
               '1. Acceptance of Terms',
-              'By accessing and using Zaly, you accept and agree to be bound by the terms and provision of this agreement.',
+              'By accessing and using Velvy, you accept and agree to be bound by the terms and provision of this agreement.',
             ),
             _buildSection(
               context,
               '2. Use License',
-              'Permission is granted to temporarily download one copy of Zaly for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n\n• Modify or copy the materials\n• Use the materials for any commercial purpose or for any public display\n• Attempt to decompile or reverse engineer any software contained in Zaly\n• Remove any copyright or other proprietary notations from the materials',
+              'Permission is granted to temporarily download one copy of Velvy for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:\n\n• Modify or copy the materials\n• Use the materials for any commercial purpose or for any public display\n• Attempt to decompile or reverse engineer any software contained in Velvy\n• Remove any copyright or other proprietary notations from the materials',
             ),
             _buildSection(
               context,
@@ -57,37 +57,37 @@ class TermsOfServiceScreen extends StatelessWidget {
             _buildSection(
               context,
               '4. User Content',
-              'You retain ownership of any content you submit, post or display on or through Zaly. By submitting, posting or displaying content on or through Zaly, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, adapt, publish, translate, and distribute such content.',
+              'You retain ownership of any content you submit, post or display on or through Velvy. By submitting, posting or displaying content on or through Velvy, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, adapt, publish, translate, and distribute such content.',
             ),
             _buildSection(
               context,
               '5. Prohibited Uses',
-              'You may not use Zaly:\n\n• In any way that violates any applicable national or international law or regulation\n• To transmit, or procure the sending of, any advertising or promotional material\n• To impersonate or attempt to impersonate the company, a company employee, another user, or any other person or entity\n• In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful',
+              'You may not use Velvy:\n\n• In any way that violates any applicable national or international law or regulation\n• To transmit, or procure the sending of, any advertising or promotional material\n• To impersonate or attempt to impersonate the company, a company employee, another user, or any other person or entity\n• In any way that infringes upon the rights of others, or in any way is illegal, threatening, fraudulent, or harmful',
             ),
             _buildSection(
               context,
               '6. Privacy Policy',
-              'Your use of Zaly is also governed by our Privacy Policy. Please review our Privacy Policy to understand our practices.',
+              'Your use of Velvy is also governed by our Privacy Policy. Please review our Privacy Policy to understand our practices.',
             ),
             _buildSection(
               context,
               '7. Disclaimer',
-              'The materials on Zaly are provided on an "as is" basis. Zaly makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.',
+              'The materials on Velvy are provided on an "as is" basis. Velvy makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.',
             ),
             _buildSection(
               context,
               '8. Limitations',
-              'In no event shall Zaly or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use Zaly, even if Zaly or a Zaly authorized representative has been notified orally or in writing of the possibility of such damage.',
+              'In no event shall Velvy or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use Velvy, even if Velvy or a Velvy authorized representative has been notified orally or in writing of the possibility of such damage.',
             ),
             _buildSection(
               context,
               '9. Revisions',
-              'Zaly may revise these terms of service for its app at any time without notice. By using Zaly you are agreeing to be bound by the then current version of these terms of service.',
+              'Velvy may revise these terms of service for its app at any time without notice. By using Velvy you are agreeing to be bound by the then current version of these terms of service.',
             ),
             _buildSection(
               context,
               '10. Contact Information',
-              'If you have any questions about these Terms of Service, please contact us at support@zaly.com.',
+              'If you have any questions about these Terms of Service, please contact us at support@Velvy.com.',
             ),
             const SizedBox(height: 32),
             Container(

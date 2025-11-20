@@ -40,7 +40,7 @@ class AboutScreen extends StatelessWidget {
                   children: [
                     // Logo
                     Image.asset(
-                      'assets/zaly_logo_about.webp',
+                      'assets/zaly_logo_about.png',
                       width: 200,
                       height: 200,
                       fit: BoxFit.contain,
@@ -63,7 +63,7 @@ class AboutScreen extends StatelessWidget {
                     const SizedBox(height: 40),
                     // App Name
                     const Text(
-                      'Zaly',
+                      'Velvy',
                       style: TextStyle(
                         fontSize: 32,
                         fontWeight: FontWeight.bold,

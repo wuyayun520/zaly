@@ -3,16 +3,16 @@ import 'theme/app_theme.dart';
 import 'screens/splash_screen.dart';
 
 void main() {
-  runApp(const ZalyApp());
+  runApp(const VelvyApp());
 }
 
-class ZalyApp extends StatelessWidget {
-  const ZalyApp({super.key});
+class VelvyApp extends StatelessWidget {
+  const VelvyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Zaly',
+      title: 'Velvy',
       theme: AppTheme.lightTheme,
       home: const SplashScreen(),
       debugShowCheckedModeBanner: false,

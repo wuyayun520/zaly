@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:video_thumbnail/video_thumbnail.dart';
+import 'package:flutter/services.dart';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
-import 'package:flutter/services.dart';
+import 'package:video_thumbnail/video_thumbnail.dart';
 import '../models/user_post_model.dart';
 import '../services/user_post_service.dart';
 import '../services/follow_service.dart';
 import '../services/like_service.dart';
-import '../services/not_interested_service.dart';
-import '../theme/app_theme.dart';
-import 'post_detail_screen.dart';
 import 'video_player_screen.dart';
-import 'user_profile_screen.dart';
 
 class CommunityScreen extends StatefulWidget {
   const CommunityScreen({super.key});
@@ -21,19 +17,17 @@ class CommunityScreen extends StatefulWidget {
 }
 
 class _CommunityScreenState extends State<CommunityScreen> {
-  List<UserPost> _userPosts = [];
   List<VideoPostItem> _videoPosts = [];
   bool _isLoading = true;
   final ValueNotifier<Set<String>> _followedUsersNotifier = ValueNotifier<Set<String>>({});
   final ValueNotifier<Set<String>> _likedPostsNotifier = ValueNotifier<Set<String>>({});
-  final ValueNotifier<Set<String>> _notInterestedPostsNotifier = ValueNotifier<Set<String>>({});
-  final Map<String, String?> _videoThumbnails = {}; // 缓存视频缩略图路径
+  final PageController _videoPageController = PageController(viewportFraction: 0.85);
+  final Map<String, String?> _thumbnailCache = {};
 
   @override
   void initState() {
     super.initState();
-    _loadNotInterestedPosts();
-    _loadUserPosts();
+    _loadData();
     _loadFollowedUsers();
     _loadLikedPosts();
   }
@@ -42,13 +36,8 @@ class _CommunityScreenState extends State<CommunityScreen> {
   void dispose() {
     _followedUsersNotifier.dispose();
     _likedPostsNotifier.dispose();
-    _notInterestedPostsNotifier.dispose();
+    _videoPageController.dispose();
     super.dispose();
-  }
-
-  Future<void> _loadNotInterestedPosts() async {
-    final notInterestedPosts = await NotInterestedService.getNotInterestedPosts();
-    _notInterestedPostsNotifier.value = notInterestedPosts;
   }
 
   Future<void> _loadLikedPosts() async {
@@ -73,118 +62,116 @@ class _CommunityScreenState extends State<CommunityScreen> {
     _followedUsersNotifier.value = newFollowedUsers;
   }
 
-  Future<void> _loadUserPosts() async {
+  Future<void> _loadData() async {
     try {
       final posts = await UserPostService.loadAllUserPosts();
-      final notInterestedPosts = await NotInterestedService.getNotInterestedPosts();
       
-      // 获取所有用户的第一条视频帖子
-      List<VideoPostItem> videoPosts = [];
+      // 提取所有视频帖子
+      final videoPosts = <VideoPostItem>[];
       for (var userPost in posts) {
-        // 查找该用户的第一条视频帖子
-        Post? videoPost;
-        try {
-          videoPost = userPost.allPosts.firstWhere(
-            (post) => post.video != null && post.video!.isNotEmpty,
-          );
-        } catch (e) {
-          // 如果该用户没有视频帖子，跳过
-          continue;
-        }
-        
-        // 确保找到了视频帖子
-        if (videoPost.video != null && videoPost.video!.isNotEmpty) {
-          // 检查是否被标记为不感兴趣
-          final uniquePostId = '${userPost.userId}_${videoPost.postId}';
-          if (notInterestedPosts.contains(uniquePostId)) {
-            // 跳过不感兴趣的视频
-            continue;
-          }
-          
-          videoPosts.add(VideoPostItem(
-            userId: userPost.userId,
-            userInfo: userPost.userInfo,
-            post: videoPost,
-          ));
-          
-          // 异步生成缩略图（不等待）
-          if (videoPost.image == null) {
-            _generateVideoThumbnail(videoPost.video!);
+        for (var post in userPost.allPosts) {
+          if (post.video != null) {
+            videoPosts.add(VideoPostItem(
+              userPost: userPost,
+              post: post,
+            ));
           }
         }
-      }
-      
-      // 调试：打印每个用户的视频信息
-      print('Total video posts loaded: ${videoPosts.length}');
-      for (var item in videoPosts) {
-        print('User: ${item.userInfo.nickname}, Video: ${item.post.video}, Title: ${item.post.title}');
       }
       
       setState(() {
-        _userPosts = posts;
         _videoPosts = videoPosts;
         _isLoading = false;
       });
+      
+      // 预加载视频缩略图
+      _loadVideoThumbnails();
     } catch (e) {
-      print('Error loading user posts: $e');
       setState(() {
         _isLoading = false;
       });
     }
   }
-
-  // 从视频生成首帧缩略图
-  Future<void> _generateVideoThumbnail(String videoPath) async {
-    if (_videoThumbnails.containsKey(videoPath) && _videoThumbnails[videoPath] != null) {
-      return; // 已经生成过
+  
+  Future<void> _loadVideoThumbnails() async {
+    // 并发加载多个缩略图,但限制并发数量避免过载
+    const maxConcurrent = 3;
+    for (int i = 0; i < _videoPosts.length; i += maxConcurrent) {
+      final batch = _videoPosts.skip(i).take(maxConcurrent);
+      await Future.wait(
+        batch.map((videoPost) async {
+          if (videoPost.post.video != null) {
+            // 使用 userId + postId 作为唯一键
+            final uniqueKey = '${videoPost.userPost.userId}_${videoPost.post.postId}';
+            if (!_thumbnailCache.containsKey(uniqueKey)) {
+              final thumbnail = await _generateThumbnail(
+                videoPost.post.video!,
+                uniqueKey, // 使用 userId + postId 确保唯一性
+              );
+              if (mounted) {
+                setState(() {
+                  _thumbnailCache[uniqueKey] = thumbnail;
+                });
+              }
+            }
+          }
+        }),
+      );
     }
-    
+  }
+  
+  Future<String?> _generateThumbnail(String videoPath, String postId) async {
     try {
-      print('Generating thumbnail for: $videoPath');
-      // 先将 assets 中的视频复制到临时目录
-      final ByteData data = await rootBundle.load(videoPath);
-      final Directory tempDir = await getTemporaryDirectory();
-      // 使用完整的路径作为文件名，确保不同用户的视频不会冲突
-      final fileName = videoPath.replaceAll('/', '_').replaceAll('assets_', '');
-      final File tempVideoFile = File('${tempDir.path}/$fileName');
+      // 如果是 asset 路径,需要先复制到临时目录
+      String actualVideoPath = videoPath;
       
-      // 如果文件已存在，先删除
-      if (await tempVideoFile.exists()) {
-        await tempVideoFile.delete();
+      if (videoPath.startsWith('assets/')) {
+        // 将 asset 视频复制到临时目录,使用 postId 确保文件名唯一
+        final tempDir = await getTemporaryDirectory();
+        // 使用 postId 作为文件名的一部分,确保每个视频都有唯一的文件名
+        final fileName = '${postId}_${videoPath.split('/').last}';
+        final videoFile = File('${tempDir.path}/$fileName');
+        
+        // 如果文件已存在,直接使用
+        if (await videoFile.exists()) {
+          actualVideoPath = videoFile.path;
+        } else {
+          // 从 asset 复制到临时目录
+          final byteData = await rootBundle.load(videoPath);
+          await videoFile.writeAsBytes(byteData.buffer.asUint8List());
+          actualVideoPath = videoFile.path;
+        }
       }
       
-      await tempVideoFile.writeAsBytes(data.buffer.asUint8List());
-      
-      // 生成缩略图，使用唯一的文件名
-      final thumbnailFileName = '${fileName}_thumb.jpg';
-      final thumbnailPath = await VideoThumbnail.thumbnailFile(
-        video: tempVideoFile.path,
-        thumbnailPath: '${tempDir.path}/$thumbnailFileName',
-        imageFormat: ImageFormat.JPEG,
+      // 生成缩略图,使用 postId 确保缩略图文件名唯一
+      final tempDir = await getTemporaryDirectory();
+      final generatedThumbnailPath = await VideoThumbnail.thumbnailFile(
+        video: actualVideoPath,
+        thumbnailPath: tempDir.path,
+        imageFormat: ImageFormat.WEBP,
         maxWidth: 400,
         quality: 75,
-        timeMs: 0, // 获取第一帧
       );
       
-      if (thumbnailPath != null && mounted) {
-        print('Thumbnail generated: $thumbnailPath for video: $videoPath');
-        setState(() {
-          _videoThumbnails[videoPath] = thumbnailPath;
-        });
+      // 如果生成成功,重命名为使用 postId 的唯一文件名
+      if (generatedThumbnailPath != null) {
+        final uniqueThumbnailPath = '${tempDir.path}/${postId}_thumbnail.webp';
+        final thumbnailFile = File(generatedThumbnailPath);
+        if (await thumbnailFile.exists()) {
+          // 如果目标文件已存在,先删除
+          final targetFile = File(uniqueThumbnailPath);
+          if (await targetFile.exists()) {
+            await targetFile.delete();
+          }
+          // 重命名文件
+          await thumbnailFile.rename(uniqueThumbnailPath);
+          return uniqueThumbnailPath;
+        }
       }
       
-      // 清理临时视频文件
-      if (await tempVideoFile.exists()) {
-        await tempVideoFile.delete();
-      }
+      return generatedThumbnailPath;
     } catch (e) {
-      print('Error generating video thumbnail for $videoPath: $e');
-      // 即使生成失败，也标记为已尝试，避免重复尝试
-      if (mounted) {
-        setState(() {
-          _videoThumbnails[videoPath] = null;
-        });
-      }
+      return null;
     }
   }
 
@@ -203,72 +190,40 @@ class _CommunityScreenState extends State<CommunityScreen> {
             child: CustomScrollView(
               slivers: [
                 SliverToBoxAdapter(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 24.0, right: 24.0, top: 16.0),
-                  child: Image.asset(
-                    'assets/zaly_home_resonance.webp',
-                    height: 50,
-                    fit: BoxFit.contain,
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24.0),
-                  child: Image.asset(
-                    'assets/zaly_community_challenge_banner.webp',
-                    width: double.infinity,
-                    fit: BoxFit.contain,
-                  ),
-                ),
-                const SizedBox(height: 24),
-                // Recommended users 标题
-                const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 24.0),
-                  child: Text(
-                    'Recommended users',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black87,
+                  child: Padding(
+                    padding: const EdgeInsets.all(24.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        _buildHeader(),
+                        const SizedBox(height: 24),
+                        _buildWelcomeCard(),
+                        const SizedBox(height: 24),
+                        _buildSectionTitle(),
+                      ],
                     ),
                   ),
                 ),
-                const SizedBox(height: 16),
-                // 用户列表
-                _isLoading
-                    ? const Center(child: CircularProgressIndicator())
-                    : _userPosts.isEmpty
-                        ? const Center(child: Text('No users available'))
-                        : SizedBox(
-                            height: 100,
-                            child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              padding: const EdgeInsets.symmetric(horizontal: 24.0),
-                              itemCount: _userPosts.length,
-                              itemBuilder: (context, index) {
-                                return _buildUserAvatar(_userPosts[index]);
-                              },
-                            ),
-                          ),
-                    ],
+                if (_isLoading)
+                  const SliverToBoxAdapter(
+                    child: Center(child: CircularProgressIndicator()),
+                  )
+                else if (_videoPosts.isEmpty)
+                  const SliverToBoxAdapter(
+                    child: Padding(
+                      padding: EdgeInsets.all(24.0),
+                      child: Center(
+                        child: Text(
+                          'No Share stories available yet',
+                          style: TextStyle(fontSize: 16, color: Colors.white70),
+                        ),
+                      ),
+                    ),
+                  )
+                else
+                  SliverToBoxAdapter(
+                    child: _buildVideoCarousel(),
                   ),
-                ),
-                // 视频帖子列表
-                _isLoading
-                    ? const SliverToBoxAdapter(child: SizedBox())
-                    : _videoPosts.isEmpty
-                        ? const SliverToBoxAdapter(
-                            child: Center(child: Text('No video posts available')))
-                        : SliverList(
-                            delegate: SliverChildBuilderDelegate(
-                              (context, index) {
-                                return _buildVideoPostCard(_videoPosts[index]);
-                              },
-                              childCount: _videoPosts.length,
-                            ),
-                          ),
                 SliverToBoxAdapter(
                   child: SizedBox(
                     height: MediaQuery.of(context).padding.bottom + 166,
@@ -282,100 +237,169 @@ class _CommunityScreenState extends State<CommunityScreen> {
     );
   }
 
-  Widget _buildVideoThumbnail(VideoPostItem videoPostItem) {
-    // 优先使用 post.image
-    if (videoPostItem.post.image != null) {
-      return Image.asset(
-        videoPostItem.post.image!,
-        width: double.infinity,
-        height: 400,
-        fit: BoxFit.cover,
-        errorBuilder: (context, error, stackTrace) {
-          return _buildThumbnailFromVideo(videoPostItem);
-        },
-      );
-    }
-    
-    // 如果没有 image，尝试从视频路径推断缩略图
-    return _buildThumbnailFromVideo(videoPostItem);
+  Widget _buildHeader() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                'Support Community',
+                style: TextStyle(
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              ),
+              const SizedBox(height: 4),
+              Text(
+                'You\'re not alone on this journey',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.white.withOpacity(0.9),
+                ),
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(width: 12),
+        Container(
+          padding: const EdgeInsets.all(12),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                const Color(0xFFFF6B9D).withOpacity(0.3),
+                const Color(0xFFA496FA).withOpacity(0.3),
+              ],
+            ),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: const Icon(
+            Icons.people,
+            color: Colors.white,
+            size: 28,
+          ),
+        ),
+      ],
+    );
   }
 
-  Widget _buildThumbnailFromVideo(VideoPostItem videoPostItem) {
-    if (videoPostItem.post.video == null) {
-      return _buildThumbnailPlaceholder(videoPostItem);
-    }
-    
-    final videoPath = videoPostItem.post.video!;
-    
-    // 如果已经有生成的缩略图，显示它
-    if (_videoThumbnails.containsKey(videoPath) && 
-        _videoThumbnails[videoPath] != null) {
-      return Image.file(
-        File(_videoThumbnails[videoPath]!),
-        width: double.infinity,
-        height: 400,
-        fit: BoxFit.cover,
-        errorBuilder: (context, error, stackTrace) {
-          return _buildThumbnailPlaceholder(videoPostItem);
-        },
-      );
-    }
-    
-    // 如果没有，异步生成并显示占位符
-    _generateVideoThumbnail(videoPath);
-    return _buildThumbnailPlaceholder(videoPostItem);
-  }
-
-  Widget _buildThumbnailPlaceholder(VideoPostItem videoPostItem) {
+  Widget _buildWelcomeCard() {
     return Container(
-      height: 400,
-      color: Colors.grey[300],
-      child: const Center(
-        child: Icon(Icons.videocam, size: 50),
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            const Color(0xFF98D8C8).withOpacity(0.95),
+            const Color(0xFF90EE90).withOpacity(0.95),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(24),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFF98D8C8).withOpacity(0.4),
+            blurRadius: 20,
+            offset: const Offset(0, 10),
+            spreadRadius: 2,
+          ),
+          BoxShadow(
+            color: Colors.black.withOpacity(0.15),
+            blurRadius: 12,
+            offset: const Offset(0, 5),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.35),
+                  borderRadius: BorderRadius.circular(14),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withOpacity(0.1),
+                      blurRadius: 8,
+                      offset: const Offset(0, 4),
+                    ),
+                  ],
+                ),
+                child: const Icon(
+                  Icons.favorite,
+                  color: Colors.white,
+                  size: 26,
+                ),
+              ),
+              const SizedBox(width: 12),
+              const Expanded(
+                child: Text(
+                  'Welcome to Our Community',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    letterSpacing: 0.3,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          const Text(
+            'This is a safe space to share your emotional journey, find support, and connect with others who understand.',
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.white,
+              height: 1.5,
+            ),
+          ),
+          const SizedBox(height: 16),
+          Row(
+            children: [
+              _buildCommunityStatBadge('💬', 'Share Stories'),
+              const SizedBox(width: 12),
+              _buildCommunityStatBadge('🤝', 'Find Support'),
+              const SizedBox(width: 12),
+              _buildCommunityStatBadge('🌱', 'Grow Together'),
+            ],
+          ),
+        ],
       ),
     );
   }
 
-  Widget _buildUserAvatar(UserPost userPost) {
-    return GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => UserProfileScreen(
-              userPost: userPost,
-            ),
-          ),
-        );
-      },
+  Widget _buildCommunityStatBadge(String emoji, String label) {
+    return Expanded(
       child: Container(
-        margin: const EdgeInsets.only(right: 16),
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.2),
+          borderRadius: BorderRadius.circular(10),
+        ),
         child: Column(
           children: [
-            Container(
-              width: 70,
-              height: 70,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(
-                  color: const Color(0xFFFF6B9D),
-                  width: 2,
-                ),
+            Text(emoji, style: const TextStyle(fontSize: 20)),
+            const SizedBox(height: 4),
+            Text(
+              label,
+              style: const TextStyle(
+                fontSize: 10,
+                color: Colors.white,
+                fontWeight: FontWeight.w600,
               ),
-              child: ClipOval(
-                child: Image.asset(
-                  userPost.userInfo.avatar,
-                  width: 70,
-                  height: 70,
-                  fit: BoxFit.cover,
-                  errorBuilder: (context, error, stackTrace) {
-                    return Container(
-                      color: Colors.grey[300],
-                      child: const Icon(Icons.person, size: 35),
-                    );
-                  },
-                ),
-              ),
+              textAlign: TextAlign.center,
             ),
           ],
         ),
@@ -383,209 +407,350 @@ class _CommunityScreenState extends State<CommunityScreen> {
     );
   }
 
-  Widget _buildVideoPostCard(VideoPostItem videoPostItem) {
-    // 调试：确保每个卡片使用不同的数据
-    final uniqueKey = ValueKey('${videoPostItem.userId}_${videoPostItem.post.postId}');
+  Widget _buildSectionTitle() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Share Stories',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              'Swipe to explore emotional journeys',
+              style: TextStyle(
+                fontSize: 13,
+                color: Colors.black,
+              ),
+            ),
+          ],
+        ),
+       
+      ],
+    );
+  }
+
+  Widget _buildVideoCarousel() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        SizedBox(
+          height: 520,
+          child: PageView.builder(
+            controller: _videoPageController,
+            itemCount: _videoPosts.length,
+            itemBuilder: (context, index) {
+              return Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: _buildVideoCard(_videoPosts[index], index),
+              );
+            },
+          ),
+        ),
+        const SizedBox(height: 16),
+        // 页面指示器
+        Center(
+          child: _buildPageIndicator(),
+        ),
+      ],
+    );
+  }
+  
+  Widget _buildPageIndicator() {
+    return AnimatedBuilder(
+      animation: _videoPageController,
+      builder: (context, child) {
+        double page = 0;
+        if (_videoPageController.hasClients && _videoPageController.position.hasContentDimensions) {
+          page = _videoPageController.page ?? 0;
+        }
+        
+        return Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: List.generate(_videoPosts.length, (index) {
+            double distance = (page - index).abs();
+            double opacity = (1 - (distance * 0.3)).clamp(0.3, 1.0);
+            double size = distance < 1 ? 8 - (distance * 2) : 6;
+            
+            return Container(
+              margin: const EdgeInsets.symmetric(horizontal: 4),
+              width: size,
+              height: size,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: Colors.white.withOpacity(opacity),
+              ),
+            );
+          }),
+        );
+      },
+    );
+  }
+  
+  Widget _buildVideoCard(VideoPostItem videoPost, int index) {
+    // 使用 userId + postId 作为唯一键查找缩略图
+    final uniqueKey = '${videoPost.userPost.userId}_${videoPost.post.postId}';
+    final thumbnail = _thumbnailCache[uniqueKey];
     
-    return Container(
-      key: uniqueKey,
-      margin: const EdgeInsets.only(bottom: 24),
-      padding: const EdgeInsets.symmetric(horizontal: 24.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          // 用户信息和 Follow 按钮
-          Row(
+    return GestureDetector(
+      onTap: () {
+        if (videoPost.post.video != null) {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => VideoPlayerScreen(
+                post: videoPost.post,
+                userInfo: videoPost.userPost.userInfo,
+                userId: videoPost.userPost.userId,
+              ),
+            ),
+          );
+        }
+      },
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(24),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.2),
+              blurRadius: 20,
+              offset: const Offset(0, 10),
+            ),
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(24),
+          child: Stack(
+            fit: StackFit.expand,
             children: [
-              ClipOval(
-                child: Image.asset(
-                  videoPostItem.userInfo.avatar,
-                  width: 40,
-                  height: 40,
+              // 视频缩略图背景
+              if (thumbnail != null && File(thumbnail).existsSync())
+                Image.file(
+                  File(thumbnail),
                   fit: BoxFit.cover,
                   errorBuilder: (context, error, stackTrace) {
+                    // 如果缩略图加载失败,显示默认背景
                     return Container(
-                      width: 40,
-                      height: 40,
-                      color: Colors.grey[300],
-                      child: const Icon(Icons.person, size: 20),
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            const Color(0xFFFF6B9D).withOpacity(0.7),
+                            const Color(0xFFA496FA).withOpacity(0.7),
+                          ],
+                        ),
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          Icons.videocam,
+                          color: Colors.white,
+                          size: 60,
+                        ),
+                      ),
                     );
                   },
+                )
+              else
+                Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [
+                        const Color(0xFFFF6B9D).withOpacity(0.7),
+                        const Color(0xFFA496FA).withOpacity(0.7),
+                      ],
+                    ),
+                  ),
+                  child: const Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        CircularProgressIndicator(
+                          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                        ),
+                        SizedBox(height: 16),
+                        Text(
+                          'Loading video...',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Text(
-                  videoPostItem.userInfo.nickname,
-                  style: const TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black87,
+              
+              // 渐变遮罩
+              Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Colors.transparent,
+                      Colors.black.withOpacity(0.7),
+                    ],
+                    stops: const [0.5, 1.0],
                   ),
                 ),
               ),
-              ValueListenableBuilder<Set<String>>(
-                valueListenable: _followedUsersNotifier,
-                builder: (context, followedUsers, child) {
-                  final isFollowing = followedUsers.contains(videoPostItem.userId);
-                  return GestureDetector(
-                    onTap: () => _toggleFollow(videoPostItem.userId),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 20,
-                        vertical: 8,
+              
+              // 播放按钮
+              Center(
+                child: Container(
+                  padding: const EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.white.withOpacity(0.9),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.3),
+                        blurRadius: 15,
+                        offset: const Offset(0, 5),
                       ),
-                      decoration: BoxDecoration(
-                        gradient: isFollowing
-                            ? null
-                            : LinearGradient(
-                                colors: [
-                                  AppTheme.primaryColor,
-                                  AppTheme.primaryColor.withOpacity(0.7),
-                                ],
+                    ],
+                  ),
+                  child: const Icon(
+                    Icons.play_arrow,
+                    color: Color(0xFFFF6B9D),
+                    size: 40,
+                  ),
+                ),
+              ),
+              
+              // 用户信息和内容
+              Positioned(
+                left: 0,
+                right: 0,
+                bottom: 0,
+                child: Container(
+                  padding: const EdgeInsets.all(20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      // 用户头像和昵称
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(color: Colors.white, width: 2),
+                            ),
+                            child: ClipOval(
+                              child: Image.asset(
+                                videoPost.userPost.userInfo.avatar,
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
                               ),
-                        color: isFollowing ? Colors.grey[300] : null,
-                        borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  videoPost.userPost.userInfo.nickname,
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                Text(
+                                  '${videoPost.userPost.userInfo.age} • ${videoPost.userPost.userInfo.location}',
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.white.withOpacity(0.8),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                         
+                        ],
                       ),
-                      child: Text(
-                        isFollowing ? 'Following' : 'Follow',
-                        style: TextStyle(
-                          color: isFollowing ? Colors.black87 : Colors.white,
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600,
+                      const SizedBox(height: 16),
+                      // 帖子标题
+                      if (videoPost.post.title.isNotEmpty)
+                        Text(
+                          videoPost.post.title,
+                          style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
                         ),
+                      const SizedBox(height: 8),
+                      // 帖子内容
+                      Text(
+                        videoPost.post.content,
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.white.withOpacity(0.9),
+                          height: 1.4,
+                        ),
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
                       ),
-                    ),
-                  );
-                },
+                      const SizedBox(height: 16),
+                      // 互动按钮
+                      Row(
+                        children: [
+                          
+                          const Spacer(),
+                          // 情绪标签
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFF98D8C8).withOpacity(0.9),
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            child: Text(
+                              videoPost.post.emotion,
+                              style: const TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
-          const SizedBox(height: 12),
-          // 视频缩略图
-          GestureDetector(
-            onTap: () async {
-              if (videoPostItem.post.video != null) {
-                await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => VideoPlayerScreen(
-                      post: videoPostItem.post,
-                      userInfo: videoPostItem.userInfo,
-                      userId: videoPostItem.userId,
-                    ),
-                  ),
-                );
-                // 从视频播放页面返回后，刷新列表以过滤不感兴趣的视频
-                _loadNotInterestedPosts();
-                _loadUserPosts();
-              } else {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => PostDetailScreen(
-                      post: videoPostItem.post,
-                      userInfo: videoPostItem.userInfo,
-                      userId: videoPostItem.userId,
-                    ),
-                  ),
-                );
-              }
-            },
-            child: Stack(
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(12),
-                  child: _buildVideoThumbnail(videoPostItem),
-                ),
-                // 播放按钮
-                Positioned(
-                  bottom: 16,
-                  left: 16,
-                  child: Container(
-                    width: 50,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.9),
-                      shape: BoxShape.circle,
-                    ),
-                    child: const Icon(
-                      Icons.play_arrow,
-                      color: Colors.black87,
-                      size: 30,
-                    ),
-                  ),
-                ),
-                // 点赞按钮
-                Positioned(
-                  top: 16,
-                  right: 16,
-                  child: ValueListenableBuilder<Set<String>>(
-                    valueListenable: _likedPostsNotifier,
-                    builder: (context, likedPosts, child) {
-                      final uniquePostId = '${videoPostItem.userId}_${videoPostItem.post.postId}';
-                      final isLiked = likedPosts.contains(uniquePostId);
-                      return GestureDetector(
-                        onTap: () => _toggleLike(uniquePostId),
-                        behavior: HitTestBehavior.opaque,
-                        child: Container(
-                          padding: const EdgeInsets.all(8),
-                          decoration: const BoxDecoration(
-                            color: Colors.white,
-                            shape: BoxShape.circle,
-                          ),
-                          child: Icon(
-                            isLiked ? Icons.favorite : Icons.favorite_border,
-                            color: isLiked ? Colors.red : Colors.grey,
-                            size: 20,
-                          ),
-                        ),
-                      );
-                    },
-                  ),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(height: 12),
-          // 标题
-          Text(
-            videoPostItem.post.title,
-            style: const TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.bold,
-              color: Colors.black87,
-            ),
-          ),
-          const SizedBox(height: 8),
-          // 内容
-          Text(
-            videoPostItem.post.content,
-            style: const TextStyle(
-              fontSize: 16,
-              color: Colors.black87,
-              height: 1.5,
-            ),
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-          ),
-        ],
+        ),
       ),
     );
   }
 }
 
-// 视频帖子项模型
+// 视频帖子数据类
 class VideoPostItem {
-  final String userId;
-  final UserInfo userInfo;
+  final UserPost userPost;
   final Post post;
-
+  
   VideoPostItem({
-    required this.userId,
-    required this.userInfo,
+    required this.userPost,
     required this.post,
   });
 }
-
 

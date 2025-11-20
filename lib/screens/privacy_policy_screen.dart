@@ -92,7 +92,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
             _buildSection(
               context,
               '11. Contact Us',
-              'If you have any questions about this Privacy Policy, please contact us at:\n\nEmail: privacy@zaly.com\n',
+              'If you have any questions about this Privacy Policy, please contact us at:\n\nEmail: privacy@Velvy.com\n',
             ),
             const SizedBox(height: 32),
             Container(

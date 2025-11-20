@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'me_screen.dart';
+import 'mood_journal_screen.dart';
 import 'post_story_screen.dart';
-import 'post_detail_screen.dart';
-import '../models/user_post_model.dart';
-import '../models/story_item_model.dart';
-import '../services/user_post_service.dart';
-import '../services/like_service.dart';
-import '../theme/app_theme.dart';
+import 'me_screen.dart';
+import 'main_screen.dart';
+import 'breathing_exercise_screen.dart';
+import 'meditation_music_screen.dart';
+import 'wellness_library_screen.dart';
+import '../services/mood_service.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -16,75 +16,88 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List<UserPost> _userPosts = [];
-  List<StoryItem> _storyItems = [];
+  int _todayMoodCount = 0;
+  int _weekMoodCount = 0;
   bool _isLoading = true;
-  late PageController _pageController;
-  Set<String> _likedPosts = {};
-  final ValueNotifier<Set<String>> _likedPostsNotifier = ValueNotifier<Set<String>>({});
 
   @override
   void initState() {
     super.initState();
-    _loadUserPosts();
-    _loadLikedPosts();
-    _pageController = PageController(
-      viewportFraction: 0.75,
-    );
-  }
-  
-  Future<void> _loadLikedPosts() async {
-    final likedPosts = await LikeService.getLikedPosts();
-    setState(() {
-      _likedPosts = likedPosts;
-      _likedPostsNotifier.value = likedPosts;
-    });
-  }
-  
-  Future<void> _toggleLike(String postId) async {
-    await LikeService.toggleLike(postId);
-    setState(() {
-      if (_likedPosts.contains(postId)) {
-        _likedPosts.remove(postId);
-      } else {
-        _likedPosts.add(postId);
-      }
-      _likedPostsNotifier.value = Set<String>.from(_likedPosts);
-    });
+    _loadMoodStats();
   }
 
-  @override
-  void dispose() {
-    _pageController.dispose();
-    _likedPostsNotifier.dispose();
-    super.dispose();
-  }
-
-  Future<void> _loadUserPosts() async {
+  Future<void> _loadMoodStats() async {
+    setState(() {
+      _isLoading = true;
+    });
+    
     try {
-      final posts = await UserPostService.loadAllUserPosts();
-      
-      // 收集所有用户的其他图片帖子
-      List<StoryItem> stories = [];
-      for (var userPost in posts) {
-        for (var post in userPost.otherImagePosts) {
-          stories.add(StoryItem(
-            userId: userPost.userId,
-            userInfo: userPost.userInfo,
-            post: post,
-          ));
-        }
-      }
+      final todayEntries = await MoodService.getTodayMoodEntries();
+      final now = DateTime.now();
+      final weekStart = now.subtract(const Duration(days: 7));
+      final weekEntries = await MoodService.getMoodEntriesForDateRange(weekStart, now);
       
       setState(() {
-        _userPosts = posts;
-        _storyItems = stories;
+        _todayMoodCount = todayEntries.length;
+        _weekMoodCount = weekEntries.length;
         _isLoading = false;
       });
     } catch (e) {
       setState(() {
         _isLoading = false;
       });
+    }
+  }
+  
+  Future<void> _refreshData() async {
+    await _loadMoodStats();
+  }
+  
+  IconData _getMotivationIcon() {
+    if (_weekMoodCount == 0) {
+      return Icons.lightbulb_outline;
+    } else if (_weekMoodCount < 3) {
+      return Icons.trending_up;
+    } else if (_weekMoodCount < 5) {
+      return Icons.favorite_border;
+    } else if (_weekMoodCount < 7) {
+      return Icons.emoji_events;
+    } else {
+      return Icons.star;
+    }
+  }
+  
+  String _getActionButtonText(String action) {
+    switch (action) {
+      case 'breathing':
+        return 'Start Breathing Exercise';
+      case 'music':
+        return 'Play Meditation Music';
+      case 'wellness':
+        return 'Explore Wellness Library';
+      case 'share':
+        return 'Share Your Story';
+      case 'mood':
+      default:
+        return 'Track Your Mood';
+    }
+  }
+
+  String _getMotivationMessage() {
+    if (_weekMoodCount == 0) {
+      return 'Start your wellness journey today! Track your first mood.';
+    } else if (_weekMoodCount == 1) {
+      return 'Great start! Keep tracking to build a healthy habit. 🌱';
+    } else if (_weekMoodCount < 3) {
+      return 'You\'re making progress! $_weekMoodCount entries this week. 💪';
+    } else if (_weekMoodCount < 5) {
+      return 'Doing well! $_weekMoodCount check-ins this week. Keep it up! ✨';
+    } else if (_weekMoodCount < 7) {
+      return 'Excellent work! $_weekMoodCount entries. Almost a full week! 🎯';
+    } else if (_weekMoodCount == 7) {
+      return 'Perfect week! 7 days of mindful tracking! 🌟';
+    } else {
+      return 'Amazing dedication! $_weekMoodCount entries this week! 🎉';
     }
   }
 
@@ -94,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final bottomNavBarHeight = 70.0;
     final bottomNavBarMargin = 48.0;
     final totalBottomSpace = bottomPadding + bottomNavBarHeight + bottomNavBarMargin + 20;
-    
+
     return Stack(
       fit: StackFit.expand,
       children: [
@@ -102,103 +115,321 @@ class _HomeScreenState extends State<HomeScreen> {
           'assets/zaly_allbg.webp',
           fit: BoxFit.cover,
         ),
-        CustomScrollView(
-          physics: const AlwaysScrollableScrollPhysics(),
-          slivers: [
+        RefreshIndicator(
+          onRefresh: _refreshData,
+          color: const Color(0xFFFF6B9D),
+          child: CustomScrollView(
+            physics: const AlwaysScrollableScrollPhysics(),
+            slivers: [
             SliverSafeArea(
               bottom: false,
               sliver: SliverToBoxAdapter(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                  padding: const EdgeInsets.all(24.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Image.asset(
-                        'assets/zaly_home_resonance.webp',
-                        height: 50,
-                        fit: BoxFit.contain,
-                      ),
-                      GestureDetector(
-                        onTap: () async {
-                          final result = await Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const PostStoryScreen(),
-                            ),
-                          );
-                          // 如果发布成功，刷新 MeScreen（如果用户切换到 MeScreen 时会自动刷新）
-                          if (result == true) {
-                            // 延迟一下，确保数据已保存
-                            await Future.delayed(const Duration(milliseconds: 300));
-                            // 通知 MeScreen 刷新（如果它已经创建）
-                            MeScreen.refresh();
-                          }
-                        },
-                        child: Image.asset(
-                          'assets/zaly_home_post.webp',
-                          height: 60,
-                          fit: BoxFit.contain,
-                        ),
-                      ),
+                      _buildHeader(),
+                      const SizedBox(height: 24),
+                      _buildDailyCheckIn(),
+                      const SizedBox(height: 20),
+                      _buildWellnessTools(),
+                      const SizedBox(height: 24),
+                      _buildTodaysFocus(),
+                      const SizedBox(height: 24),
+                      _buildWeeklyStats(),
                     ],
                   ),
                 ),
               ),
             ),
             SliverToBoxAdapter(
-                  child: SizedBox(
-                    height: 320,
-                    child: _isLoading
-                        ? const Center(child: CircularProgressIndicator())
-                        : _userPosts.isEmpty
-                            ? const Center(child: Text('No posts available'))
-                            : PageView.builder(
-                                itemCount: _userPosts.length,
-                                controller: _pageController,
-                                itemBuilder: (context, index) {
-                                  return _buildAnimatedPostCard(
-                                    _userPosts[index],
-                                    index,
-                                  );
-                                },
-                              ),
-                  ),
+              child: SizedBox(height: totalBottomSpace),
+            ),
+          ],
+        ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildHeader() {
+    final hour = DateTime.now().hour;
+    String greeting;
+    if (hour < 12) {
+      greeting = 'Good Morning';
+    } else if (hour < 18) {
+      greeting = 'Good Afternoon';
+    } else {
+      greeting = 'Good Evening';
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          greeting,
+          style: TextStyle(
+            fontSize: 32,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            shadows: [
+              Shadow(
+                color: Colors.black.withOpacity(0.3),
+                offset: const Offset(0, 2),
+                blurRadius: 4,
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 8),
+        Text(
+          'How are you feeling today?',
+          style: TextStyle(
+            fontSize: 16,
+            color: Colors.white.withOpacity(0.9),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildDailyCheckIn() {
+    return Container(
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            const Color(0xFFFF6B9D).withOpacity(0.95),
+            const Color(0xFFA496FA).withOpacity(0.95),
+          ],
+        ),
+        borderRadius: BorderRadius.circular(24),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFFFF6B9D).withOpacity(0.4),
+            blurRadius: 20,
+            offset: const Offset(0, 10),
+            spreadRadius: 2,
+          ),
+          BoxShadow(
+            color: Colors.black.withOpacity(0.1),
+            blurRadius: 10,
+            offset: const Offset(0, 5),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.3),
+                  borderRadius: BorderRadius.circular(12),
                 ),
-                SliverToBoxAdapter(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 24.0, top: 16.0, bottom: 16.0),
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      child: Image.asset(
-                        'assets/zaly_home_emotional.webp',
-                        height: 30,
-                        fit: BoxFit.contain,
+                child: const Icon(
+                  Icons.favorite,
+                  color: Colors.white,
+                  size: 28,
+                ),
+              ),
+              const SizedBox(width: 16),
+              const Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Daily Check-in',
+                      style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
                       ),
                     ),
-                  ),
+                    SizedBox(height: 4),
+                    Text(
+                      'Track your emotional wellness',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.white70,
+                      ),
+                    ),
+                  ],
                 ),
-                _isLoading
-                    ? const SliverToBoxAdapter(child: SizedBox())
-                    : _storyItems.isEmpty
-                        ? const SliverToBoxAdapter(
-                            child: Center(child: Text('No stories available')))
-                        : SliverPadding(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 16.0,
-                            ),
-                            sliver: SliverList(
-                              delegate: SliverChildBuilderDelegate(
-                                (context, index) {
-                                  return _buildStoryCard(_storyItems[index]);
-                                },
-                                childCount: _storyItems.length,
-                              ),
-                            ),
-                          ),
-            SliverToBoxAdapter(
-              child: SizedBox(
-                height: totalBottomSpace,
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Row(
+            children: [
+              Expanded(
+                child: _buildStatCard(
+                  'Today',
+                  _todayMoodCount.toString(),
+                  Icons.today,
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: _buildStatCard(
+                  'This Week',
+                  _weekMoodCount.toString(),
+                  Icons.calendar_today,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            width: double.infinity,
+            child: ElevatedButton(
+              onPressed: () async {
+                final result = await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MoodJournalScreen(),
+                  ),
+                );
+                // 如果用户添加了新的情绪记录,刷新数据
+                if (result == true || result == null) {
+                  _refreshData();
+                }
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                foregroundColor: const Color(0xFFFF6B9D),
+                padding: const EdgeInsets.symmetric(vertical: 16),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: _isLoading
+                  ? const SizedBox(
+                      height: 20,
+                      width: 20,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2,
+                        valueColor: AlwaysStoppedAnimation<Color>(Color(0xFFFF6B9D)),
+                      ),
+                    )
+                  : const Text(
+                      'Track Your Mood',
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildStatCard(String label, String value, IconData icon) {
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.2),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Row(
+        children: [
+          Icon(icon, color: Colors.white, size: 20),
+          const SizedBox(width: 8),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                value,
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Text(
+                label,
+                style: const TextStyle(
+                  fontSize: 11,
+                  color: Colors.white70,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildWellnessTools() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Text(
+          'Quick Actions',
+          style: TextStyle(
+            fontSize: 22,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        const SizedBox(height: 16),
+        Row(
+          children: [
+            Expanded(
+              child: _buildQuickActionCard(
+                'Explore Tools',
+                'Breathing, Challenges & More',
+                Icons.healing,
+                const LinearGradient(
+                  colors: [Color(0xFFA496FA), Color(0xFFB8ACFF)],
+                ),
+                () {
+                  // 切换到 Healing Center 标签页 (index 2)
+                  MainScreen.of(context)?.switchToTab(2);
+                },
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 12),
+        Row(
+          children: [
+            Expanded(
+              child: _buildToolCard(
+                'Share Story',
+                Icons.edit,
+                const Color(0xFFFF6B9D),
+                () async {
+                  final result = await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const PostStoryScreen(),
+                    ),
+                  );
+                  if (result == true) {
+                    await Future.delayed(const Duration(milliseconds: 300));
+                    MeScreen.refresh();
+                  }
+                },
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: _buildToolCard(
+                'Community',
+                Icons.people,
+                const Color(0xFF90EE90),
+                () {
+                  // 切换到 Community 标签页 (index 1)
+                  MainScreen.of(context)?.switchToTab(1);
+                },
               ),
             ),
           ],
@@ -207,309 +438,477 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildAnimatedPostCard(UserPost userPost, int index) {
-    return AnimatedBuilder(
-      animation: Listenable.merge([_pageController, _likedPostsNotifier]),
-      builder: (context, child) {
-        final currentLikedPosts = _likedPostsNotifier.value;
-        
-        if (!_pageController.position.haveDimensions) {
-          return _buildPostCard(userPost, currentLikedPosts);
-        }
-
-        double page = _pageController.page ?? 0.0;
-        double value = (index - page).abs();
-        
-        double scale = value > 0.5 ? 0.9 : 1.0 - (value * 0.2);
-        double opacity = value > 0.5 ? 0.6 : 1.0 - (value * 0.8);
-
-        return Transform.scale(
-          scale: scale.clamp(0.9, 1.0),
-          child: Opacity(
-            opacity: opacity.clamp(0.6, 1.0),
-            child: _buildPostCard(userPost, currentLikedPosts),
-          ),
-        );
-      },
+  Widget _buildQuickActionCard(
+    String title,
+    String subtitle,
+    IconData icon,
+    Gradient gradient,
+    VoidCallback onTap,
+  ) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(22),
+        decoration: BoxDecoration(
+          gradient: gradient,
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.2),
+              blurRadius: 15,
+              offset: const Offset(0, 6),
+              spreadRadius: 1,
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.3),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Icon(icon, color: Colors.white, size: 28),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    subtitle,
+                    style: const TextStyle(
+                      fontSize: 13,
+                      color: Colors.white70,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(
+              Icons.arrow_forward_ios,
+              color: Colors.white,
+              size: 20,
+            ),
+          ],
+        ),
+      ),
     );
   }
 
-  Widget _buildPostCard(UserPost userPost, Set<String> likedPosts) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8.0),
-      child: GestureDetector(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => PostDetailScreen(
-                post: userPost.firstImagePost,
-                userInfo: userPost.userInfo,
-                userId: userPost.userId,
-              ),
-            ),
-          );
-        },
-        child: SizedBox(
-          width: 266,
-          height: 320,
-          child: Card(
-          elevation: 12,
-          shadowColor: Colors.black.withOpacity(0.3),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
+  Widget _buildToolCard(String label, IconData icon, Color color, VoidCallback onTap) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 22, horizontal: 18),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              color.withOpacity(0.95),
+              color.withOpacity(0.85),
+            ],
           ),
-          clipBehavior: Clip.antiAlias,
-          child: Stack(
+          borderRadius: BorderRadius.circular(18),
+          boxShadow: [
+            BoxShadow(
+              color: color.withOpacity(0.4),
+              blurRadius: 12,
+              offset: const Offset(0, 6),
+              spreadRadius: 1,
+            ),
+            BoxShadow(
+              color: Colors.black.withOpacity(0.1),
+              blurRadius: 8,
+              offset: const Offset(0, 3),
+            ),
+          ],
+        ),
+        child: Column(
+          children: [
+            Icon(icon, color: Colors.white, size: 32),
+            const SizedBox(height: 8),
+            Text(
+              label,
+              style: const TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildTodaysFocus() {
+    final hour = DateTime.now().hour;
+    Map<String, dynamic> todayFocus;
+    
+    // 根据时间和用户活跃度提供不同的建议
+    if (_todayMoodCount == 0) {
+      // 用户今天还没有记录情绪 - 提供不同的工具建议，避免和第一个功能重复
+      if (hour < 12) {
+        todayFocus = {
+          'title': 'Start Your Day Mindfully',
+          'description': 'Take a moment for breathing exercises to center yourself',
+          'icon': '🌅',
+          'action': 'breathing',
+        };
+      } else if (hour < 18) {
+        todayFocus = {
+          'title': 'Midday Relaxation',
+          'description': 'Take a break with calming meditation music',
+          'icon': '☀️',
+          'action': 'music',
+        };
+      } else {
+        todayFocus = {
+          'title': 'Evening Reflection',
+          'description': 'Explore wellness articles for personal growth',
+          'icon': '🌙',
+          'action': 'wellness',
+        };
+      }
+    } else if (_weekMoodCount < 3) {
+      // 用户本周记录较少,鼓励坚持
+      todayFocus = {
+        'title': 'Build Your Habit',
+        'description': 'Consistency is key! Try to track daily for better insights',
+        'icon': '🌱',
+        'action': 'mood',
+      };
+    } else {
+      // 用户活跃,提供多样化的建议
+      final focuses = [
+        {
+          'title': 'Practice Gratitude',
+          'description': 'Write down 3 things you\'re grateful for today',
+          'icon': '🙏',
+          'action': 'mood',
+        },
+        {
+          'title': 'Mindful Breathing',
+          'description': 'Take 5 minutes for breathing exercises',
+          'icon': '🧘',
+          'action': 'breathing',
+        },
+        {
+          'title': 'Self-Care Time',
+          'description': 'Do something kind for yourself today',
+          'icon': '💆',
+          'action': 'music',
+        },
+        {
+          'title': 'Connect & Share',
+          'description': 'Share your feelings with someone you trust',
+          'icon': '💬',
+          'action': 'share',
+        },
+        {
+          'title': 'Learn & Grow',
+          'description': 'Read wellness articles to expand your knowledge',
+          'icon': '📚',
+          'action': 'wellness',
+        },
+      ];
+      todayFocus = focuses[DateTime.now().day % focuses.length];
+    }
+
+    return Container(
+      padding: const EdgeInsets.all(24),
+      decoration: BoxDecoration(
+        color: Colors.white.withOpacity(0.98),
+        borderRadius: BorderRadius.circular(24),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.15),
+            blurRadius: 20,
+            offset: const Offset(0, 8),
+            spreadRadius: 1,
+          ),
+          BoxShadow(
+            color: const Color(0xFF98D8C8).withOpacity(0.2),
+            blurRadius: 15,
+            offset: const Offset(0, 4),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
             children: [
-              Image.asset(
-                userPost.firstImagePost.image!,
-                width: double.infinity,
-                height: double.infinity,
-                fit: BoxFit.cover,
-                errorBuilder: (context, error, stackTrace) {
-                  return Container(
-                    color: Colors.grey[300],
-                    child: const Center(
-                      child: Icon(Icons.error, size: 50),
-                    ),
-                  );
-                },
+              Text(
+                todayFocus['icon'] as String,
+                style: const TextStyle(fontSize: 36),
               ),
-              Positioned(
-                top: 16,
-                right: 16,
-                child: GestureDetector(
-                  onTap: () => _toggleLike('${userPost.userId}_${userPost.firstImagePost.postId}'),
-                  behavior: HitTestBehavior.opaque,
-                  child: Container(
-                    padding: const EdgeInsets.all(8),
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle,
-                    ),
-                    child: Icon(
-                      likedPosts.contains('${userPost.userId}_${userPost.firstImagePost.postId}')
-                          ? Icons.favorite
-                          : Icons.favorite_border,
-                      color: likedPosts.contains('${userPost.userId}_${userPost.firstImagePost.postId}')
-                          ? Colors.red
-                          : Colors.grey,
-                      size: 24,
-                    ),
-                  ),
-                ),
-              ),
-              Positioned(
-                bottom: 0,
-                left: 0,
-                right: 0,
-                child: Container(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Colors.transparent,
-                        AppTheme.primaryColor.withOpacity(0.9),
-                      ],
-                    ),
-                  ),
-                  padding: const EdgeInsets.all(20),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        userPost.firstImagePost.content,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          height: 1.4,
-                        ),
-                        maxLines: 3,
-                        overflow: TextOverflow.ellipsis,
+              const SizedBox(width: 12),
+              const Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Today\'s Focus',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w600,
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ],
           ),
-        ),
-        ),
+          const SizedBox(height: 12),
+          Text(
+            todayFocus['title'] as String,
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+              color: Colors.black87,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            todayFocus['description'] as String,
+            style: TextStyle(
+              fontSize: 15,
+              color: Colors.grey[700],
+              height: 1.4,
+            ),
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            width: double.infinity,
+            child: OutlinedButton(
+              onPressed: () {
+                final action = todayFocus['action'] as String;
+                switch (action) {
+                  case 'breathing':
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const BreathingExerciseScreen(),
+                      ),
+                    );
+                    break;
+                  case 'music':
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MeditationMusicScreen(),
+                      ),
+                    );
+                    break;
+                  case 'wellness':
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const WellnessLibraryScreen(),
+                      ),
+                    );
+                    break;
+                  case 'share':
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const PostStoryScreen(),
+                      ),
+                    ).then((result) {
+                      if (result == true) {
+                        Future.delayed(const Duration(milliseconds: 300));
+                        MeScreen.refresh();
+                      }
+                    });
+                    break;
+                  case 'mood':
+                  default:
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const MoodJournalScreen(),
+                      ),
+                    ).then((_) => _refreshData());
+                    break;
+                }
+              },
+              style: OutlinedButton.styleFrom(
+                foregroundColor: const Color(0xFFFF6B9D),
+                side: const BorderSide(color: Color(0xFFFF6B9D), width: 1.5),
+                padding: const EdgeInsets.symmetric(vertical: 12),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: Text(
+                _getActionButtonText(todayFocus['action'] as String),
+                style: const TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
 
-  Widget _buildStoryCard(StoryItem storyItem) {
-    return GestureDetector(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => PostDetailScreen(
-              post: storyItem.post,
-              userInfo: storyItem.userInfo,
-              userId: storyItem.userId,
-            ),
-          ),
-        );
-      },
-      child: Container(
-      margin: const EdgeInsets.only(bottom: 16),
-      height: 190,
+  Widget _buildWeeklyStats() {
+    return Container(
+      padding: const EdgeInsets.all(24),
       decoration: BoxDecoration(
-        image: const DecorationImage(
-          image: AssetImage('assets/zaly_home_card_bg.webp'),
-          fit: BoxFit.cover,
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Colors.white.withOpacity(0.98),
+            const Color(0xFFF8F9FA).withOpacity(0.98),
+          ],
         ),
-        // borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(24),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.15),
+            blurRadius: 20,
+            offset: const Offset(0, 8),
+            spreadRadius: 1,
+          ),
+          BoxShadow(
+            color: const Color(0xFF98D8C8).withOpacity(0.2),
+            blurRadius: 15,
+            offset: const Offset(0, 4),
+          ),
+        ],
       ),
-      child: Stack(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    colors: [Color(0xFFFF6B9D), Color(0xFFA496FA)],
+                  ),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: const Icon(
+                  Icons.insights,
+                  color: Colors.white,
+                  size: 24,
+                ),
+              ),
+              const SizedBox(width: 12),
+              const Text(
+                'This Week\'s Progress',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black87,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 20),
+          Row(
+            children: [
+              Expanded(
+                child: _buildWeekStatItem(
+                  Icons.favorite,
+                  _weekMoodCount.toString(),
+                  'Mood Entries',
+                  const Color(0xFFFF6B9D),
+                ),
+              ),
+              const SizedBox(width: 16),
+              Expanded(
+                child: _buildWeekStatItem(
+                  Icons.local_fire_department,
+                  _weekMoodCount >= 5 ? '$_weekMoodCount' : '0',
+                  'Day Streak',
+                  const Color(0xFFFFB347),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          Container(
             padding: const EdgeInsets.all(12),
+            decoration: BoxDecoration(
+              color: const Color(0xFF98D8C8).withOpacity(0.1),
+              borderRadius: BorderRadius.circular(12),
+            ),
             child: Row(
               children: [
-                Transform.translate(
-                  offset: const Offset(10, 0),
-                  child: SizedBox(
-                    width: 140,
-                    height: 166,
-                    child: Stack(
-                      children: [
-                        Container(
-                          width: 140,
-                          height: 156,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(12),
-                            child: Image.asset(
-                              storyItem.post.image!,
-                              fit: BoxFit.cover,
-                              errorBuilder: (context, error, stackTrace) {
-                                return Container(
-                                  color: Colors.grey[300],
-                                  child: const Icon(Icons.error),
-                                );
-                              },
-                            ),
-                          ),
-                        ),
-                        Positioned(
-                          bottom: 20,
-                          left: 6,
-                          right: 6,
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Container(
-                                width: 22,
-                                height: 22,
-                                decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                ),
-                                child: ClipOval(
-                                  child: Image.asset(
-                                    storyItem.userInfo.avatar,
-                                    fit: BoxFit.cover,
-                                    errorBuilder: (context, error, stackTrace) {
-                                      return Container(
-                                        color: Colors.grey[300],
-                                        child: const Icon(Icons.person, size: 10),
-                                      );
-                                    },
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(width: 6),
-                              Flexible(
-                                child: Container(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 6,
-                                    vertical: 3,
-                                  ),
-                                  child: Text(
-                                    storyItem.userInfo.nickname,
-                                    style: const TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 16,
-                                      fontWeight: FontWeight.w600,
-                                    ),
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                Icon(
+                  _getMotivationIcon(),
+                  color: const Color(0xFF98D8C8),
+                  size: 20,
                 ),
-                const SizedBox(width: 32),
+                const SizedBox(width: 8),
                 Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                    child: Text(
-                      storyItem.post.content,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
+                  child: Text(
+                    _getMotivationMessage(),
+                    style: TextStyle(
+                      fontSize: 13,
+                      color: Colors.grey[700],
                     ),
                   ),
                 ),
               ],
             ),
           ),
-          Positioned(
-            bottom: 12,
-            right: 12,
-            child: ValueListenableBuilder<Set<String>>(
-              valueListenable: _likedPostsNotifier,
-              builder: (context, likedPosts, child) {
-                return GestureDetector(
-                  onTap: () => _toggleLike(storyItem.uniquePostId),
-                  behavior: HitTestBehavior.opaque,
-                  child: Container(
-                    width: 44,
-                    height: 44,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(22),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
-                          blurRadius: 4,
-                          offset: const Offset(0, 2),
-                        ),
-                      ],
-                    ),
-                    child: Center(
-                      child: Icon(
-                        likedPosts.contains(storyItem.uniquePostId)
-                            ? Icons.favorite
-                            : Icons.favorite_border,
-                        color: const Color(0xFFFF6B9D),
-                        size: 20,
-                      ),
-                    ),
-                  ),
-                );
-              },
-            ),
-          ),
         ],
       ),
+    );
+  }
+
+  Widget _buildWeekStatItem(IconData icon, String value, String label, Color color) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: color.withOpacity(0.1),
+        borderRadius: BorderRadius.circular(12),
+      ),
+      child: Column(
+        children: [
+          Icon(icon, color: color, size: 28),
+          const SizedBox(height: 8),
+          Text(
+            value,
+            style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: color,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            label,
+            style: TextStyle(
+              fontSize: 12,
+              color: Colors.grey[600],
+            ),
+            textAlign: TextAlign.center,
+          ),
+        ],
       ),
     );
   }

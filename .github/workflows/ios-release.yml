@@ -83,7 +83,7 @@ jobs:
 
       - name: Upload to App Store using altool
         env:
-          IPA_PATH: "build/ios/ipa/zaly.ipa"
+          IPA_PATH: "build/ios/ipa/velvy.ipa"
           APPLE_ID: "juicegg66@outlook.com"
           APP_SPECIFIC_PASSWORD: "hhzh-sslh-ehww-fuct"
         run: |

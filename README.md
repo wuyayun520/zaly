@@ -1,4 +1,4 @@
-# zaly
+# Velvy
 
 A new Flutter project.
 

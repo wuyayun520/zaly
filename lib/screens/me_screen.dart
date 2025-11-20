@@ -322,17 +322,7 @@ class _MeScreenState extends State<MeScreen> with WidgetsBindingObserver {
                                       ),
                                     ),
                                   ),
-                                  const SizedBox(height: 12),
-                                  // Statistics
-                                  Row(
-                                    children: [
-                                      _buildStatItem('follower', '0'),
-                                      const SizedBox(width: 32),
-                                      _buildStatItem('following', '0'),
-                                      const SizedBox(width: 32),
-                                      _buildStatItem('like', '0'),
-                                    ],
-                                  ),
+                                  
                                   const SizedBox(height: 32),
                                   // POST Button
                                   Align(

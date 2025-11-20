@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Zaly</string>
+	<string>Velvy</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,7 +15,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>zaly</string>
+	<string>velvy</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -32,15 +32,15 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Zaly needs access to camera for video calls and taking photos for chat.</string>
+	<string>Velvy needs access to camera for video calls and taking photos for chat.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Zaly needs access to microphone for video calls and recording voice messages in chat.</string>
+	<string>Velvy needs access to microphone for video calls and recording voice messages in chat.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Zaly requires access to add new photos to your library, enabling you to save photos directly from the app.</string>
+	<string>Velvy requires access to add new photos to your library, enabling you to save photos directly from the app.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Zaly needs access to photo library to share images in chat.</string>
+	<string>Velvy needs access to photo library to share images in chat.</string>
 	<key>NSUserTrackingUsageDescription</key>
-	<string>Zaly would like to track your activity across other companies' apps and websites to provide you with personalized content and improve your experience with AI companions.</string>
+	<string>Velvy would like to track your activity across other companies' apps and websites to provide you with personalized content and improve your experience with AI companions.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIBackgroundModes</key>

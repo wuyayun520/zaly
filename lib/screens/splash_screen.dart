@@ -95,7 +95,7 @@ class _SplashScreenState extends State<SplashScreen> {
                             elevation: 4,
                           ),
                           child: const Text(
-                            'Enter zaly',
+                            'Enter Velvy',
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w600,
