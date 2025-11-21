@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>durationAboutStrategy</key>
+	<string>desktopSkirtVisible</string>
+	<key>isolateStrategyTint</key>
+	<string>resourceVersusLevel</string>
+	<key>listviewValueSkewy</key>
+	<string>newestActionMargin</string>
+	<key>localManagerMargin</key>
+	<string>providerWithoutTask</string>
+	<key>optimizerParameterIndex</key>
+	<string>newestLayoutBound</string>
+	<key>shaderPatternCenter</key>
+	<string>signatureAboutNumber</string>
+	<key>streamValueRate</key>
+	<string>synchronousControllerTransparency</string>
+	<key>subpixelOperationSkewy</key>
+	<string>otherEntropyCount</string>
+</dict>
+</plist>

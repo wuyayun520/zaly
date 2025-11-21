@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cacheProxyShade</key>
+	<string>invisibleGridHead</string>
+	<key>canvasParameterFormat</key>
+	<string>otherBulletTheme</string>
+	<key>interfaceNumberLeft</key>
+	<string>permissiveLocalizationVelocity</string>
+	<key>pivotalCursorRight</key>
+	<string>opaqueSliderType</string>
+	<key>queryEnvironmentVisibility</key>
+	<string>modulusCycleAlignment</string>
+	<key>statelessViewFlags</key>
+	<string>gramDespiteCycle</string>
+</dict>
+</plist>

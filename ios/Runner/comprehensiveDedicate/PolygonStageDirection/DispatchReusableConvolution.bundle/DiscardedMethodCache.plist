@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pinchableOptionInterval</key>
+	<string>pinchableExtensionDelay</string>
+	<key>progressbarAroundLevel</key>
+	<string>densePetOrientation</string>
+	<key>scrollTaskOffset</key>
+	<string>radiusLayerTheme</string>
+	<key>spriteViaVar</key>
+	<string>asyncLayerKind</string>
+	<key>subsequentHashAcceleration</key>
+	<string>menuStageVelocity</string>
+	<key>webMetadataFrequency</key>
+	<string>subscriptionStateMargin</string>
+</dict>
+</plist>

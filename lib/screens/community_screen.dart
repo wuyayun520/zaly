@@ -3,11 +3,13 @@ import 'package:flutter/services.dart';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'package:video_thumbnail/video_thumbnail.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/user_post_model.dart';
 import '../services/user_post_service.dart';
 import '../services/follow_service.dart';
 import '../services/like_service.dart';
 import 'video_player_screen.dart';
+import 'velvy_inapppurchases_screen.dart';
 
 class CommunityScreen extends StatefulWidget {
   const CommunityScreen({super.key});
@@ -23,6 +25,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
   final ValueNotifier<Set<String>> _likedPostsNotifier = ValueNotifier<Set<String>>({});
   final PageController _videoPageController = PageController(viewportFraction: 0.85);
   final Map<String, String?> _thumbnailCache = {};
+  static const int _unlockCost = 20; // 解锁视频所需金币
 
   @override
   void initState() {
@@ -60,6 +63,232 @@ class _CommunityScreenState extends State<CommunityScreen> {
     await FollowService.toggleFollow(userId);
     final newFollowedUsers = await FollowService.getFollowedUsers();
     _followedUsersNotifier.value = newFollowedUsers;
+  }
+
+  // 获取视频的唯一标识符
+  String _getVideoId(VideoPostItem videoPost) {
+    return '${videoPost.userPost.userId}_${videoPost.post.postId}';
+  }
+
+  // 检查视频是否已解锁
+  Future<bool> _isVideoUnlocked(String videoId) async {
+    final prefs = await SharedPreferences.getInstance();
+    final unlockedVideos = prefs.getStringList('unlockedVideos') ?? [];
+    return unlockedVideos.contains(videoId);
+  }
+
+  // 标记视频为已解锁
+  Future<void> _unlockVideo(String videoId) async {
+    final prefs = await SharedPreferences.getInstance();
+    final unlockedVideos = prefs.getStringList('unlockedVideos') ?? [];
+    if (!unlockedVideos.contains(videoId)) {
+      unlockedVideos.add(videoId);
+      await prefs.setStringList('unlockedVideos', unlockedVideos);
+    }
+  }
+
+  // 获取当前金币余额
+  Future<int> _getVelvyCoins() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getInt('velvyCoins') ?? 0;
+  }
+
+  // 扣除金币
+  Future<bool> _deductCoins(int amount) async {
+    final prefs = await SharedPreferences.getInstance();
+    final currentCoins = prefs.getInt('velvyCoins') ?? 0;
+    if (currentCoins >= amount) {
+      await prefs.setInt('velvyCoins', currentCoins - amount);
+      return true;
+    }
+    return false;
+  }
+
+  // 处理视频解锁和播放
+  Future<void> _handleVideoTap(VideoPostItem videoPost) async {
+    if (videoPost.post.video == null) return;
+
+    final videoId = _getVideoId(videoPost);
+    final isUnlocked = await _isVideoUnlocked(videoId);
+
+    // 如果已解锁，直接播放
+    if (isUnlocked) {
+      _playVideo(videoPost);
+      return;
+    }
+
+    // 如果未解锁，检查金币余额
+    final currentCoins = await _getVelvyCoins();
+
+    if (currentCoins >= _unlockCost) {
+      // 金币足够，显示确认对话框
+      final shouldUnlock = await showDialog<bool>(
+        context: context,
+        builder: (context) => AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          title: const Text(
+            'Unlock Video',
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          content: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Unlock this video for $_unlockCost coins?',
+                style: const TextStyle(fontSize: 16),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                'Your balance: $currentCoins coins',
+                style: TextStyle(
+                  fontSize: 14,
+                  color: Colors.grey[600],
+                ),
+              ),
+            ],
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(false),
+              child: const Text('Cancel'),
+            ),
+            ElevatedButton(
+              onPressed: () => Navigator.of(context).pop(true),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: const Color(0xFFFF6B9D),
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+              child: const Text('Unlock'),
+            ),
+          ],
+        ),
+      );
+
+      if (shouldUnlock == true) {
+        // 再次检查金币（防止在对话框显示期间金币被消耗）
+        final coinsAfterCheck = await _getVelvyCoins();
+        if (coinsAfterCheck >= _unlockCost) {
+          final success = await _deductCoins(_unlockCost);
+          if (success) {
+            await _unlockVideo(videoId);
+            if (mounted) {
+              ScaffoldMessenger.of(context).showSnackBar(
+                SnackBar(
+                  content: Text('Video unlocked! -$_unlockCost coins'),
+                  backgroundColor: const Color(0xFF98D8C8),
+                  behavior: SnackBarBehavior.floating,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+              );
+            }
+            _playVideo(videoPost);
+          }
+        } else {
+          // 金币不足，提示充值
+          _showInsufficientCoinsDialog();
+        }
+      }
+    } else {
+      // 金币不足，提示充值
+      _showInsufficientCoinsDialog();
+    }
+  }
+
+  // 显示金币不足对话框
+  Future<void> _showInsufficientCoinsDialog() async {
+    final currentCoins = await _getVelvyCoins();
+    final shouldRecharge = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        title: const Text(
+          'Insufficient Coins',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'You need $_unlockCost coins to unlock this video.',
+              style: const TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Your balance: $currentCoins coins',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey[600],
+              ),
+            ),
+            const SizedBox(height: 12),
+            const Text(
+              'Would you like to recharge?',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFFF6B9D),
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: const Text('Recharge'),
+          ),
+        ],
+      ),
+    );
+
+    if (shouldRecharge == true && mounted) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const InAppPurchasesPage(),
+        ),
+      );
+    }
+  }
+
+  // 播放视频
+  void _playVideo(VideoPostItem videoPost) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => VideoPlayerScreen(
+          post: videoPost.post,
+          userInfo: videoPost.userPost.userInfo,
+          userId: videoPost.userPost.userId,
+        ),
+      ),
+    );
   }
 
   Future<void> _loadData() async {
@@ -500,20 +729,7 @@ class _CommunityScreenState extends State<CommunityScreen> {
     final thumbnail = _thumbnailCache[uniqueKey];
     
     return GestureDetector(
-      onTap: () {
-        if (videoPost.post.video != null) {
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => VideoPlayerScreen(
-                post: videoPost.post,
-                userInfo: videoPost.userPost.userInfo,
-                userId: videoPost.userPost.userId,
-              ),
-            ),
-          );
-        }
-      },
+      onTap: () => _handleVideoTap(videoPost),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(24),

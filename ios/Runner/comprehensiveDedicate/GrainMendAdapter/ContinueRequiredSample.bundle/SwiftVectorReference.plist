@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activityInterpreterKind</key>
+	<string>displayableContainerFrequency</string>
+	<key>futureFunctionTheme</key>
+	<string>scaffoldDuringBridge</string>
+	<key>handlerByVar</key>
+	<string>certificateVarFrequency</string>
+	<key>indicatorUntilTask</key>
+	<string>positionedTaskAppearance</string>
+</dict>
+</plist>

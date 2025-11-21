@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>adaptiveNavigationValidation</key>
+	<string>richtextPrototypeBottom</string>
+	<key>alignmentNearAdapter</key>
+	<string>popupNearPlatform</string>
+	<key>bufferFrameworkTail</key>
+	<string>positionInterpreterColor</string>
+	<key>canvasCompositeStatus</key>
+	<string>scaffoldLikeContext</string>
+	<key>criticalTabviewMargin</key>
+	<string>clipperProxyTop</string>
+	<key>mobileCallbackInset</key>
+	<string>dynamicMissionTint</string>
+	<key>repositoryThanLevel</key>
+	<string>invisibleMetadataForce</string>
+	<key>statelessResolverPosition</key>
+	<string>radioAndVariable</string>
+	<key>transitionAmongMemento</key>
+	<string>multiProjectionTag</string>
+</dict>
+</plist>

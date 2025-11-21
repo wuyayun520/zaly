@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alertActivityBehavior</key>
+	<string>providerInterpreterShade</string>
+	<key>cartesianTweenTail</key>
+	<string>sliderParamVelocity</string>
+	<key>constraintThroughFacade</key>
+	<string>utilDespiteVariable</string>
+	<key>displayableAlertSkewx</key>
+	<string>contractionMediatorStatus</string>
+	<key>metadataPatternSkewy</key>
+	<string>temporaryMetadataDirection</string>
+	<key>providerVariableSkewy</key>
+	<string>borderExceptType</string>
+	<key>queryOutsideStyle</key>
+	<string>tableValueAppearance</string>
+	<key>subsequentResultSkewx</key>
+	<string>primaryEffectShape</string>
+	<key>tappableRouteSaturation</key>
+	<string>interactiveNavigationRate</string>
+	<key>unactivatedGridviewMargin</key>
+	<string>textureScopeDepth</string>
+</dict>
+</plist>

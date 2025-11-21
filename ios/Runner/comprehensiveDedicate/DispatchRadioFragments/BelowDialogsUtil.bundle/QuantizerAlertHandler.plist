@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>easyGesturedetectorFrequency</key>
+	<string>difficultPointCount</string>
+	<key>equalizationLikePhase</key>
+	<string>animationTaskBehavior</string>
+	<key>featureFromBuffer</key>
+	<string>dynamicAxisPosition</string>
+	<key>interactorPatternAlignment</key>
+	<string>controllerAsPhase</string>
+	<key>parallelConstraintShape</key>
+	<string>resolverMementoOffset</string>
+	<key>specifierContextOrigin</key>
+	<string>streamProxyIndex</string>
+	<key>temporaryResultDistance</key>
+	<string>mediaquerySinceEnvironment</string>
+	<key>titleOperationTop</key>
+	<string>criticalMaterialSkewx</string>
+</dict>
+</plist>

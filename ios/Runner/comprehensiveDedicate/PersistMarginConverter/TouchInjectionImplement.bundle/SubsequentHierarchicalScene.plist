@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>constraintByAdapter</key>
+	<string>basicApertureDirection</string>
+	<key>exponentFromBridge</key>
+	<string>streamScopeSize</string>
+	<key>largePainterInteraction</key>
+	<string>exponentParameterShape</string>
+	<key>tweenProcessAcceleration</key>
+	<string>asyncDelegateInterval</string>
+</dict>
+</plist>

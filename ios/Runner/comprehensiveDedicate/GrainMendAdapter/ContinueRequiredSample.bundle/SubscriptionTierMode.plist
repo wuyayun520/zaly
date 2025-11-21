@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationWithoutStructure</key>
+	<string>giftEnvironmentTransparency</string>
+	<key>completerOfComposite</key>
+	<string>adaptiveDrawerAcceleration</string>
+	<key>gridviewStateFrequency</key>
+	<string>hyperbolicTextureFeedback</string>
+	<key>hashInFramework</key>
+	<string>oldUsecaseBrightness</string>
+	<key>instructionAmongCycle</key>
+	<string>streamStageOffset</string>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoButtonColor</key>
+	<string>checkboxShapeForce</string>
+	<key>commandAlongMethod</key>
+	<string>aspectratioNearShape</string>
+	<key>completionUntilFunction</key>
+	<string>cubeVarCoord</string>
+	<key>stateCommandTail</key>
+	<string>painterNumberShape</string>
+</dict>
+</plist>

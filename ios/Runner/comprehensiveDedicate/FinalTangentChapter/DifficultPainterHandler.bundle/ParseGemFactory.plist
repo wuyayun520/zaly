@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>collectionPerChain</key>
+	<string>crudeQueueMode</string>
+	<key>decorationPerMethod</key>
+	<string>specifyTitleHead</string>
+	<key>disabledSinkIndex</key>
+	<string>futureVarColor</string>
+	<key>featureViaComposite</key>
+	<string>stampPhaseHead</string>
+	<key>labelPerComposite</key>
+	<string>eagerDelegateInset</string>
+	<key>labelPhaseContrast</key>
+	<string>momentumJobDuration</string>
+	<key>memberShapeDensity</key>
+	<string>statelessPreviewState</string>
+	<key>scaffoldAtVariable</key>
+	<string>autoDurationAppearance</string>
+	<key>titleThroughKind</key>
+	<string>masterAboutVar</string>
+</dict>
+</plist>

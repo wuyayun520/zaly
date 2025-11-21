@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alphaStrategyMargin</key>
+	<string>injectionDespiteActivity</string>
+	<key>chartPerNumber</key>
+	<string>actionUntilFlyweight</string>
+	<key>labelBeyondComposite</key>
+	<string>tableByProcess</string>
+	<key>normalGradientShape</key>
+	<string>navigatorBeyondObserver</string>
+	<key>normalPlateShape</key>
+	<string>rowUntilActivity</string>
+	<key>playbackMediatorOffset</key>
+	<string>asyncContainerCount</string>
+	<key>resizableDependencyValidation</key>
+	<string>unactivatedBufferLocation</string>
+	<key>resultTierDepth</key>
+	<string>relationalQueueDelay</string>
+	<key>singletonWorkCount</key>
+	<string>paddingAndFunction</string>
+</dict>
+</plist>

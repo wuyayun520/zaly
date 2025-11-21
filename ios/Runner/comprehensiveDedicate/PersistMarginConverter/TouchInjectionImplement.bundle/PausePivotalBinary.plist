@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>consumerProxyInterval</key>
+	<string>builderAmongSingleton</string>
+	<key>layoutSystemVisibility</key>
+	<string>accordionChartSaturation</string>
+	<key>lostSingletonDistance</key>
+	<string>zoneAlongChain</string>
+	<key>semanticConstraintBorder</key>
+	<string>hierarchicalPreviewHead</string>
+	<key>sessionAboutFlyweight</key>
+	<string>chapterCompositeContrast</string>
+	<key>utilAdapterDirection</key>
+	<string>columnTempleTop</string>
+</dict>
+</plist>

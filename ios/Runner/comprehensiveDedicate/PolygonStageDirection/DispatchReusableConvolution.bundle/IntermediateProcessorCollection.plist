@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>behaviorMementoTint</key>
+	<string>buttonContainStructure</string>
+	<key>contractionAsProxy</key>
+	<string>resourceObserverValidation</string>
+	<key>difficultCharacterTheme</key>
+	<string>viewCommandName</string>
+	<key>entityFlyweightTag</key>
+	<string>logStrategyState</string>
+	<key>queueSingletonBrightness</key>
+	<string>synchronousConsumerAlignment</string>
+	<key>rectKindOrientation</key>
+	<string>descriptionWorkLeft</string>
+	<key>robustResponseRate</key>
+	<string>discardedMultiplicationSkewy</string>
+	<key>singletonJobAlignment</key>
+	<string>transitionSingletonForce</string>
+</dict>
+</plist>

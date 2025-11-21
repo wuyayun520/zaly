@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customAllocatorFlags</key>
+	<string>displayableObserverInset</string>
+	<key>eagerDescriptionFeedback</key>
+	<string>fusedVectorMode</string>
+	<key>graphOrFlyweight</key>
+	<string>dimensionAgainstValue</string>
+	<key>labelAmongSystem</key>
+	<string>monsterCommandRight</string>
+	<key>resultAndMode</key>
+	<string>accordionIndicatorHue</string>
+	<key>resultBesideFacade</key>
+	<string>screenOrPlatform</string>
+	<key>slashOperationDuration</key>
+	<string>cacheIncludeInterpreter</string>
+</dict>
+</plist>

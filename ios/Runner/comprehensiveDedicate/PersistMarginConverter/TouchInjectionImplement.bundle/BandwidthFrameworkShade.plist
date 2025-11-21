@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>canvasActionKind</key>
+	<string>viewAlongShape</string>
+	<key>gesturedetectorBeyondScope</key>
+	<string>exponentLayerAcceleration</string>
+	<key>keyInterfaceTransparency</key>
+	<string>cupertinoFormOrientation</string>
+	<key>topicLevelSkewx</key>
+	<string>nodeInterpreterPressure</string>
+	<key>utilIncludeLayer</key>
+	<string>dynamicProtocolBottom</string>
+</dict>
+</plist>

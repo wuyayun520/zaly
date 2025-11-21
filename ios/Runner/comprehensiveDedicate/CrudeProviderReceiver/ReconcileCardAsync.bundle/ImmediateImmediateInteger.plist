@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>characterAdapterBrightness</key>
+	<string>viewAndInterpreter</string>
+	<key>completionAdapterEdge</key>
+	<string>labelOutsideStyle</string>
+	<key>delegateBridgeColor</key>
+	<string>cubitNumberAlignment</string>
+	<key>gemVisitorDelay</key>
+	<string>providerBridgeAcceleration</string>
+	<key>significantRepositoryBehavior</key>
+	<string>modulusLikeProxy</string>
+	<key>widgetCommandBound</key>
+	<string>projectPatternDelay</string>
+</dict>
+</plist>

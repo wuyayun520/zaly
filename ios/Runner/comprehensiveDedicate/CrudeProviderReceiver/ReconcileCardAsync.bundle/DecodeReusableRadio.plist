@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoParticleVisibility</key>
+	<string>effectWithoutForm</string>
+	<key>brushVersusSystem</key>
+	<string>staticStatelessBehavior</string>
+	<key>effectAboutStrategy</key>
+	<string>nodeSystemCount</string>
+	<key>materialFlexResponse</key>
+	<string>animationBridgeMomentum</string>
+	<key>overlayBesideMemento</key>
+	<string>navigatorPhasePosition</string>
+	<key>rectAmongStrategy</key>
+	<string>appbarIncludeStrategy</string>
+	<key>textKindBehavior</key>
+	<string>cellAroundNumber</string>
+</dict>
+</plist>

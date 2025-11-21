@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>completerTierTag</key>
+	<string>bulletByParameter</string>
+	<key>notifierFunctionType</key>
+	<string>callbackCommandRight</string>
+	<key>otherNormRate</key>
+	<string>parallelScrollAppearance</string>
+	<key>utilOutsideForm</key>
+	<string>staticMobxMode</string>
+</dict>
+</plist>

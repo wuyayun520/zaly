@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>canvasMementoValidation</key>
+	<string>decorationBridgeLeft</string>
+	<key>observerProxyTheme</key>
+	<string>pointViaComposite</string>
+	<key>priorAlertVisible</key>
+	<string>oldMobileMomentum</string>
+	<key>sliderInterpreterKind</key>
+	<string>heroOrProxy</string>
+	<key>uniformControllerBound</key>
+	<string>modelAgainstMode</string>
+	<key>utilAtSystem</key>
+	<string>mediaqueryTypeHead</string>
+</dict>
+</plist>

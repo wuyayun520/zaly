@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>captionPatternOffset</key>
+	<string>secondProtocolSkewy</string>
+	<key>cursorDecoratorDistance</key>
+	<string>parallelLoopFeedback</string>
+	<key>handlerUntilVisitor</key>
+	<string>mobileCubitRate</string>
+	<key>lazyAllocatorBrightness</key>
+	<string>injectionProxyRate</string>
+	<key>publicLabelValidation</key>
+	<string>flexibleFutureSize</string>
+	<key>queueOrStage</key>
+	<string>frameNearPlatform</string>
+	<key>tabbarInState</key>
+	<string>adaptiveTimerForce</string>
+	<key>themeInterpreterRate</key>
+	<string>futureInKind</string>
+	<key>unsortedAwaitBound</key>
+	<string>managerVersusPrototype</string>
+</dict>
+</plist>

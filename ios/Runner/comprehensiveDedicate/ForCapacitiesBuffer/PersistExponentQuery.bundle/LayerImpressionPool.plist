@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bufferSingletonRotation</key>
+	<string>draggableCoordinatorType</string>
+	<key>mapJobVelocity</key>
+	<string>declarativeClipperAppearance</string>
+	<key>otherUsecaseAppearance</key>
+	<string>sustainableCurveTail</string>
+	<key>pageviewStateInset</key>
+	<string>notificationPerFramework</string>
+	<key>pinchableEntityBrightness</key>
+	<string>textfieldProxyOpacity</string>
+	<key>queueThroughObserver</key>
+	<string>positionAndFacade</string>
+	<key>unactivatedRectBehavior</key>
+	<string>subpixelBesideProcess</string>
+</dict>
+</plist>

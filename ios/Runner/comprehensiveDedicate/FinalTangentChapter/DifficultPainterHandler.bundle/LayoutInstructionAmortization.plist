@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>agileRichtextSize</key>
+	<string>pointInFacade</string>
+	<key>collectionBeyondBuffer</key>
+	<string>synchronousAnimationTop</string>
+	<key>discardedHistogramRotation</key>
+	<string>scaffoldViaType</string>
+	<key>granularRectPosition</key>
+	<string>interactiveZoneInset</string>
+	<key>handlerWorkMomentum</key>
+	<string>transitionOfState</string>
+	<key>inheritedTaskForce</key>
+	<string>convolutionKindOffset</string>
+	<key>interactorShapeMomentum</key>
+	<string>interactiveOffsetTint</string>
+	<key>streamVarStatus</key>
+	<string>exceptionInterpreterMargin</string>
+	<key>subtleGradientDelay</key>
+	<string>iterativeRemainderTag</string>
+</dict>
+</plist>

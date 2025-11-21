@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncWithStyle</key>
+	<string>inheritedMissionInterval</string>
+	<key>capacitiesOutsideAdapter</key>
+	<string>storageVarTheme</string>
+	<key>criticalDurationAppearance</key>
+	<string>lossAsCommand</string>
+	<key>customBufferTint</key>
+	<string>normAmongMethod</string>
+	<key>queryAsPattern</key>
+	<string>musicActionRate</string>
+	<key>streamPhaseForce</key>
+	<string>sliderAndCommand</string>
+	<key>subscriptionNearWork</key>
+	<string>curveMementoName</string>
+	<key>subsequentSizeAppearance</key>
+	<string>mediaWithScope</string>
+	<key>tappableToolRight</key>
+	<string>scrollableTickerName</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cellLikeVariable</key>
+	<string>plateFromValue</string>
+	<key>checkboxShapeBottom</key>
+	<string>graphFromSingleton</string>
+	<key>iterativeResolverTop</key>
+	<string>specifyCurveSaturation</string>
+	<key>sharedGramBorder</key>
+	<string>actionAroundCycle</string>
+	<key>stateDuringBuffer</key>
+	<string>sharedPreviewTransparency</string>
+</dict>
+</plist>

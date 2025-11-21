@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:image_picker/image_picker.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../services/user_profile_service.dart';
 import '../services/user_post_storage_service.dart';
 import '../models/user_post_item.dart';
@@ -9,6 +10,8 @@ import 'terms_of_service_screen.dart';
 import 'post_story_screen.dart';
 import 'my_post_detail_screen.dart';
 import 'about_screen.dart';
+import 'velvy_inapppurchases_screen.dart';
+import 'velvy_subscriptions_screen.dart';
 
 class MeScreen extends StatefulWidget {
   const MeScreen({super.key});
@@ -31,6 +34,7 @@ class _MeScreenState extends State<MeScreen> with WidgetsBindingObserver {
   final ImagePicker _imagePicker = ImagePicker();
   List<UserPostItem> _posts = [];
   bool _isFirstLoad = true;
+  static const int _avatarChangeCost = 30; // 修改头像所需金币
 
   @override
   void initState() {
@@ -88,7 +92,170 @@ class _MeScreenState extends State<MeScreen> with WidgetsBindingObserver {
     }
   }
 
+  // 获取当前金币余额
+  Future<int> _getVelvyCoins() async {
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getInt('velvyCoins') ?? 0;
+  }
+
+  // 扣除金币
+  Future<bool> _deductCoins(int amount) async {
+    final prefs = await SharedPreferences.getInstance();
+    final currentCoins = prefs.getInt('velvyCoins') ?? 0;
+    if (currentCoins >= amount) {
+      await prefs.setInt('velvyCoins', currentCoins - amount);
+      return true;
+    }
+    return false;
+  }
+
+  // 显示金币不足对话框
+  Future<void> _showInsufficientCoinsDialog() async {
+    final currentCoins = await _getVelvyCoins();
+    final shouldRecharge = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        title: const Text(
+          'Insufficient Coins',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'You need $_avatarChangeCost coins to change your avatar.',
+              style: const TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Your balance: $currentCoins coins',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey[600],
+              ),
+            ),
+            const SizedBox(height: 12),
+            const Text(
+              'Would you like to recharge?',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFFF6B9D),
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: const Text('Recharge'),
+          ),
+        ],
+      ),
+    );
+
+    if (shouldRecharge == true && mounted) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const InAppPurchasesPage(),
+        ),
+      );
+    }
+  }
+
   Future<void> _editAvatar() async {
+    // 检查金币余额
+    final currentCoins = await _getVelvyCoins();
+
+    if (currentCoins < _avatarChangeCost) {
+      // 金币不足，显示对话框
+      _showInsufficientCoinsDialog();
+      return;
+    }
+
+    // 金币足够，显示确认对话框
+    final shouldProceed = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        title: const Text(
+          'Change Avatar',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Change your avatar for $_avatarChangeCost coins?',
+              style: const TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Your balance: $currentCoins coins',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.grey[600],
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFFF6B9D),
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: const Text('Confirm'),
+          ),
+        ],
+      ),
+    );
+
+    if (shouldProceed != true) {
+      return;
+    }
+
+    // 再次检查金币（防止在对话框显示期间金币被消耗）
+    final coinsAfterCheck = await _getVelvyCoins();
+    if (coinsAfterCheck < _avatarChangeCost) {
+      if (mounted) {
+        _showInsufficientCoinsDialog();
+      }
+      return;
+    }
+
     try {
       final XFile? pickedFile = await _imagePicker.pickImage(
         source: ImageSource.gallery,
@@ -96,6 +263,15 @@ class _MeScreenState extends State<MeScreen> with WidgetsBindingObserver {
       );
 
       if (pickedFile != null) {
+        // 扣除金币
+        final success = await _deductCoins(_avatarChangeCost);
+        if (!success) {
+          if (mounted) {
+            _showInsufficientCoinsDialog();
+          }
+          return;
+        }
+
         final file = File(pickedFile.path);
         final savedPath = await UserProfileService.saveAvatar(file);
         
@@ -104,10 +280,14 @@ class _MeScreenState extends State<MeScreen> with WidgetsBindingObserver {
             _avatarPath = savedPath;
           });
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text('Avatar updated successfully'),
-              backgroundColor: Colors.green,
-              duration: Duration(seconds: 2),
+            SnackBar(
+              content: Text('Avatar updated successfully! -$_avatarChangeCost coins'),
+              backgroundColor: const Color(0xFF98D8C8),
+              behavior: SnackBarBehavior.floating,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+              duration: const Duration(seconds: 2),
             ),
           );
         }
@@ -385,6 +565,46 @@ class _MeScreenState extends State<MeScreen> with WidgetsBindingObserver {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
+                                    // Vip Card
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) => const VelvySubscriptionsPage(),
+                                          ),
+                                        );
+                                      },
+                                      child: Image.asset(
+                                        'assets/velvy_me_vip.webp',
+                                        fit: BoxFit.contain,
+                                        alignment: Alignment.centerLeft,
+                                        errorBuilder: (context, error, stackTrace) {
+                                          return const SizedBox.shrink();
+                                        },
+                                      ),
+                                    ),
+                                    const SizedBox(height: 12),
+                                    // Wallet Card
+                                    GestureDetector(
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) => const InAppPurchasesPage(),
+                                          ),
+                                        );
+                                      },
+                                      child: Image.asset(
+                                        'assets/velvy_me_wallet.webp',
+                                        fit: BoxFit.contain,
+                                        alignment: Alignment.centerLeft,
+                                        errorBuilder: (context, error, stackTrace) {
+                                          return const SizedBox.shrink();
+                                        },
+                                      ),
+                                    ),
+                                    const SizedBox(height: 12),
                                     // Menu Items
                                     GestureDetector(
                                       onTap: () {

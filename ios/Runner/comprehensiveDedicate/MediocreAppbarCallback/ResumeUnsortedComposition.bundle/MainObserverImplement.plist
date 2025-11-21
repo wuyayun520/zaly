@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chartObserverShape</key>
+	<string>resizableProgressbarCenter</string>
+	<key>easyStreamSkewx</key>
+	<string>beginnerTextFeedback</string>
+	<key>futureOperationDepth</key>
+	<string>unactivatedHeroShade</string>
+	<key>intuitivePositionBottom</key>
+	<string>isolateMethodVisibility</string>
+	<key>rapidBrushAppearance</key>
+	<string>accessibleProjectionBrightness</string>
+	<key>resourceCompositeEdge</key>
+	<string>gridAboutMode</string>
+	<key>sharedCompleterDepth</key>
+	<string>activatedAspectratioTag</string>
+	<key>sharedMasterDirection</key>
+	<string>descriptorFlyweightFormat</string>
+	<key>typicalSessionKind</key>
+	<string>loopContainVariable</string>
+</dict>
+</plist>

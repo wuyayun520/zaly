@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appbarForTier</key>
+	<string>widgetContextBrightness</string>
+	<key>batchValuePressure</key>
+	<string>widgetPrototypeAppearance</string>
+	<key>currentGramName</key>
+	<string>configurationMethodForce</string>
+	<key>fusedSubpixelHue</key>
+	<string>publicInterfaceVelocity</string>
+	<key>gemAmongMethod</key>
+	<string>builderLikeSingleton</string>
+	<key>prismaticTransitionVisibility</key>
+	<string>containerProcessHead</string>
+	<key>riverpodEnvironmentBound</key>
+	<string>frameObserverTheme</string>
+	<key>spineThroughFlyweight</key>
+	<string>techniqueBeyondTier</string>
+	<key>webActivityVisible</key>
+	<string>priorPageviewStyle</string>
+	<key>webCompositionTop</key>
+	<string>skinActionSize</string>
+</dict>
+</plist>

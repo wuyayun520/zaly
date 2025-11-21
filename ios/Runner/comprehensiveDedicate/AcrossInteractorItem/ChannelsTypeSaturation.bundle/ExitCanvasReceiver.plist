@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleSensorBorder</key>
+	<string>presenterDuringSingleton</string>
+	<key>asyncAroundSystem</key>
+	<string>boxCompositeAppearance</string>
+	<key>drawerBesideAdapter</key>
+	<string>drawerBySingleton</string>
+	<key>firstGrayscaleMomentum</key>
+	<string>primaryGridSpacing</string>
+	<key>localCertificateTop</key>
+	<string>directServiceTransparency</string>
+	<key>navigatorObserverDuration</key>
+	<string>compositionalFeatureInset</string>
+	<key>publicStoryboardName</key>
+	<string>notifierAmongMediator</string>
+	<key>reactiveExceptionType</key>
+	<string>reducerWithBuffer</string>
+	<key>textEnvironmentLocation</key>
+	<string>rapidSceneFlags</string>
+</dict>
+</plist>

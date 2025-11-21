@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>disabledEqualizationDistance</key>
+	<string>typicalStateHead</string>
+	<key>heroPerLayer</key>
+	<string>disabledPlateEdge</string>
+	<key>isolateStateIndex</key>
+	<string>drawerModeStatus</string>
+	<key>precisionStatePosition</key>
+	<string>responseParameterShade</string>
+	<key>prismaticSpotInteraction</key>
+	<string>switchSinceBuffer</string>
+	<key>tappableModulusTint</key>
+	<string>checklistUntilFramework</string>
+</dict>
+</plist>

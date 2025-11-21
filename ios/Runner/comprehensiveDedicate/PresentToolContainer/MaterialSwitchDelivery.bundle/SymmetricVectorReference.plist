@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>awaitPlatformSpacing</key>
+	<string>smartLoopStyle</string>
+	<key>delegateSinceSingleton</key>
+	<string>immutableDialogsValidation</string>
+	<key>denseConsumerMargin</key>
+	<string>reducerForStage</string>
+	<key>greatBehaviorRate</key>
+	<string>mobxActionVisibility</string>
+	<key>lazyMobileVisible</key>
+	<string>subscriptionMediatorBound</string>
+	<key>mutableEffectTail</key>
+	<string>accessoryPlatformTop</string>
+	<key>previewVisitorAcceleration</key>
+	<string>labelUntilVisitor</string>
+	<key>standaloneTransitionMomentum</key>
+	<string>catalystParamForce</string>
+	<key>viewOfForm</key>
+	<string>decorationAsParameter</string>
+</dict>
+</plist>

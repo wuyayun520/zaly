@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>effectThroughStyle</key>
+	<string>ignoredRepositoryShade</string>
+	<key>injectionOrLevel</key>
+	<string>profileFromScope</string>
+	<key>repositoryMementoShape</key>
+	<string>lazyContainerStyle</string>
+	<key>routerWorkPressure</key>
+	<string>precisionShapeContrast</string>
+	<key>statefulRequestVisibility</key>
+	<string>routerWithoutComposite</string>
+	<key>unaryNumberOffset</key>
+	<string>positionedPerType</string>
+</dict>
+</plist>

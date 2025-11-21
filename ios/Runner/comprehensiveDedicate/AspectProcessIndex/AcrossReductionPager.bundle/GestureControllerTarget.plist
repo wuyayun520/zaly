@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedConstraintMomentum</key>
+	<string>featureCompositePressure</string>
+	<key>consumerParameterValidation</key>
+	<string>vectorBeyondStructure</string>
+	<key>graphicSingletonSkewx</key>
+	<string>materialSubpixelBehavior</string>
+	<key>integerUntilLevel</key>
+	<string>effectLayerAlignment</string>
+	<key>interactorVarLocation</key>
+	<string>columnVisitorLeft</string>
+	<key>localMultiplicationBehavior</key>
+	<string>canvasContainBridge</string>
+	<key>navigatorViaVar</key>
+	<string>mediaqueryAmongScope</string>
+	<key>tabbarThanWork</key>
+	<string>singleDecorationScale</string>
+</dict>
+</plist>

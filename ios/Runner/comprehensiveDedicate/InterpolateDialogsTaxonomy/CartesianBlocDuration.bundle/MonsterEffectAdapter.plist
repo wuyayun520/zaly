@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoSpineAlignment</key>
+	<string>isolatePatternPosition</string>
+	<key>captionAtValue</key>
+	<string>subscriptionVersusStructure</string>
+	<key>configurationValueStyle</key>
+	<string>batchNumberType</string>
+	<key>finalAwaitResponse</key>
+	<string>cupertinoFlyweightDepth</string>
+	<key>interfaceInterpreterInteraction</key>
+	<string>alignmentCompositeScale</string>
+	<key>mutableErrorFrequency</key>
+	<string>projectActionVisibility</string>
+	<key>protocolChainSaturation</key>
+	<string>statefulParticleType</string>
+	<key>roleFromFramework</key>
+	<string>skirtLevelInset</string>
+	<key>utilAdapterResponse</key>
+	<string>allocatorProxyDensity</string>
+</dict>
+</plist>

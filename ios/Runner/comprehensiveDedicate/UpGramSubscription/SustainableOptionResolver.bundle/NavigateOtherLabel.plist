@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dialogsActivityFormat</key>
+	<string>diffableIntegerName</string>
+	<key>listviewBridgeRate</key>
+	<string>completerScopeScale</string>
+	<key>missedCoordinatorColor</key>
+	<string>nativeNibScale</string>
+	<key>specifierVarBound</key>
+	<string>priorToolVisible</string>
+	<key>toolNumberTop</key>
+	<string>sequentialChapterBottom</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentBufferCenter</key>
+	<string>asyncTaskTransparency</string>
+	<key>eventForBuffer</key>
+	<string>accessibleEventFormat</string>
+	<key>factoryForCommand</key>
+	<string>groupSingletonContrast</string>
+	<key>flexibleGridBottom</key>
+	<string>capacitiesKindTop</string>
+	<key>significantAwaitColor</key>
+	<string>errorThroughPattern</string>
+	<key>toolKindDepth</key>
+	<string>geometricSemanticsOffset</string>
+	<key>unactivatedQueueContrast</key>
+	<string>basicDurationBound</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commonTickerValidation</key>
+	<string>modalVersusFramework</string>
+	<key>draggableCardVelocity</key>
+	<string>immediateDropdownbuttonPadding</string>
+	<key>drawerContainFramework</key>
+	<string>uniqueGesturedetectorOpacity</string>
+	<key>explicitLayerTail</key>
+	<string>assetJobCenter</string>
+	<key>largeCustompaintBound</key>
+	<string>priorTaskFeedback</string>
+	<key>requiredModelSpeed</key>
+	<string>dependencyWorkHead</string>
+</dict>
+</plist>

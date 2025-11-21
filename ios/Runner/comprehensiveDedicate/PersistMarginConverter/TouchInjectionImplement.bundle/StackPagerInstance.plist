@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionOperationShade</key>
+	<string>queryJobFrequency</string>
+	<key>blocExceptChain</key>
+	<string>transitionForInterpreter</string>
+	<key>chartActivityFrequency</key>
+	<string>operationBridgeName</string>
+	<key>gesturedetectorBesideStyle</key>
+	<string>cupertinoProtocolStyle</string>
+	<key>reactiveAsyncFrequency</key>
+	<string>previewOfCycle</string>
+	<key>singletonExceptPlatform</key>
+	<string>respectiveBatchLeft</string>
+	<key>timerInterpreterVisible</key>
+	<string>widgetLevelVisibility</string>
+</dict>
+</plist>

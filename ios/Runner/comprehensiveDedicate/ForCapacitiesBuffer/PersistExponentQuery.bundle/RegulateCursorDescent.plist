@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iterativeMenuState</key>
+	<string>cubitAdapterDensity</string>
+	<key>marginIncludeLayer</key>
+	<string>cubeEnvironmentBound</string>
+	<key>positionMediatorFrequency</key>
+	<string>segmentAtVar</string>
+	<key>sensorNearVariable</key>
+	<string>builderTaskOpacity</string>
+	<key>transformerOutsideFacade</key>
+	<string>playbackForState</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>coordinatorContainVisitor</key>
+	<string>layoutBridgeTop</string>
+	<key>delegateBesideChain</key>
+	<string>usageModeRate</string>
+	<key>geometricListenerInteraction</key>
+	<string>oldAppbarOrientation</string>
+	<key>largeStreamColor</key>
+	<string>tappableGroupFeedback</string>
+	<key>localDescriptorHue</key>
+	<string>denseConfigurationBrightness</string>
+	<key>multiplicationShapeSaturation</key>
+	<string>descriptionViaPlatform</string>
+	<key>stateAwayForm</key>
+	<string>cardWithoutParam</string>
+	<key>statelessMediatorOffset</key>
+	<string>labelAmongNumber</string>
+</dict>
+</plist>

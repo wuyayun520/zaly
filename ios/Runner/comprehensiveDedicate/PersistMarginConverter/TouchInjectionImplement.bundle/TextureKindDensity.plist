@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentBeyondPhase</key>
+	<string>animationPerType</string>
+	<key>blocFormTail</key>
+	<string>signVariableSpeed</string>
+	<key>graphOperationVisibility</key>
+	<string>errorFormLeft</string>
+	<key>isolateLayerRight</key>
+	<string>providerExceptPrototype</string>
+	<key>parallelQueryDistance</key>
+	<string>customizedTextureTint</string>
+	<key>textStateAppearance</key>
+	<string>singletonThroughParam</string>
+</dict>
+</plist>

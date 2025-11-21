@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>menuBufferTint</key>
+	<string>lossMethodCenter</string>
+	<key>methodStructureHead</key>
+	<string>interactiveIsolateBrightness</string>
+	<key>mutableSymbolInset</key>
+	<string>curvePhaseVisibility</string>
+	<key>navigatorOutsideBridge</key>
+	<string>tappableOffsetTop</string>
+	<key>signatureFrameworkBrightness</key>
+	<string>disabledContainerForce</string>
+</dict>
+</plist>

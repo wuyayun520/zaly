@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessoryPerStage</key>
+	<string>displayableEqualizationState</string>
+	<key>binaryScopeAppearance</key>
+	<string>notifierWithoutOperation</string>
+	<key>crucialInstructionBehavior</key>
+	<string>listenerFormContrast</string>
+	<key>lostEntitySpacing</key>
+	<string>expandedInVisitor</string>
+	<key>observerAroundWork</key>
+	<string>interfacePrototypeDepth</string>
+	<key>sinkOperationAcceleration</key>
+	<string>desktopRowStatus</string>
+	<key>subscriptionCycleMode</key>
+	<string>customizedGroupType</string>
+	<key>temporaryTernaryTag</key>
+	<string>composableButtonShade</string>
+	<key>tweenSinceFramework</key>
+	<string>transformerAboutStyle</string>
+	<key>unactivatedExceptionAcceleration</key>
+	<string>positionParamBehavior</string>
+</dict>
+</plist>

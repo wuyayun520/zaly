@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>borderOperationTransparency</key>
+	<string>relationalSingletonCount</string>
+	<key>controllerVisitorBound</key>
+	<string>persistentAlphaEdge</string>
+	<key>fixedEffectBehavior</key>
+	<string>discardedThemePosition</string>
+	<key>integerModeScale</key>
+	<string>advancedCommandLeft</string>
+	<key>mobileQuerySpacing</key>
+	<string>largeArithmeticPosition</string>
+	<key>rapidNavigatorKind</key>
+	<string>popupSystemOrigin</string>
+	<key>retainedZoneTop</key>
+	<string>subsequentRouteDistance</string>
+	<key>seamlessSizeRight</key>
+	<string>variantMethodBorder</string>
+	<key>storyboardPrototypeState</key>
+	<string>standaloneMetadataMode</string>
+</dict>
+</plist>

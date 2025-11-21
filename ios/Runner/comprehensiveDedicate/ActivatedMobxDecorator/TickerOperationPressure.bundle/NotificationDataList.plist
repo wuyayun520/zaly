@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionBeyondEnvironment</key>
+	<string>movementStrategyBorder</string>
+	<key>appbarFunctionOpacity</key>
+	<string>previewInterpreterPadding</string>
+	<key>featureFunctionBound</key>
+	<string>largeTabbarContrast</string>
+	<key>immediateSubpixelCenter</key>
+	<string>bitrateModeTail</string>
+	<key>localizationDuringScope</key>
+	<string>multiNavigatorColor</string>
+	<key>secondIndicatorDistance</key>
+	<string>nativeTransitionInset</string>
+	<key>unsortedStatelessRate</key>
+	<string>labelDuringWork</string>
+	<key>unsortedSubscriptionAcceleration</key>
+	<string>layoutPhaseAlignment</string>
+</dict>
+</plist>

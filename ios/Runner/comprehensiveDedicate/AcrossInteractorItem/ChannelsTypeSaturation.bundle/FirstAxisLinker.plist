@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentActivityInteraction</key>
+	<string>mediaInterpreterFeedback</string>
+	<key>alignmentVariableStatus</key>
+	<string>framePhaseForce</string>
+	<key>groupDuringInterpreter</key>
+	<string>multiTangentDuration</string>
+	<key>mobileSingletonTint</key>
+	<string>tappableToolBehavior</string>
+	<key>scaffoldInsideEnvironment</key>
+	<string>queryBesideTier</string>
+	<key>signTypeRight</key>
+	<string>enabledLossSkewx</string>
+	<key>streamByFlyweight</key>
+	<string>sortedLabelStatus</string>
+	<key>webReductionBound</key>
+	<string>vectorAtAction</string>
+</dict>
+</plist>

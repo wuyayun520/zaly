@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>boxshadowPrototypeIndex</key>
+	<string>mutableBorderOffset</string>
+	<key>factoryPerProcess</key>
+	<string>sliderCommandEdge</string>
+	<key>flexibleBorderIndex</key>
+	<string>marginActionVisibility</string>
+	<key>mainMultiplicationIndex</key>
+	<string>featureAmongVisitor</string>
+	<key>precisionPerScope</key>
+	<string>methodByLayer</string>
+	<key>scrollableCubitContrast</key>
+	<string>nodeProxyValidation</string>
+	<key>sharedSpriteBound</key>
+	<string>dynamicLogLocation</string>
+	<key>subpixelAlongShape</key>
+	<string>loopBeyondAction</string>
+	<key>subtleParticleCenter</key>
+	<string>constStorageCoord</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedcontainerDecoratorInteraction</key>
+	<string>unsortedUsecaseCount</string>
+	<key>controllerKindTint</key>
+	<string>batchVersusLayer</string>
+	<key>delicateTabbarDistance</key>
+	<string>batchInsideBuffer</string>
+	<key>fixedSceneContrast</key>
+	<string>diffableTitleOrientation</string>
+	<key>geometricClipperFormat</key>
+	<string>concreteSpriteInterval</string>
+	<key>spritePatternSpeed</key>
+	<string>resultShapeOpacity</string>
+	<key>webActivityShade</key>
+	<string>switchObserverBrightness</string>
+</dict>
+</plist>

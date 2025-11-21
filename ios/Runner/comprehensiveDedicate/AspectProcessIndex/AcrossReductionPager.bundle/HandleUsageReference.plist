@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncCurveInteraction</key>
+	<string>taskNearEnvironment</string>
+	<key>backwardScrollDepth</key>
+	<string>previewProxyPressure</string>
+	<key>elasticRichtextVelocity</key>
+	<string>usedOperationDuration</string>
+	<key>localizationActionHue</key>
+	<string>streamStageShade</string>
+</dict>
+</plist>

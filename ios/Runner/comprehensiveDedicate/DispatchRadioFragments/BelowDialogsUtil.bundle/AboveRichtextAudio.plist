@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animatedBufferAcceleration</key>
+	<string>characterActionScale</string>
+	<key>animatedSizedboxBorder</key>
+	<string>richtextOrStage</string>
+	<key>cubitAmongVar</key>
+	<string>widgetAlongVariable</string>
+	<key>ignoredInteractorTension</key>
+	<string>frameFrameworkName</string>
+	<key>interactiveRowHue</key>
+	<string>directTechniqueDepth</string>
+	<key>resilientPreviewResponse</key>
+	<string>labelSingletonPosition</string>
+	<key>streamAmongScope</key>
+	<string>similarKernelFormat</string>
+	<key>unsortedSingletonStatus</key>
+	<string>resultSystemFrequency</string>
+	<key>usedWidgetPadding</key>
+	<string>plateFrameworkOffset</string>
+</dict>
+</plist>

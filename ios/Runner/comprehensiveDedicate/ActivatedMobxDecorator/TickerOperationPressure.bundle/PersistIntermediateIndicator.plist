@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>collectionForContext</key>
+	<string>sizeFunctionOffset</string>
+	<key>inactiveConstraintSaturation</key>
+	<string>basicThemeRate</string>
+	<key>localizationOrSystem</key>
+	<string>dropdownbuttonViaPrototype</string>
+	<key>paddingWithoutParam</key>
+	<string>sequentialRichtextAcceleration</string>
+	<key>semanticsNearActivity</key>
+	<string>modalPatternShade</string>
+	<key>singleGridviewDuration</key>
+	<string>prevGrainVisibility</string>
+	<key>statefulResolverBorder</key>
+	<string>synchronousViewForce</string>
+	<key>subtleDelegateFrequency</key>
+	<string>storageAsAction</string>
+	<key>transitionPrototypeCenter</key>
+	<string>primaryBufferMomentum</string>
+</dict>
+</plist>

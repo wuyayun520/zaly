@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capacitiesInScope</key>
+	<string>adaptiveLayoutLeft</string>
+	<key>fixedControllerLeft</key>
+	<string>constraintSystemBehavior</string>
+	<key>kernelEnvironmentMargin</key>
+	<string>lostTextVisible</string>
+	<key>menuParamTension</key>
+	<string>modulusActivityDensity</string>
+	<key>rectActivityFrequency</key>
+	<string>globalExceptionDelay</string>
+</dict>
+</plist>

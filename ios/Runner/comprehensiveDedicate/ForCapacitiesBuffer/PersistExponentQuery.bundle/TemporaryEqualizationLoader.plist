@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>builderAwayStructure</key>
+	<string>containerNearLevel</string>
+	<key>cursorModeShape</key>
+	<string>pointAwayFlyweight</string>
+	<key>customMenuRotation</key>
+	<string>completionTierEdge</string>
+	<key>listenerSinceStructure</key>
+	<string>animationAwayChain</string>
+	<key>movementSinceForm</key>
+	<string>methodProcessDepth</string>
+	<key>persistentMethodShape</key>
+	<string>curveNearStyle</string>
+	<key>repositoryDecoratorMode</key>
+	<string>tweenViaSystem</string>
+	<key>requestProcessKind</key>
+	<string>accessibleCanvasScale</string>
+	<key>segueLayerType</key>
+	<string>directlyEffectSkewy</string>
+</dict>
+</plist>

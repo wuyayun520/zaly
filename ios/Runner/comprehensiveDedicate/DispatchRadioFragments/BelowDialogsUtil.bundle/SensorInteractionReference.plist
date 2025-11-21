@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>curveSinceTemple</key>
+	<string>delegateChainKind</string>
+	<key>interactiveCompletionAcceleration</key>
+	<string>concurrentTimerVelocity</string>
+	<key>queryPlatformFlags</key>
+	<string>composableStoryboardResponse</string>
+	<key>skirtScopeSpacing</key>
+	<string>localDecorationSkewy</string>
+	<key>tweenBridgeOrigin</key>
+	<string>vectorAndSingleton</string>
+</dict>
+</plist>

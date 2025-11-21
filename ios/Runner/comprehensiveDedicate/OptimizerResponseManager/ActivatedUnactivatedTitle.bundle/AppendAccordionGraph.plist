@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>coordinatorWithStructure</key>
+	<string>cubitExceptAdapter</string>
+	<key>deferredSwiftBottom</key>
+	<string>queryAroundTier</string>
+	<key>instructionVersusMemento</key>
+	<string>awaitOrAction</string>
+	<key>kernelEnvironmentInset</key>
+	<string>providerMediatorMode</string>
+	<key>listenerPatternDistance</key>
+	<string>progressbarMethodFeedback</string>
+	<key>observerVersusKind</key>
+	<string>sequentialSubscriptionFrequency</string>
+	<key>persistentCursorColor</key>
+	<string>offsetOperationInterval</string>
+	<key>sampleShapeValidation</key>
+	<string>rectCycleForce</string>
+	<key>subscriptionValueBrightness</key>
+	<string>synchronousScreenSize</string>
+	<key>widgetBesideParam</key>
+	<string>ephemeralResolverLocation</string>
+</dict>
+</plist>

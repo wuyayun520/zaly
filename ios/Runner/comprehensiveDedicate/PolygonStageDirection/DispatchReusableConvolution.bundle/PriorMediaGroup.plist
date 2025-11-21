@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>certificateFrameworkVisibility</key>
+	<string>kernelContainTemple</string>
+	<key>diffableStoryboardMode</key>
+	<string>streamWithEnvironment</string>
+	<key>secondRadioCount</key>
+	<string>protectedChapterOffset</string>
+	<key>spritePlatformTop</key>
+	<string>autoCatalystVisible</string>
+	<key>toolInsideStructure</key>
+	<string>layoutBufferCount</string>
+</dict>
+</plist>

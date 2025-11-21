@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>controllerForMode</key>
+	<string>diversifiedConfigurationShade</string>
+	<key>interfaceLevelAlignment</key>
+	<string>collectionModeDepth</string>
+	<key>labelSinceLevel</key>
+	<string>semanticPrecisionFeedback</string>
+	<key>lostMissionAlignment</key>
+	<string>projectTaskDensity</string>
+	<key>navigationProcessBottom</key>
+	<string>sortedAccessoryPressure</string>
+	<key>petNumberHead</key>
+	<string>progressbarJobCoord</string>
+	<key>precisionDuringParameter</key>
+	<string>signObserverScale</string>
+	<key>sizePrototypeValidation</key>
+	<string>compositionProcessOrientation</string>
+</dict>
+</plist>

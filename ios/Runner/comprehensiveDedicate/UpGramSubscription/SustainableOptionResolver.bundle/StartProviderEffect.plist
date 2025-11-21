@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ephemeralDependencyDensity</key>
+	<string>associatedCatalystOpacity</string>
+	<key>overlayNumberBehavior</key>
+	<string>subtleSceneContrast</string>
+	<key>resilientProgressbarOrigin</key>
+	<string>projectionDecoratorSize</string>
+	<key>routerAgainstOperation</key>
+	<string>optionSinceMediator</string>
+</dict>
+</plist>

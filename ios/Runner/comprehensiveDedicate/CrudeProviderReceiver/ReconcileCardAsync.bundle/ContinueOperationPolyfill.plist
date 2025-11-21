@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncCycleOffset</key>
+	<string>stateInTier</string>
+	<key>bufferBeyondParam</key>
+	<string>finalObserverState</string>
+	<key>descriptorSingletonCenter</key>
+	<string>nodeInDecorator</string>
+	<key>interactorBeyondScope</key>
+	<string>popupSystemDirection</string>
+	<key>rowThroughActivity</key>
+	<string>intensityProxyColor</string>
+	<key>standaloneDescriptorOpacity</key>
+	<string>borderObserverSize</string>
+	<key>subscriptionThanMethod</key>
+	<string>segmentContextMode</string>
+	<key>subtleChartFrequency</key>
+	<string>configurationOrTask</string>
+</dict>
+</plist>

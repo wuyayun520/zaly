@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleStorageOrigin</key>
+	<string>utilOutsideWork</string>
+	<key>adaptivePopupSkewy</key>
+	<string>ternaryContainKind</string>
+	<key>advancedAnimationOrigin</key>
+	<string>reductionWithEnvironment</string>
+	<key>bulletModeSkewy</key>
+	<string>taskInBridge</string>
+	<key>canvasNumberHue</key>
+	<string>tweenJobState</string>
+	<key>commonActionTransparency</key>
+	<string>stampMediatorVelocity</string>
+	<key>enabledProjectSpacing</key>
+	<string>futureVersusScope</string>
+	<key>framePerVariable</key>
+	<string>respectiveQueueEdge</string>
+	<key>uniqueCoordinatorFlags</key>
+	<string>numericalUsageHead</string>
+</dict>
+</plist>

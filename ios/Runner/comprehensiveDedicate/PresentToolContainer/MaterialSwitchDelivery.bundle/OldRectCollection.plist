@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>batchStyleSkewx</key>
+	<string>multiEffectPressure</string>
+	<key>layoutFormInteraction</key>
+	<string>columnPhaseAppearance</string>
+	<key>staticViewCoord</key>
+	<string>gateThroughTemple</string>
+	<key>tensorDependencyResponse</key>
+	<string>mobileVersusTemple</string>
+</dict>
+</plist>

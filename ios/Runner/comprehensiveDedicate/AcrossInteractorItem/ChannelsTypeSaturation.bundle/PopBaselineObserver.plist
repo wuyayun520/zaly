@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>desktopModulusTail</key>
+	<string>activeFrameBound</string>
+	<key>easyRouterShade</key>
+	<string>enabledReferenceVisibility</string>
+	<key>lossProcessVisibility</key>
+	<string>curveNearLayer</string>
+	<key>resilientCycleValidation</key>
+	<string>localizationContainVariable</string>
+	<key>routeFacadeVelocity</key>
+	<string>autoMapStyle</string>
+	<key>staticTableRotation</key>
+	<string>animationInState</string>
+</dict>
+</plist>

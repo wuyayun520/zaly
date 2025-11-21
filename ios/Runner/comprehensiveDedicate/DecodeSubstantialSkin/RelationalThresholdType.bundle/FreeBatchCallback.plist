@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>futureSingletonDensity</key>
+	<string>semanticInterfaceCenter</string>
+	<key>greatCompletionType</key>
+	<string>statelessFunctionType</string>
+	<key>layoutDecoratorRotation</key>
+	<string>titleInVar</string>
+	<key>liteMenuShape</key>
+	<string>actionOutsidePlatform</string>
+	<key>reducerAlongMemento</key>
+	<string>offsetAgainstVisitor</string>
+	<key>resourceAdapterLocation</key>
+	<string>mediumPopupIndex</string>
+	<key>ternaryOrNumber</key>
+	<string>newestBulletFlags</string>
+	<key>typicalFutureSpeed</key>
+	<string>frameValueBrightness</string>
+</dict>
+</plist>

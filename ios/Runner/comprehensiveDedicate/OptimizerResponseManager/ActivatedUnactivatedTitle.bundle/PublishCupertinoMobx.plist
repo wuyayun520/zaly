@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>concurrentResolverFrequency</key>
+	<string>coordinatorInMode</string>
+	<key>labelShapeInteraction</key>
+	<string>cartesianGrainStyle</string>
+	<key>sophisticatedQueryState</key>
+	<string>brushStateRate</string>
+	<key>timerWithBridge</key>
+	<string>beginnerRowBorder</string>
+	<key>widgetBesidePattern</key>
+	<string>imageUntilEnvironment</string>
+</dict>
+</plist>

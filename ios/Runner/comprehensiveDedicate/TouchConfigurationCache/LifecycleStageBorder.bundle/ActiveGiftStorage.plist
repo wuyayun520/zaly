@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoGramMode</key>
+	<string>heapPerState</string>
+	<key>finalControllerRight</key>
+	<string>gramFlyweightName</string>
+	<key>pageviewProxyStyle</key>
+	<string>euclideanCustompaintAppearance</string>
+	<key>requestStyleAcceleration</key>
+	<string>canvasAboutWork</string>
+	<key>robustSizedboxInset</key>
+	<string>labelAtObserver</string>
+	<key>significantAxisBorder</key>
+	<string>concurrentDependencyInset</string>
+	<key>statefulAwaitLocation</key>
+	<string>ternaryWithoutPattern</string>
+	<key>uniformViewFrequency</key>
+	<string>denseScreenRotation</string>
+</dict>
+</plist>

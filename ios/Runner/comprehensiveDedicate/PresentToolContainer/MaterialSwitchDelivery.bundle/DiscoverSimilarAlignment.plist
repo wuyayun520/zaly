@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>featureVisitorBorder</key>
+	<string>loopParameterLocation</string>
+	<key>futureThanVar</key>
+	<string>operationKindType</string>
+	<key>iconNearVariable</key>
+	<string>gramCycleColor</string>
+	<key>isolateLikeVisitor</key>
+	<string>enabledSizedboxInterval</string>
+	<key>protectedGroupAppearance</key>
+	<string>stateAdapterResponse</string>
+	<key>remainderPrototypeFormat</key>
+	<string>marginPerCommand</string>
+	<key>taskInsideVar</key>
+	<string>cubitTypeFormat</string>
+</dict>
+</plist>

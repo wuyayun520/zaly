@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cubeCycleForce</key>
+	<string>singleFrameOrientation</string>
+	<key>futureByState</key>
+	<string>cubitDespiteActivity</string>
+	<key>presenterMementoInset</key>
+	<string>captionFrameworkShade</string>
+	<key>responseStrategyOffset</key>
+	<string>dynamicContainerEdge</string>
+	<key>spriteModeDepth</key>
+	<string>responseAdapterOffset</string>
+</dict>
+</plist>

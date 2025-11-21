@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>concurrentConfigurationMomentum</key>
+	<string>webMenuVelocity</string>
+	<key>durationInsidePattern</key>
+	<string>eagerClipperInteraction</string>
+	<key>handlerParamCount</key>
+	<string>positionDuringFacade</string>
+	<key>listenerViaTask</key>
+	<string>factoryKindSize</string>
+	<key>spineStateAlignment</key>
+	<string>euclideanHistogramCenter</string>
+</dict>
+</plist>

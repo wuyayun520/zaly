@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cubitBufferBehavior</key>
+	<string>sinkAmongCycle</string>
+	<key>equalizationAsVariable</key>
+	<string>interactiveArithmeticOffset</string>
+	<key>marginBridgeSkewy</key>
+	<string>transitionAmongFlyweight</string>
+	<key>mobxChainBrightness</key>
+	<string>chapterTypeTheme</string>
+	<key>scaleStageDepth</key>
+	<string>metadataLikeSingleton</string>
+	<key>sliderOutsideScope</key>
+	<string>smallInjectionStyle</string>
+</dict>
+</plist>

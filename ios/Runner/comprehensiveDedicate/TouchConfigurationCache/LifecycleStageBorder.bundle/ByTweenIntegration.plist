@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>curveVariableKind</key>
+	<string>keyGridviewVisibility</string>
+	<key>iterativeGrayscaleEdge</key>
+	<string>hierarchicalBinaryTheme</string>
+	<key>labelTaskLocation</key>
+	<string>masterPerVar</string>
+	<key>lastDescriptionSpeed</key>
+	<string>descriptionTypeOpacity</string>
+	<key>optimizerContainKind</key>
+	<string>sensorFlyweightBehavior</string>
+	<key>sensorLayerFormat</key>
+	<string>monsterObserverSkewx</string>
+	<key>sophisticatedSessionBehavior</key>
+	<string>radiusForCommand</string>
+	<key>stackContainActivity</key>
+	<string>equipmentCycleMomentum</string>
+	<key>techniqueFlyweightSaturation</key>
+	<string>exceptionAboutPhase</string>
+</dict>
+</plist>

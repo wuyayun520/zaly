@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoHandlerInset</key>
+	<string>globalEventInteraction</string>
+	<key>capsuleContextCenter</key>
+	<string>baselineAndStyle</string>
+	<key>heapForValue</key>
+	<string>layoutOperationFeedback</string>
+	<key>vectorMediatorSaturation</key>
+	<string>featureAwayMediator</string>
+</dict>
+</plist>

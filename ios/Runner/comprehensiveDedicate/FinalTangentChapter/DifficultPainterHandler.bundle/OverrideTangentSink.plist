@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>backwardSwitchInterval</key>
+	<string>animationAgainstTask</string>
+	<key>directSliderSkewy</key>
+	<string>cupertinoCoordinatorRight</string>
+	<key>gridOutsideKind</key>
+	<string>paddingProcessEdge</string>
+	<key>histogramModeTail</key>
+	<string>sustainableTextfieldDirection</string>
+	<key>intensityOperationMomentum</key>
+	<string>stepAgainstTask</string>
+	<key>progressbarCommandFormat</key>
+	<string>serviceLayerInteraction</string>
+	<key>reusableProviderBehavior</key>
+	<string>positionedFunctionVisible</string>
+	<key>segmentInterpreterVisibility</key>
+	<string>euclideanOptionVelocity</string>
+	<key>similarListenerTransparency</key>
+	<string>bulletPlatformFeedback</string>
+</dict>
+</plist>

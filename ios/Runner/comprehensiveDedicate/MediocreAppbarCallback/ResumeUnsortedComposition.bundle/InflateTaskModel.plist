@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compositionalArithmeticOrientation</key>
+	<string>smallCubitFrequency</string>
+	<key>documentParameterDuration</key>
+	<string>blocPhaseMode</string>
+	<key>entityFromChain</key>
+	<string>bulletAlongParam</string>
+	<key>inheritedProfileForce</key>
+	<string>tweenFacadeTail</string>
+	<key>layoutProxyOrigin</key>
+	<string>otherSensorSkewx</string>
+	<key>localToolBehavior</key>
+	<string>optimizerCompositeContrast</string>
+	<key>nextTaskDistance</key>
+	<string>stateIncludeInterpreter</string>
+	<key>temporaryDurationOpacity</key>
+	<string>actionAtType</string>
+	<key>timerPerJob</key>
+	<string>assetChainDepth</string>
+</dict>
+</plist>

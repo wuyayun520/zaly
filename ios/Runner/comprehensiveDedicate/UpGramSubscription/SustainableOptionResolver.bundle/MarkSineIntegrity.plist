@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chapterLevelSpeed</key>
+	<string>missedStoreVisibility</string>
+	<key>drawerNearActivity</key>
+	<string>alignmentWithoutBuffer</string>
+	<key>entityWithActivity</key>
+	<string>delegateAtSingleton</string>
+	<key>immediateUtilInset</key>
+	<string>riverpodForStage</string>
+	<key>mapDecoratorBottom</key>
+	<string>capsuleDespiteCommand</string>
+	<key>sizeDuringPhase</key>
+	<string>operationMethodInteraction</string>
+	<key>statefulCollectionSkewy</key>
+	<string>radiusLayerPosition</string>
+	<key>taskCycleBound</key>
+	<string>completionCycleKind</string>
+</dict>
+</plist>

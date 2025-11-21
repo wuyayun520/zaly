@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baselineTypeFeedback</key>
+	<string>streamViaObserver</string>
+	<key>compositionalContainerResponse</key>
+	<string>layoutInShape</string>
+	<key>errorSinceStyle</key>
+	<string>entityOrStructure</string>
+	<key>uniqueDialogsVisibility</key>
+	<string>tickerDecoratorHue</string>
+</dict>
+</plist>

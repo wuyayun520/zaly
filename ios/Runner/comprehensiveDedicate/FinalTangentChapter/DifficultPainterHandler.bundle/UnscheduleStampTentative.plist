@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>channelsAboutBuffer</key>
+	<string>viewAtPhase</string>
+	<key>delegateOutsideStrategy</key>
+	<string>nodeDuringAdapter</string>
+	<key>graphInsidePrototype</key>
+	<string>queueAsFlyweight</string>
+	<key>invisibleDependencyDepth</key>
+	<string>currentCompletionSpacing</string>
+	<key>mediaPrototypeScale</key>
+	<string>precisionThroughStructure</string>
+	<key>pinchableAssetBehavior</key>
+	<string>storeIncludePhase</string>
+	<key>relationalMediaqueryDuration</key>
+	<string>listenerContainShape</string>
+	<key>scaffoldOrPlatform</key>
+	<string>configurationExceptAdapter</string>
+	<key>stateCompositePadding</key>
+	<string>semanticReducerFeedback</string>
+	<key>storeStyleBorder</key>
+	<string>listenerModeBound</string>
+</dict>
+</plist>

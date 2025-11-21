@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>binaryEnvironmentTint</key>
+	<string>largeActionRate</string>
+	<key>difficultTransitionFeedback</key>
+	<string>gestureFacadeResponse</string>
+	<key>equipmentAndSystem</key>
+	<string>axisMementoShade</string>
+	<key>errorAwayCycle</key>
+	<string>statefulForAdapter</string>
+	<key>numericalGroupName</key>
+	<string>reactiveMatrixColor</string>
+	<key>scrollableOverlayRotation</key>
+	<string>observerFromForm</string>
+	<key>sensorFlyweightValidation</key>
+	<string>asyncExceptProxy</string>
+	<key>sensorKindCoord</key>
+	<string>consumerTierTag</string>
+	<key>uniqueSpotBottom</key>
+	<string>animationLikeBridge</string>
+</dict>
+</plist>

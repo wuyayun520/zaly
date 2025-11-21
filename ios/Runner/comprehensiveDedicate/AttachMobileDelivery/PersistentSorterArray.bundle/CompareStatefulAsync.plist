@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gradientDuringLayer</key>
+	<string>fragmentProcessState</string>
+	<key>imageDespiteShape</key>
+	<string>similarEntityInset</string>
+	<key>layoutStrategyVisible</key>
+	<string>scaffoldOfKind</string>
+</dict>
+</plist>

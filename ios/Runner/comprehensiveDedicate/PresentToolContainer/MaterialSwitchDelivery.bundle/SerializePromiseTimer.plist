@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dependencyPlatformLeft</key>
+	<string>gesturedetectorFromStyle</string>
+	<key>indicatorCommandOpacity</key>
+	<string>invisibleRoleTint</string>
+	<key>memberSingletonLeft</key>
+	<string>switchAgainstChain</string>
+	<key>semanticAnimationBrightness</key>
+	<string>documentOrPlatform</string>
+	<key>specifyBatchValidation</key>
+	<string>stepLevelDirection</string>
+</dict>
+</plist>

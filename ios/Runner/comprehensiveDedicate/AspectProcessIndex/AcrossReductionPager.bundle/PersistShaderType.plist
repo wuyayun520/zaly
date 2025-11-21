@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>clipperUntilEnvironment</key>
+	<string>appbarLayerMargin</string>
+	<key>commandDuringBuffer</key>
+	<string>flexibleDrawerStatus</string>
+	<key>desktopExceptionFeedback</key>
+	<string>granularConstraintTint</string>
+	<key>eventFormOrigin</key>
+	<string>hardTextTint</string>
+	<key>opaquePopupDensity</key>
+	<string>dependencyBufferScale</string>
+	<key>storageSystemSaturation</key>
+	<string>transitionBufferMode</string>
+</dict>
+</plist>

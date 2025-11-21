@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arithmeticPreviewRight</key>
+	<string>scrollableTransitionStatus</string>
+	<key>associatedAxisTop</key>
+	<string>lazySkinBound</string>
+	<key>controllerModeVisibility</key>
+	<string>enabledEqualizationTheme</string>
+	<key>dedicatedPriorityKind</key>
+	<string>observerFlyweightIndex</string>
+	<key>inheritedMenuColor</key>
+	<string>storeStateEdge</string>
+	<key>painterSystemDistance</key>
+	<string>discardedSliderBrightness</string>
+	<key>positionedPerWork</key>
+	<string>equipmentUntilValue</string>
+	<key>reducerTierIndex</key>
+	<string>asyncVariableHue</string>
+	<key>relationalProviderKind</key>
+	<string>semanticsModeDirection</string>
+	<key>sortedExponentName</key>
+	<string>responsiveStepTint</string>
+</dict>
+</plist>

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'mood_journal_screen.dart';
 import 'post_story_screen.dart';
 import 'me_screen.dart';
@@ -6,6 +7,7 @@ import 'main_screen.dart';
 import 'breathing_exercise_screen.dart';
 import 'meditation_music_screen.dart';
 import 'wellness_library_screen.dart';
+import 'velvy_subscriptions_screen.dart';
 import '../services/mood_service.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -51,6 +53,99 @@ class _HomeScreenState extends State<HomeScreen> {
   
   Future<void> _refreshData() async {
     await _loadMoodStats();
+  }
+
+  // 检查用户是否为有效的月订阅 Velvy Premium 用户
+  Future<bool> _checkMonthlyPremiumStatus() async {
+    final prefs = await SharedPreferences.getInstance();
+    final isPremium = prefs.getBool('isVelvyPremium') ?? prefs.getBool('isVip') ?? false;
+    
+    if (!isPremium) {
+      return false;
+    }
+    
+    // 检查是否过期
+    final expiryStr = prefs.getString('velvyPremiumExpiry') ?? prefs.getString('vipExpiry');
+    if (expiryStr == null) {
+      return false;
+    }
+    
+    final expiry = DateTime.tryParse(expiryStr);
+    if (expiry == null) {
+      return false;
+    }
+    
+    // 检查是否已过期
+    if (DateTime.now().isAfter(expiry)) {
+      return false;
+    }
+    
+    // 检查订阅类型，必须是月订阅
+    final premiumType = prefs.getString('velvyPremiumType') ?? prefs.getString('vip_type');
+    return premiumType == 'monthly';
+  }
+
+  // 显示需要月订阅的确认对话框
+  Future<void> _showMonthlyPremiumRequiredDialog() async {
+    final shouldSubscribe = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        title: const Text(
+          'Monthly Premium Required',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Text(
+              'Share Story is a Monthly Premium feature.',
+              style: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 12),
+            const Text(
+              'Subscribe to Monthly Velvy Premium to unlock the Share Story feature.',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.black87,
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFFF6B9D),
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: const Text('Subscribe'),
+          ),
+        ],
+      ),
+    );
+
+    if (shouldSubscribe == true && mounted) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const VelvySubscriptionsPage(initialIndex: 1), // 默认选择月订阅
+        ),
+      );
+    }
   }
   
   IconData _getMotivationIcon() {
@@ -407,15 +502,24 @@ class _HomeScreenState extends State<HomeScreen> {
                 Icons.edit,
                 const Color(0xFFFF6B9D),
                 () async {
-                  final result = await Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const PostStoryScreen(),
-                    ),
-                  );
-                  if (result == true) {
-                    await Future.delayed(const Duration(milliseconds: 300));
-                    MeScreen.refresh();
+                  // 检查是否为月订阅 Premium 用户
+                  final isMonthlyPremium = await _checkMonthlyPremiumStatus();
+                  
+                  if (isMonthlyPremium) {
+                    // 是月订阅 Premium 用户，直接执行功能
+                    final result = await Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const PostStoryScreen(),
+                      ),
+                    );
+                    if (result == true) {
+                      await Future.delayed(const Duration(milliseconds: 300));
+                      MeScreen.refresh();
+                    }
+                  } else {
+                    // 不是月订阅 Premium 用户，显示对话框
+                    _showMonthlyPremiumRequiredDialog();
                   }
                 },
               ),
@@ -724,15 +828,24 @@ class _HomeScreenState extends State<HomeScreen> {
                     );
                     break;
                   case 'share':
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => const PostStoryScreen(),
-                      ),
-                    ).then((result) {
-                      if (result == true) {
-                        Future.delayed(const Duration(milliseconds: 300));
-                        MeScreen.refresh();
+                    // 检查是否为月订阅 Premium 用户
+                    _checkMonthlyPremiumStatus().then((isMonthlyPremium) {
+                      if (isMonthlyPremium) {
+                        // 是月订阅 Premium 用户，直接执行功能
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const PostStoryScreen(),
+                          ),
+                        ).then((result) {
+                          if (result == true) {
+                            Future.delayed(const Duration(milliseconds: 300));
+                            MeScreen.refresh();
+                          }
+                        });
+                      } else {
+                        // 不是月订阅 Premium 用户，显示对话框
+                        _showMonthlyPremiumRequiredDialog();
                       }
                     });
                     break;

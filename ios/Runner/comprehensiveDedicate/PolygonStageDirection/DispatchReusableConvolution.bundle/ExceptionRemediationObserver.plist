@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncTaskDistance</key>
+	<string>collectionFacadeTint</string>
+	<key>baseCyclePadding</key>
+	<string>interfaceViaStage</string>
+	<key>delicateCubitVisibility</key>
+	<string>scrollableModelCenter</string>
+	<key>dropdownbuttonMementoCoord</key>
+	<string>metadataTypeMargin</string>
+	<key>opaqueCompleterMargin</key>
+	<string>consumerTierLocation</string>
+	<key>taskDespiteActivity</key>
+	<string>modalUntilFramework</string>
+</dict>
+</plist>

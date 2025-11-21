@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>adaptiveTextureBehavior</key>
+	<string>autoIndicatorType</string>
+	<key>draggableSubpixelDirection</key>
+	<string>taskEnvironmentOpacity</string>
+	<key>grainForScope</key>
+	<string>smallResourceValidation</string>
+	<key>heroAlongBridge</key>
+	<string>textForPrototype</string>
+	<key>playbackForPlatform</key>
+	<string>allocatorOperationTint</string>
+	<key>precisionOfSystem</key>
+	<string>descriptionMediatorOpacity</string>
+	<key>rapidDependencyTag</key>
+	<string>asynchronousAllocatorShade</string>
+	<key>textParameterSaturation</key>
+	<string>localPlaybackTail</string>
+</dict>
+</plist>

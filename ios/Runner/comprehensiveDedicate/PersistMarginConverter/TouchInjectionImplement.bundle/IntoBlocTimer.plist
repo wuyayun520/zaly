@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dependencyChainType</key>
+	<string>cartesianSubscriptionInterval</string>
+	<key>errorOperationTheme</key>
+	<string>specifierPerFramework</string>
+	<key>featureScopeCoord</key>
+	<string>navigationPerPlatform</string>
+	<key>injectionLikeAdapter</key>
+	<string>enabledNavigatorCoord</string>
+	<key>injectionViaWork</key>
+	<string>isolateChainStyle</string>
+	<key>intuitiveTableAcceleration</key>
+	<string>sinkOutsideVisitor</string>
+	<key>materialDecorationStatus</key>
+	<string>gesturedetectorWorkTension</string>
+	<key>reducerShapeFeedback</key>
+	<string>sharedStreamAlignment</string>
+	<key>tabbarAlongStrategy</key>
+	<string>mutableTaskTransparency</string>
+</dict>
+</plist>

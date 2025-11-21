@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>brushWorkName</key>
+	<string>blocJobCoord</string>
+	<key>interactorMediatorSkewy</key>
+	<string>persistentRequestVelocity</string>
+	<key>mutableSubpixelShade</key>
+	<string>enabledBlocColor</string>
+	<key>sequentialEntityShade</key>
+	<string>typicalInjectionEdge</string>
+	<key>skirtEnvironmentVisible</key>
+	<string>activeExtensionState</string>
+</dict>
+</plist>

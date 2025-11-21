@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asynchronousRepositoryAlignment</key>
+	<string>controllerAmongPlatform</string>
+	<key>cubitDecoratorLeft</key>
+	<string>multiSessionInset</string>
+	<key>interactorForProcess</key>
+	<string>callbackMediatorKind</string>
+	<key>requestWithJob</key>
+	<string>groupUntilTask</string>
+</dict>
+</plist>

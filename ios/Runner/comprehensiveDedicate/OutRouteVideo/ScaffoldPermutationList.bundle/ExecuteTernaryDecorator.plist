@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asynchronousTouchKind</key>
+	<string>curveFlyweightFormat</string>
+	<key>composableWorkflowTint</key>
+	<string>containerWithWork</string>
+	<key>expandedTaskRotation</key>
+	<string>usedBlocIndex</string>
+	<key>lostScrollOffset</key>
+	<string>widgetParameterScale</string>
+	<key>methodLikeVariable</key>
+	<string>concurrentBuilderType</string>
+	<key>referenceParameterVisible</key>
+	<string>certificateAlongObserver</string>
+	<key>sequentialStoreShade</key>
+	<string>repositoryAtKind</string>
+	<key>statefulAdapterOpacity</key>
+	<string>zoneLayerScale</string>
+	<key>themeInsideState</key>
+	<string>reducerBeyondActivity</string>
+	<key>usecasePrototypeAppearance</key>
+	<string>roleFormSize</string>
+</dict>
+</plist>

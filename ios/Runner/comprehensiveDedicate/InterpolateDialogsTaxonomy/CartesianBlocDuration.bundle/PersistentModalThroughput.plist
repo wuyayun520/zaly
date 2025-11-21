@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncCompositeVisible</key>
+	<string>specifierStageState</string>
+	<key>consumerViaParam</key>
+	<string>responseAlongPlatform</string>
+	<key>gemSincePlatform</key>
+	<string>requestVersusFramework</string>
+</dict>
+</plist>

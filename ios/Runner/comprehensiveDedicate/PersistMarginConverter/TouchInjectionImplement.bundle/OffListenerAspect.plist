@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>behaviorDuringBridge</key>
+	<string>cellLikeChain</string>
+	<key>commandThroughFunction</key>
+	<string>segmentFrameworkSize</string>
+	<key>compositionalHandlerSize</key>
+	<string>nativeStateBorder</string>
+	<key>repositoryWithoutProcess</key>
+	<string>actionAgainstState</string>
+	<key>stateContainLayer</key>
+	<string>channelBridgeAlignment</string>
+</dict>
+</plist>

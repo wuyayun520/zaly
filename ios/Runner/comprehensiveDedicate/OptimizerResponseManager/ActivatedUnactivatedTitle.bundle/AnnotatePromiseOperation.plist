@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleRequestMargin</key>
+	<string>multiUsecaseCenter</string>
+	<key>allocatorAmongScope</key>
+	<string>beginnerRemainderBottom</string>
+	<key>controllerOutsideAction</key>
+	<string>associatedManagerTop</string>
+	<key>exceptionByLevel</key>
+	<string>storyboardContainMethod</string>
+	<key>heroBufferIndex</key>
+	<string>catalystKindRotation</string>
+	<key>navigatorMethodSaturation</key>
+	<string>rapidFutureBrightness</string>
+	<key>newestMenuPosition</key>
+	<string>tickerAtStrategy</string>
+	<key>projectWithoutParameter</key>
+	<string>agileGemPosition</string>
+	<key>tappableScreenSize</key>
+	<string>eventPerCycle</string>
+</dict>
+</plist>

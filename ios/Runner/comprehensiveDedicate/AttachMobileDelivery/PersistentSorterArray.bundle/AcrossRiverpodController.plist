@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>boxAndStyle</key>
+	<string>clipperExceptOperation</string>
+	<key>bulletFacadeTension</key>
+	<string>taskBySingleton</string>
+	<key>loopLikeStructure</key>
+	<string>arithmeticLikeInterpreter</string>
+	<key>rowThanComposite</key>
+	<string>secondQueueDirection</string>
+	<key>singletonAndFacade</key>
+	<string>mainSpineSpeed</string>
+</dict>
+</plist>

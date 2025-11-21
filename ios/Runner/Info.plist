@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BGTaskSchedulerPermittedIdentifiers</key>
+	<array>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	</array>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
@@ -22,8 +26,40 @@
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>velvy</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>velvy</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.384011916546-mve13am5ge86g2qdjsoaj8cq5t4347gu</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>GIDClientID</key>
+	<string>384011916546-mve13am5ge86g2qdjsoaj8cq5t4347gu.apps.googleusercontent.com</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>weixin</string>
+		<string>lark</string>
+		<string>wxwork</string>
+		<string>dingtalk</string>
+		<string>app-settings</string>
+		<string>itms-apps</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -33,6 +69,10 @@
 	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Velvy needs access to camera for video calls and taking photos for chat.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Velvy want uses your location data continuously to display users near you, enhancing your social interactions and recommendations. If you deny this permission, nearby users will not be shown.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Velvy requires your location while using the app to provide location-based features, such as finding nearby events, connecting with local users, and delivering relevant content based on your area.</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Velvy needs access to microphone for video calls and recording voice messages in chat.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
@@ -46,6 +86,9 @@
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>
+		<string>fetch</string>
+		<string>processing</string>
+		<string>remote-notification</string>
 	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
@@ -62,5 +105,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>

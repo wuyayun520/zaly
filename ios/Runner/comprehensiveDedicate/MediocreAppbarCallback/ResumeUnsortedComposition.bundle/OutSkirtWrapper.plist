@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>consumerVisitorInteraction</key>
+	<string>tickerTypeDelay</string>
+	<key>heapPerBuffer</key>
+	<string>screenParameterTint</string>
+	<key>resourceViaBuffer</key>
+	<string>futureViaVar</string>
+	<key>rowBufferOrigin</key>
+	<string>basicOptimizerMomentum</string>
+	<key>staticCurveMode</key>
+	<string>localizationVisitorTag</string>
+	<key>subpixelContainJob</key>
+	<string>mediaqueryLayerShade</string>
+	<key>swiftAdapterLeft</key>
+	<string>graphicPerVar</string>
+</dict>
+</plist>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionValueValidation</key>
+	<string>keyButtonBorder</string>
+	<key>factoryForType</key>
+	<string>isolateIncludeSystem</string>
+	<key>factoryLikeScope</key>
+	<string>visibleProgressbarTheme</string>
+	<key>liteIntegerRight</key>
+	<string>pinchableAllocatorFeedback</string>
+	<key>offsetAgainstVisitor</key>
+	<string>textWorkRotation</string>
+	<key>pinchableAwaitRate</key>
+	<string>reusableInterfaceDensity</string>
+	<key>presenterKindCenter</key>
+	<string>batchOfLevel</string>
+	<key>progressbarAboutPattern</key>
+	<string>permanentTickerColor</string>
+	<key>statelessConfigurationFlags</key>
+	<string>subscriptionThanScope</string>
+	<key>taskOutsideParam</key>
+	<string>handlerNearScope</string>
+</dict>
+</plist>

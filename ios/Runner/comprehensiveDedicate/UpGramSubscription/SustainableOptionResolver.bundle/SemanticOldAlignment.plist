@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>buttonByTask</key>
+	<string>disparateSpriteOrientation</string>
+	<key>crucialSkinFlags</key>
+	<string>originalAnchorTop</string>
+	<key>customizedZoneSaturation</key>
+	<string>adaptiveMonsterMomentum</string>
+	<key>graphPerKind</key>
+	<string>serviceBufferSaturation</string>
+	<key>mediaqueryActionPosition</key>
+	<string>tableByJob</string>
+	<key>profilePlatformInset</key>
+	<string>ephemeralEquipmentType</string>
+	<key>resolverForVisitor</key>
+	<string>symbolThroughState</string>
+	<key>streamFormVisible</key>
+	<string>builderThroughForm</string>
+	<key>utilParameterMargin</key>
+	<string>errorTaskRate</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentLayerVisible</key>
+	<string>slashWithoutAdapter</string>
+	<key>appbarAdapterFrequency</key>
+	<string>handlerBesideContext</string>
+	<key>drawerAgainstAction</key>
+	<string>loopLayerTransparency</string>
+	<key>mainEventInset</key>
+	<string>dynamicUtilBehavior</string>
+	<key>mobxCompositeKind</key>
+	<string>flexWithoutProcess</string>
+	<key>modulusFromPattern</key>
+	<string>effectAroundComposite</string>
+	<key>observerActivitySpacing</key>
+	<string>popupAsProxy</string>
+	<key>subscriptionAmongState</key>
+	<string>characterFacadeFeedback</string>
+	<key>textIncludeDecorator</key>
+	<string>matrixDespiteType</string>
+</dict>
+</plist>

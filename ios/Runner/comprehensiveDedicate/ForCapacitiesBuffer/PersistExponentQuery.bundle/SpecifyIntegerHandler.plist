@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alignmentMediatorScale</key>
+	<string>constraintModeInset</string>
+	<key>builderPhaseMode</key>
+	<string>labelVersusFramework</string>
+	<key>functionalConstraintFlags</key>
+	<string>gesturedetectorPlatformBottom</string>
+	<key>greatCommandMode</key>
+	<string>skirtStructureLeft</string>
+	<key>largeDelegateBorder</key>
+	<string>canvasStageName</string>
+	<key>petFrameworkName</key>
+	<string>factoryInterpreterResponse</string>
+	<key>prevTextureSpacing</key>
+	<string>buttonThanPrototype</string>
+	<key>roleCycleAcceleration</key>
+	<string>stampParamValidation</string>
+	<key>statefulFlexSkewx</key>
+	<string>cubeModeOrigin</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>autoSkinOrientation</key>
+	<string>nativeConsumerTransparency</string>
+	<key>buttonDuringFlyweight</key>
+	<string>uniqueTextSpeed</string>
+	<key>finalAnchorValidation</key>
+	<string>singleSliderState</string>
+	<key>movementProxyScale</key>
+	<string>reducerUntilStyle</string>
+	<key>positionContainDecorator</key>
+	<string>controllerJobPadding</string>
+	<key>publicSymbolVelocity</key>
+	<string>dependencyAwayVariable</string>
+	<key>sliderCommandBehavior</key>
+	<string>stampAdapterForce</string>
+	<key>tensorAssetTag</key>
+	<string>axisUntilMemento</string>
+</dict>
+</plist>

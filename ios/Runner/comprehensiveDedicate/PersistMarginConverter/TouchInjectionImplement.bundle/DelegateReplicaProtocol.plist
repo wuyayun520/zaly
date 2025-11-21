@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>boxshadowCommandMargin</key>
+	<string>drawerTempleSaturation</string>
+	<key>draggableResourceBound</key>
+	<string>gesturedetectorActionColor</string>
+	<key>factoryMethodOffset</key>
+	<string>hyperbolicTabbarDelay</string>
+	<key>invisibleMobileFrequency</key>
+	<string>inactiveDependencyValidation</string>
+	<key>resilientSceneDepth</key>
+	<string>viewModeContrast</string>
+	<key>taskNearInterpreter</key>
+	<string>spriteTierStyle</string>
+</dict>
+</plist>

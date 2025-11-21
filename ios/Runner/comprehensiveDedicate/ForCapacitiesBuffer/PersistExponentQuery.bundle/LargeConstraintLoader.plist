@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>descriptionPerChain</key>
+	<string>decorationAndActivity</string>
+	<key>resilientTransitionBrightness</key>
+	<string>gesturedetectorStylePadding</string>
+	<key>richtextWithoutState</key>
+	<string>durationPerState</string>
+	<key>unaryVisitorSkewy</key>
+	<string>normalAlignmentForce</string>
+	<key>uniformActivityOpacity</key>
+	<string>switchFrameworkValidation</string>
+</dict>
+</plist>

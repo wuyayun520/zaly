@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blocActivityBrightness</key>
+	<string>entityAgainstParameter</string>
+	<key>decorationNumberFormat</key>
+	<string>appbarBeyondMode</string>
+	<key>methodAmongLevel</key>
+	<string>desktopActivitySpeed</string>
+	<key>queueThroughNumber</key>
+	<string>containerAroundFramework</string>
+	<key>smartPresenterSkewx</key>
+	<string>displayablePlateContrast</string>
+</dict>
+</plist>

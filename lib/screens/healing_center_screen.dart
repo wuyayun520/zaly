@@ -1,12 +1,120 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'ai_partner_screen.dart';
 import 'mood_journal_screen.dart';
 import 'breathing_exercise_screen.dart';
 import 'wellness_library_screen.dart';
 import 'meditation_music_screen.dart';
+import 'velvy_subscriptions_screen.dart';
 
-class HealingCenterScreen extends StatelessWidget {
+class HealingCenterScreen extends StatefulWidget {
   const HealingCenterScreen({super.key});
+
+  @override
+  State<HealingCenterScreen> createState() => _HealingCenterScreenState();
+}
+
+class _HealingCenterScreenState extends State<HealingCenterScreen> {
+
+  // 检查用户是否为有效的 Velvy Premium 用户
+  Future<bool> _checkVelvyPremiumStatus() async {
+    final prefs = await SharedPreferences.getInstance();
+    final isPremium = prefs.getBool('isVelvyPremium') ?? prefs.getBool('isVip') ?? false;
+    
+    if (!isPremium) {
+      return false;
+    }
+    
+    // 检查是否过期
+    final expiryStr = prefs.getString('velvyPremiumExpiry') ?? prefs.getString('vipExpiry');
+    if (expiryStr == null) {
+      return false;
+    }
+    
+    final expiry = DateTime.tryParse(expiryStr);
+    if (expiry == null) {
+      return false;
+    }
+    
+    // 检查是否已过期
+    return DateTime.now().isBefore(expiry);
+  }
+
+  // 显示需要 Premium 的确认对话框
+  Future<void> _showPremiumRequiredDialog(String featureName) async {
+    final shouldSubscribe = await showDialog<bool>(
+      context: context,
+      builder: (context) => AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        title: const Text(
+          'Velvy Premium Required',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              '$featureName is a Premium feature.',
+              style: const TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 12),
+            const Text(
+              'Subscribe to Velvy Premium to unlock all healing tools and features.',
+              style: TextStyle(
+                fontSize: 14,
+                color: Colors.black87,
+              ),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(false),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            onPressed: () => Navigator.of(context).pop(true),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFFF6B9D),
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: const Text('Subscribe'),
+          ),
+        ],
+      ),
+    );
+
+    if (shouldSubscribe == true && mounted) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => const VelvySubscriptionsPage(),
+        ),
+      );
+    }
+  }
+
+  // 处理功能点击，检查 Premium 状态
+  Future<void> _handleFeatureTap(String featureName, VoidCallback onSuccess) async {
+    final isPremium = await _checkVelvyPremiumStatus();
+    
+    if (isPremium) {
+      // 是 Premium 用户，直接执行功能
+      onSuccess();
+    } else {
+      // 不是 Premium 用户，显示对话框
+      _showPremiumRequiredDialog(featureName);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -67,11 +175,16 @@ class HealingCenterScreen extends StatelessWidget {
                           colors: [Color(0xFFFF6B9D), Color(0xFFFF8FB3)],
                         ),
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const MoodJournalScreen(),
-                            ),
+                          _handleFeatureTap(
+                            'Mood Journal',
+                            () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const MoodJournalScreen(),
+                                ),
+                              );
+                            },
                           );
                         },
                       ),
@@ -84,11 +197,16 @@ class HealingCenterScreen extends StatelessWidget {
                           colors: [Color(0xFFA496FA), Color(0xFFB8ACFF)],
                         ),
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const BreathingExerciseScreen(),
-                            ),
+                          _handleFeatureTap(
+                            'Breathing Exercise',
+                            () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const BreathingExerciseScreen(),
+                                ),
+                              );
+                            },
                           );
                         },
                       ),
@@ -101,11 +219,16 @@ class HealingCenterScreen extends StatelessWidget {
                           colors: [Color(0xFF98D8C8), Color(0xFFB0E0E6)],
                         ),
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const MeditationMusicScreen(),
-                            ),
+                          _handleFeatureTap(
+                            'Meditation Music',
+                            () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const MeditationMusicScreen(),
+                                ),
+                              );
+                            },
                           );
                         },
                       ),
@@ -118,11 +241,16 @@ class HealingCenterScreen extends StatelessWidget {
                           colors: [Color(0xFF90EE90), Color(0xFFA8F5A8)],
                         ),
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const AIPartnerScreen(),
-                            ),
+                          _handleFeatureTap(
+                            'AI Partner',
+                            () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const AIPartnerScreen(),
+                                ),
+                              );
+                            },
                           );
                         },
                       ),
@@ -135,11 +263,16 @@ class HealingCenterScreen extends StatelessWidget {
                           colors: [Color(0xFFFFB347), Color(0xFFFFCC70)],
                         ),
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const WellnessLibraryScreen(),
-                            ),
+                          _handleFeatureTap(
+                            'Wellness Library',
+                            () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const WellnessLibraryScreen(),
+                                ),
+                              );
+                            },
                           );
                         },
                       ),

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>denseTickerAcceleration</key>
+	<string>cupertinoPositionVisibility</string>
+	<key>painterAtStyle</key>
+	<string>layoutFromShape</string>
+	<key>reducerByPrototype</key>
+	<string>activeLocalizationInteraction</string>
+	<key>semanticObserverTag</key>
+	<string>swiftForSingleton</string>
+</dict>
+</plist>

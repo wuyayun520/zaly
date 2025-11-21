@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>adaptiveEffectInteraction</key>
+	<string>presenterMediatorTension</string>
+	<key>cubitAdapterRotation</key>
+	<string>controllerNearPlatform</string>
+	<key>inactiveSignMargin</key>
+	<string>unsortedTabviewPosition</string>
+	<key>instructionCycleCenter</key>
+	<string>descriptionParameterScale</string>
+	<key>lostMomentumCount</key>
+	<string>associatedIntensityRight</string>
+	<key>usageThroughState</key>
+	<string>widgetInterpreterTint</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capacitiesAdapterPressure</key>
+	<string>switchLayerTheme</string>
+	<key>cardBesideBuffer</key>
+	<string>hashLayerLeft</string>
+	<key>curveWithoutObserver</key>
+	<string>flexibleCompleterTop</string>
+	<key>decorationModeSpacing</key>
+	<string>tickerTierBound</string>
+	<key>directlyAnimationEdge</key>
+	<string>positionAgainstContext</string>
+	<key>instructionVersusMethod</key>
+	<string>autoControllerKind</string>
+	<key>permissiveLayoutBrightness</key>
+	<string>callbackAsState</string>
+	<key>signScopeDelay</key>
+	<string>observerAsMediator</string>
+	<key>streamNearPlatform</key>
+	<string>directNormMomentum</string>
+</dict>
+</plist>

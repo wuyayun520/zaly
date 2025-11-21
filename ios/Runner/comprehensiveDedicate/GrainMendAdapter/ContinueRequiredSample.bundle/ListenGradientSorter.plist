@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>disabledCompleterAcceleration</key>
+	<string>constraintFormSpeed</string>
+	<key>geometricLocalizationDelay</key>
+	<string>multiplicationForInterpreter</string>
+	<key>presenterTempleSkewy</key>
+	<string>routeBySystem</string>
+	<key>protocolDespiteStyle</key>
+	<string>dialogsInterpreterTheme</string>
+	<key>sequentialRiverpodOpacity</key>
+	<string>effectScopeCount</string>
+	<key>stampPerTask</key>
+	<string>specifyRemainderDirection</string>
+	<key>taskVersusAction</key>
+	<string>granularSignLocation</string>
+	<key>textJobValidation</key>
+	<string>switchContainState</string>
+</dict>
+</plist>

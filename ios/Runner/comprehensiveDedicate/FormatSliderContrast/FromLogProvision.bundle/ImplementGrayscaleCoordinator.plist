@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bitrateEnvironmentKind</key>
+	<string>mobileInterpreterHue</string>
+	<key>particleDecoratorOrientation</key>
+	<string>typicalApertureIndex</string>
+	<key>petOutsideOperation</key>
+	<string>reusableSubpixelEdge</string>
+	<key>playbackDespiteActivity</key>
+	<string>subpixelWithPattern</string>
+	<key>protectedUsageRotation</key>
+	<string>pivotalTaskBehavior</string>
+	<key>providerUntilPrototype</key>
+	<string>capacitiesVariableInset</string>
+	<key>sliderWithoutPattern</key>
+	<string>streamModeBorder</string>
+	<key>zoneMediatorAppearance</key>
+	<string>protectedContainerScale</string>
+</dict>
+</plist>

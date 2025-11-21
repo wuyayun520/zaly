@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>behaviorAndShape</key>
+	<string>matrixExceptCycle</string>
+	<key>memberUntilFacade</key>
+	<string>optionSystemForce</string>
+	<key>missionEnvironmentShade</key>
+	<string>sensorVariableDuration</string>
+	<key>scaffoldVariableFlags</key>
+	<string>rowVariableOrientation</string>
+</dict>
+</plist>

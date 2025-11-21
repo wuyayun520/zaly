@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commandWorkInteraction</key>
+	<string>missionTempleRight</string>
+	<key>dedicatedBuilderShade</key>
+	<string>queueAlongScope</string>
+	<key>functionalButtonLocation</key>
+	<string>localizationAtOperation</string>
+	<key>pointSinceValue</key>
+	<string>capsuleUntilPhase</string>
+	<key>reusableScreenOrientation</key>
+	<string>ternaryDuringBridge</string>
+	<key>serviceAboutStage</key>
+	<string>publicViewMargin</string>
+</dict>
+</plist>

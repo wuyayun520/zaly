@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cupertinoVariableFeedback</key>
+	<string>activatedZoneMode</string>
+	<key>giftMementoPadding</key>
+	<string>signatureWithoutComposite</string>
+	<key>lostSizeAcceleration</key>
+	<string>requiredGridRate</string>
+	<key>menuBridgeVelocity</key>
+	<string>grayscaleCompositeMode</string>
+	<key>routeAgainstTask</key>
+	<string>descriptionMementoOpacity</string>
+	<key>sliderAdapterSkewx</key>
+	<string>segueOfActivity</string>
+	<key>streamWithoutMode</key>
+	<string>hyperbolicViewInterval</string>
+</dict>
+</plist>

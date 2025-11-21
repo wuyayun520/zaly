@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activityValueSpacing</key>
+	<string>imageActivityOffset</string>
+	<key>completerJobSpeed</key>
+	<string>rowLayerDelay</string>
+	<key>consultativeAnchorIndex</key>
+	<string>oldCardColor</string>
+	<key>exceptionStructureValidation</key>
+	<string>localizationBufferPressure</string>
+	<key>gridPrototypeTop</key>
+	<string>painterOfComposite</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>coordinatorAdapterRight</key>
+	<string>sceneObserverEdge</string>
+	<key>descriptorAtMode</key>
+	<string>controllerAmongForm</string>
+	<key>numericalInterfaceRate</key>
+	<string>directlyCosineVisibility</string>
+	<key>protocolPlatformBorder</key>
+	<string>singleAlignmentVisibility</string>
+	<key>streamLevelMomentum</key>
+	<string>stateStyleTheme</string>
+	<key>viewForType</key>
+	<string>navigatorFrameworkCenter</string>
+</dict>
+</plist>

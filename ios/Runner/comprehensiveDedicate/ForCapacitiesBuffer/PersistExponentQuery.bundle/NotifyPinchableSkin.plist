@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commandAgainstCycle</key>
+	<string>textureForShape</string>
+	<key>cycleAsFacade</key>
+	<string>routerIncludePlatform</string>
+	<key>fixedChapterSize</key>
+	<string>finalLabelCenter</string>
+	<key>gateWorkShade</key>
+	<string>memberAndVariable</string>
+	<key>permissiveMissionOrientation</key>
+	<string>matrixFacadeOrigin</string>
+	<key>storagePlatformType</key>
+	<string>descriptionNearKind</string>
+	<key>subtleSpriteAlignment</key>
+	<string>mediaMediatorPadding</string>
+</dict>
+</plist>

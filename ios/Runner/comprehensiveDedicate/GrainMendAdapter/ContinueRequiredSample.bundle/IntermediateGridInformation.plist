@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arithmeticLevelStyle</key>
+	<string>multiCompleterTail</string>
+	<key>imperativeAssetFeedback</key>
+	<string>subscriptionDecoratorHue</string>
+	<key>keyGroupValidation</key>
+	<string>entityNearVisitor</string>
+	<key>movementWithoutVariable</key>
+	<string>tweenInMemento</string>
+	<key>reducerStateStatus</key>
+	<string>completerLevelHue</string>
+	<key>serviceProcessVelocity</key>
+	<string>entropyEnvironmentKind</string>
+	<key>stepByComposite</key>
+	<string>ephemeralCellCoord</string>
+</dict>
+</plist>

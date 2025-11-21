@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>borderOperationInset</key>
+	<string>hardInterpolationFeedback</string>
+	<key>promisePatternState</key>
+	<string>localRoleTheme</string>
+	<key>reactiveControllerOrientation</key>
+	<string>animatedcontainerIncludeBuffer</string>
+	<key>symmetricLossHead</key>
+	<string>symmetricMarginDuration</string>
+	<key>techniqueAndMethod</key>
+	<string>clipperNearProxy</string>
+	<key>viewStrategyBehavior</key>
+	<string>priorLabelDuration</string>
+</dict>
+</plist>

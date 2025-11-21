@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activatedChallengeLocation</key>
+	<string>singletonInsideInterpreter</string>
+	<key>advancedProgressbarTail</key>
+	<string>controllerIncludeAction</string>
+	<key>cosineTierBehavior</key>
+	<string>scaleActionAppearance</string>
+	<key>eagerRouteTransparency</key>
+	<string>temporarySingletonLocation</string>
+	<key>graphCommandShade</key>
+	<string>liteNavigatorSkewx</string>
+	<key>groupAwayCycle</key>
+	<string>resizableFactorySpeed</string>
+	<key>priorityPhaseRotation</key>
+	<string>invisibleIsolateMomentum</string>
+	<key>providerDuringState</key>
+	<string>apertureMementoKind</string>
+</dict>
+</plist>

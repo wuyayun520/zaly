@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asyncVersusLevel</key>
+	<string>interfaceBufferHue</string>
+	<key>compositionActionAlignment</key>
+	<string>largeTabbarVisibility</string>
+	<key>curveVarDistance</key>
+	<string>loopObserverBorder</string>
+	<key>deferredResourceOrigin</key>
+	<string>builderAgainstValue</string>
+	<key>newestOffsetShape</key>
+	<string>gestureObserverMode</string>
+	<key>persistentMultiplicationValidation</key>
+	<string>subtleRectScale</string>
+	<key>sceneSystemBrightness</key>
+	<string>curveBySingleton</string>
+</dict>
+</plist>

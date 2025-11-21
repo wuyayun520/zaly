@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accordionConvolutionDirection</key>
+	<string>diffableTopicOrientation</string>
+	<key>agileFeatureMargin</key>
+	<string>interfaceBufferType</string>
+	<key>builderPlatformFrequency</key>
+	<string>permanentTimerMomentum</string>
+	<key>concurrentTaskTransparency</key>
+	<string>plateScopeRotation</string>
+	<key>iconStageAppearance</key>
+	<string>ternaryStructureName</string>
+	<key>lostDependencyCenter</key>
+	<string>requestObserverSpacing</string>
+	<key>missedHistogramVisible</key>
+	<string>lostEventInterval</string>
+	<key>pinchableBlocFormat</key>
+	<string>subtleMarginLocation</string>
+	<key>progressbarBesideCycle</key>
+	<string>durationNearCycle</string>
+</dict>
+</plist>

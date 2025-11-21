@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>clipperPrototypeStyle</key>
+	<string>awaitInsideSystem</string>
+	<key>cupertinoUsecaseFeedback</key>
+	<string>previewAsVisitor</string>
+	<key>curveBeyondActivity</key>
+	<string>standaloneDurationStatus</string>
+	<key>discardedBlocPadding</key>
+	<string>mediumAspectratioDelay</string>
+	<key>fusedScrollShade</key>
+	<string>sceneInChain</string>
+	<key>navigationStateVisibility</key>
+	<string>bulletBufferTint</string>
+	<key>navigatorDecoratorInset</key>
+	<string>enabledSensorTransparency</string>
+	<key>radiusMethodMode</key>
+	<string>imperativeBufferCenter</string>
+	<key>rowStrategyLeft</key>
+	<string>techniqueSinceParameter</string>
+	<key>unaryFormIndex</key>
+	<string>criticalBehaviorMode</string>
+</dict>
+</plist>

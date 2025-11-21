@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>buttonFromEnvironment</key>
+	<string>layerThroughChain</string>
+	<key>concurrentHandlerSpacing</key>
+	<string>responseSystemTransparency</string>
+	<key>interfaceDuringAction</key>
+	<string>animationCycleVelocity</string>
+	<key>remainderOutsideStructure</key>
+	<string>gestureAsTier</string>
+</dict>
+</plist>

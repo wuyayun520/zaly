@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>factoryBesideFacade</key>
+	<string>sharedFlexAppearance</string>
+	<key>gridviewSinceCommand</key>
+	<string>typicalCupertinoColor</string>
+	<key>handlerDespiteObserver</key>
+	<string>textureModeForce</string>
+	<key>lastCacheDirection</key>
+	<string>cellDuringAction</string>
+	<key>mainWidgetSaturation</key>
+	<string>prismaticRouteValidation</string>
+	<key>matrixFlyweightCenter</key>
+	<string>observerAtStyle</string>
+	<key>stateAboutStrategy</key>
+	<string>variantVisitorSaturation</string>
+	<key>streamViaType</key>
+	<string>paddingSystemPressure</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>deferredInkwellShape</key>
+	<string>usageOrBridge</string>
+	<key>isolateFromMemento</key>
+	<string>playbackAgainstOperation</string>
+	<key>liteLayerSaturation</key>
+	<string>singleContainerIndex</string>
+	<key>materialExceptLayer</key>
+	<string>operationByBuffer</string>
+	<key>modulusProcessOrientation</key>
+	<string>specifierExceptNumber</string>
+	<key>pageviewWorkIndex</key>
+	<string>intensityEnvironmentDirection</string>
+	<key>permanentObserverTension</key>
+	<string>queryUntilFramework</string>
+	<key>scrollDespitePlatform</key>
+	<string>utilDuringChain</string>
+</dict>
+</plist>

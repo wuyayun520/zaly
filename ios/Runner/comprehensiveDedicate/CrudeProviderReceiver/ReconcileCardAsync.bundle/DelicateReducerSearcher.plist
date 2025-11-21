@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>advancedMenuType</key>
+	<string>appbarSinceBridge</string>
+	<key>asynchronousProviderCenter</key>
+	<string>animatedcontainerSingletonPosition</string>
+	<key>constraintInterpreterInterval</key>
+	<string>listenerNearAction</string>
+	<key>criticalSinkBehavior</key>
+	<string>textParameterIndex</string>
+	<key>enabledHandlerSpacing</key>
+	<string>controllerThanState</string>
+	<key>fixedTextMode</key>
+	<string>gramStageSkewy</string>
+	<key>handlerFunctionLocation</key>
+	<string>imperativeEquipmentTension</string>
+	<key>logEnvironmentDepth</key>
+	<string>binaryViaProxy</string>
+	<key>singletonAlongActivity</key>
+	<string>difficultProgressbarShade</string>
+</dict>
+</plist>

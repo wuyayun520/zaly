@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>customizedAssetSize</key>
+	<string>mobxThroughActivity</string>
+	<key>declarativeNotifierName</key>
+	<string>controllerLevelFormat</string>
+	<key>effectContextAppearance</key>
+	<string>subpixelTypeDelay</string>
+	<key>groupMediatorBehavior</key>
+	<string>callbackNumberAlignment</string>
+	<key>kernelContainCycle</key>
+	<string>builderPlatformName</string>
+	<key>popupProxyInset</key>
+	<string>retainedInterfaceOffset</string>
+	<key>projectionTypeState</key>
+	<string>stampAdapterAlignment</string>
+	<key>tappableAllocatorFrequency</key>
+	<string>pointLevelBrightness</string>
+</dict>
+</plist>

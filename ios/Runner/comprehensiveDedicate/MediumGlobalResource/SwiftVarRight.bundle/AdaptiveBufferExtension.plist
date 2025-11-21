@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>builderKindCount</key>
+	<string>canvasPlatformTag</string>
+	<key>buttonDecoratorRate</key>
+	<string>autoKernelStyle</string>
+	<key>delegateInsideShape</key>
+	<string>controllerInsideSingleton</string>
+	<key>dependencyInsideWork</key>
+	<string>nextOffsetRotation</string>
+	<key>hardThemeShape</key>
+	<string>queueViaVisitor</string>
+	<key>mobxLevelKind</key>
+	<string>protectedPresenterOrientation</string>
+</dict>
+</plist>

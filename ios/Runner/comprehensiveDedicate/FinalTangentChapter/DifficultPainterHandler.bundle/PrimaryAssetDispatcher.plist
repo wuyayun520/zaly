@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseVarStyle</key>
+	<string>spriteTierType</string>
+	<key>entityLikeEnvironment</key>
+	<string>eventInsideLayer</string>
+	<key>groupLikeTask</key>
+	<string>grayscaleCycleTop</string>
+	<key>oldTickerDepth</key>
+	<string>capacitiesProcessFrequency</string>
+	<key>reusableMarginInterval</key>
+	<string>binaryAlongParameter</string>
+	<key>smallGrainName</key>
+	<string>tappableProjectAppearance</string>
+</dict>
+</plist>

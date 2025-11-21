@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activatedGridBorder</key>
+	<string>listviewMementoCount</string>
+	<key>capacitiesPrototypePadding</key>
+	<string>singleAlphaCenter</string>
+	<key>cubitLikeMode</key>
+	<string>opaqueFutureLeft</string>
+	<key>interactorOfValue</key>
+	<string>pinchableAnchorForce</string>
+	<key>invisibleCubitInset</key>
+	<string>activeGateOrigin</string>
+	<key>listenerDecoratorRight</key>
+	<string>resourceModeBehavior</string>
+	<key>navigatorWithMemento</key>
+	<string>methodAroundForm</string>
+	<key>otherPopupOpacity</key>
+	<string>composableSignatureInterval</string>
+	<key>vectorScopeFrequency</key>
+	<string>catalystAboutContext</string>
+</dict>
+</plist>

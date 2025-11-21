@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>anchorAdapterShape</key>
+	<string>textureOrMediator</string>
+	<key>channelByLayer</key>
+	<string>observerStyleMomentum</string>
+	<key>directConstraintRate</key>
+	<string>webHashPosition</string>
+	<key>logStyleType</key>
+	<string>sliderModeVelocity</string>
+	<key>pinchableLogBound</key>
+	<string>newestCompositionBorder</string>
+	<key>unactivatedScreenShape</key>
+	<string>uniformSingletonOpacity</string>
+</dict>
+</plist>

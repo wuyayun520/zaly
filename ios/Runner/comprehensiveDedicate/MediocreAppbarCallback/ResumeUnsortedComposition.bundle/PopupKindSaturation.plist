@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>backwardTransitionDuration</key>
+	<string>sensorShapeInterval</string>
+	<key>channelFunctionVisibility</key>
+	<string>sizeVariableCoord</string>
+	<key>completerAboutFramework</key>
+	<string>sessionContextOrigin</string>
+	<key>dynamicTimerSize</key>
+	<string>unactivatedStatelessSpeed</string>
+	<key>globalRequestRotation</key>
+	<string>persistentTransitionCount</string>
+	<key>relationalRiverpodBound</key>
+	<string>routerCycleFeedback</string>
+</dict>
+</plist>

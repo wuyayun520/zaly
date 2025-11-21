@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alphaThanSingleton</key>
+	<string>chapterBesideForm</string>
+	<key>deferredEventLeft</key>
+	<string>responseByTask</string>
+	<key>keyIsolateState</key>
+	<string>sinkFacadeDirection</string>
+	<key>nextQueryOrigin</key>
+	<string>providerSincePlatform</string>
+	<key>numericalChannelSpacing</key>
+	<string>subsequentGestureEdge</string>
+	<key>retainedAspectVisible</key>
+	<string>bufferStructureDirection</string>
+	<key>tappableAppbarRotation</key>
+	<string>hardUnaryOrigin</string>
+</dict>
+</plist>

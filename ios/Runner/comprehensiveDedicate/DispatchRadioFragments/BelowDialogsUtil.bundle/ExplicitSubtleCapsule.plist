@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>checklistWorkTail</key>
+	<string>cycleBridgeDelay</string>
+	<key>dependencyStyleForce</key>
+	<string>previewBesideChain</string>
+	<key>localMediaTheme</key>
+	<string>litePreviewPadding</string>
+	<key>marginIncludeCommand</key>
+	<string>screenInFlyweight</string>
+	<key>widgetOfScope</key>
+	<string>streamModeAlignment</string>
+</dict>
+</plist>

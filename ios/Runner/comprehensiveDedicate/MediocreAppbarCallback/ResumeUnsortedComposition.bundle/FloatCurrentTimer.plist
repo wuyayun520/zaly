@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>alertThroughPattern</key>
+	<string>screenOperationDensity</string>
+	<key>axisPlatformSkewx</key>
+	<string>inheritedTransitionOrigin</string>
+	<key>imperativeLayoutTint</key>
+	<string>robustSubscriptionFormat</string>
+	<key>interactorVersusFacade</key>
+	<string>cupertinoCommandBottom</string>
+	<key>slashAgainstActivity</key>
+	<string>textObserverVisible</string>
+	<key>taskUntilLayer</key>
+	<string>compositionVersusShape</string>
+</dict>
+</plist>

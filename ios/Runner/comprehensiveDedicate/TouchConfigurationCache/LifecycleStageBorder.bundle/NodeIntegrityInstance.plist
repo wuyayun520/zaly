@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cubitFrameworkDelay</key>
+	<string>compositionByDecorator</string>
+	<key>directlyButtonRight</key>
+	<string>liteSpriteSize</string>
+	<key>providerContainBuffer</key>
+	<string>ignoredBuilderOrientation</string>
+	<key>riverpodOrStrategy</key>
+	<string>deferredActivityCount</string>
+</dict>
+</plist>

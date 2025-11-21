@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>diversifiedInterpolationFrequency</key>
+	<string>independentPlateStatus</string>
+	<key>localizationAsFacade</key>
+	<string>themeAgainstTask</string>
+	<key>memberDespiteFunction</key>
+	<string>priorityAgainstActivity</string>
+	<key>stateInParameter</key>
+	<string>viewAwayParam</string>
+	<key>unsortedUsecaseAppearance</key>
+	<string>pageviewMethodDistance</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>equipmentOutsideParameter</key>
+	<string>beginnerStorageBrightness</string>
+	<key>lastArithmeticDistance</key>
+	<string>paddingValueName</string>
+	<key>listviewActionInset</key>
+	<string>labelFormBorder</string>
+	<key>pinchableLocalizationHead</key>
+	<string>descriptorTempleTension</string>
+	<key>rectPerStructure</key>
+	<string>mobileStageKind</string>
+	<key>responsiveStoreCount</key>
+	<string>labelWithPrototype</string>
+</dict>
+</plist>

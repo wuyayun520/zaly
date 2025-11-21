@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>crudePlaybackTheme</key>
+	<string>controllerCommandIndex</string>
+	<key>exceptionIncludePlatform</key>
+	<string>spineOrTemple</string>
+	<key>gestureFromAdapter</key>
+	<string>materialPopupState</string>
+	<key>localizationVarFormat</key>
+	<string>requiredQueryRotation</string>
+	<key>publicThemeTag</key>
+	<string>desktopGramVisibility</string>
+	<key>sharedNotificationSkewx</key>
+	<string>textTempleBehavior</string>
+	<key>singletonExceptStructure</key>
+	<string>crucialSceneInterval</string>
+	<key>zoneIncludeTier</key>
+	<string>blocInsideStage</string>
+</dict>
+</plist>

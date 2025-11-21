@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bufferShapeOrientation</key>
+	<string>firstTangentCoord</string>
+	<key>eventInStyle</key>
+	<string>transitionVersusSingleton</string>
+	<key>queryFromSystem</key>
+	<string>otherDrawerPosition</string>
+	<key>threadActionCenter</key>
+	<string>ephemeralLabelDistance</string>
+	<key>usedSampleBorder</key>
+	<string>requestExceptPrototype</string>
+	<key>vectorVisitorTail</key>
+	<string>routerBridgeKind</string>
+</dict>
+</plist>

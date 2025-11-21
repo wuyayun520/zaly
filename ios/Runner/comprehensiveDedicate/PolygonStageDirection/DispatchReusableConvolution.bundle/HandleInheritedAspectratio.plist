@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bufferModeContrast</key>
+	<string>interfaceViaVisitor</string>
+	<key>concurrentGradientOrientation</key>
+	<string>operationAgainstVariable</string>
+	<key>queryProxyTag</key>
+	<string>viewAlongVar</string>
+	<key>sizeAboutMediator</key>
+	<string>tweenIncludeMediator</string>
+</dict>
+</plist>

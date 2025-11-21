@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationFrameworkPressure</key>
+	<string>isolateProxyType</string>
+	<key>granularSineBrightness</key>
+	<string>localizationPerBuffer</string>
+	<key>presenterDecoratorDirection</key>
+	<string>checklistFunctionOffset</string>
+	<key>robustListenerDelay</key>
+	<string>scrollableManagerPadding</string>
+	<key>sharedStoryboardLocation</key>
+	<string>modulusOutsideCommand</string>
+	<key>signatureMediatorRotation</key>
+	<string>viewLayerBehavior</string>
+</dict>
+</plist>

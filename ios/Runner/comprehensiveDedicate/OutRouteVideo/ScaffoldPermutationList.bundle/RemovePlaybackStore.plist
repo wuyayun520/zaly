@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>entityStateAppearance</key>
+	<string>seamlessSessionStatus</string>
+	<key>menuAndFlyweight</key>
+	<string>mediumViewSaturation</string>
+	<key>navigatorPhaseDuration</key>
+	<string>offsetStyleTint</string>
+	<key>providerByLayer</key>
+	<string>anchorAmongAction</string>
+	<key>segmentVarShade</key>
+	<string>compositionalStorageBorder</string>
+	<key>semanticScaffoldBehavior</key>
+	<string>repositoryIncludeVar</string>
+	<key>sessionAgainstProcess</key>
+	<string>axisAndSystem</string>
+	<key>sortedProviderSpacing</key>
+	<string>responseFacadeTop</string>
+</dict>
+</plist>

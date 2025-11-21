@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>adaptiveTickerValidation</key>
+	<string>smartObserverStyle</string>
+	<key>allocatorBridgeOrientation</key>
+	<string>temporaryProtocolInterval</string>
+	<key>dropdownbuttonBeyondType</key>
+	<string>singletonAboutFacade</string>
+	<key>integerPatternInteraction</key>
+	<string>subsequentCallbackShade</string>
+	<key>isolateFormRotation</key>
+	<string>typicalThemeEdge</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>appbarDuringProcess</key>
+	<string>equalizationParameterTheme</string>
+	<key>delegateViaWork</key>
+	<string>completerFacadeMode</string>
+	<key>localizationMementoVelocity</key>
+	<string>progressbarViaMediator</string>
+	<key>mapOfPattern</key>
+	<string>parallelGateTransparency</string>
+	<key>materialAsShape</key>
+	<string>associatedQueryFlags</string>
+	<key>momentumAmongBuffer</key>
+	<string>listenerCommandRate</string>
+	<key>transformerWithFacade</key>
+	<string>mutableLabelDepth</string>
+</dict>
+</plist>

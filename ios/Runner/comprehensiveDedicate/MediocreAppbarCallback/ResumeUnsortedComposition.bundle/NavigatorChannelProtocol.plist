@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cardInterpreterCount</key>
+	<string>responsiveBufferEdge</string>
+	<key>constraintPatternSkewy</key>
+	<string>ternaryInsideParam</string>
+	<key>decorationVersusVariable</key>
+	<string>modelViaParameter</string>
+	<key>numericalChannelPosition</key>
+	<string>awaitModeCount</string>
+	<key>providerCompositeSkewy</key>
+	<string>compositionalDecorationMargin</string>
+	<key>similarResolverIndex</key>
+	<string>subscriptionValueFormat</string>
+	<key>singleCubitCenter</key>
+	<string>exceptionFromBridge</string>
+	<key>sinkOfContext</key>
+	<string>responsiveNotificationFlags</string>
+	<key>unsortedProgressbarHue</key>
+	<string>singletonDuringBuffer</string>
+</dict>
+</plist>

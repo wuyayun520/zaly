@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>aspectratioWithoutDecorator</key>
+	<string>widgetMethodTransparency</string>
+	<key>lazyBaseStyle</key>
+	<string>dropdownbuttonEnvironmentMargin</string>
+	<key>normalGridLeft</key>
+	<string>mobileArithmeticSpacing</string>
+	<key>overlayNumberAcceleration</key>
+	<string>declarativeGesturedetectorOpacity</string>
+	<key>sequentialEffectMargin</key>
+	<string>aspectratioMediatorSize</string>
+	<key>spotTierPressure</key>
+	<string>taskAsPrototype</string>
+	<key>synchronousMediaMode</key>
+	<string>descriptorWithParam</string>
+	<key>taskContainChain</key>
+	<string>masterOfAdapter</string>
+	<key>timerAndFunction</key>
+	<string>geometricTitleFeedback</string>
+</dict>
+</plist>

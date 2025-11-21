@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>channelsInPattern</key>
+	<string>euclideanDialogsLeft</string>
+	<key>chapterIncludePlatform</key>
+	<string>mobxSystemSize</string>
+	<key>interactiveStateCoord</key>
+	<string>awaitVarOrientation</string>
+	<key>isolateUntilSingleton</key>
+	<string>layoutPlatformDuration</string>
+	<key>mobileOrNumber</key>
+	<string>variantModeDepth</string>
+	<key>rapidQueryDirection</key>
+	<string>loopFlyweightStatus</string>
+	<key>usecaseAgainstScope</key>
+	<string>euclideanLocalizationTransparency</string>
+</dict>
+</plist>

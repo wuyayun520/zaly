@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capsuleActivityContrast</key>
+	<string>getxVersusState</string>
+	<key>cupertinoCompositeCoord</key>
+	<string>playbackModeSize</string>
+	<key>deferredCubitInset</key>
+	<string>effectPlatformPadding</string>
+	<key>originalPetOrigin</key>
+	<string>euclideanMobxPosition</string>
+	<key>paddingActionAlignment</key>
+	<string>tensorMetadataVisible</string>
+	<key>responseStructureDistance</key>
+	<string>entityWithoutSystem</string>
+</dict>
+</plist>

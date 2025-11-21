@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>errorBufferBound</key>
+	<string>marginFromDecorator</string>
+	<key>intensityDecoratorDuration</key>
+	<string>segmentTaskVisibility</string>
+	<key>masterBesideStructure</key>
+	<string>modelStageTint</string>
+	<key>resourceNumberOffset</key>
+	<string>mobxAdapterPadding</string>
+	<key>unsortedDependencyLocation</key>
+	<string>iterativeTextureValidation</string>
+</dict>
+</plist>

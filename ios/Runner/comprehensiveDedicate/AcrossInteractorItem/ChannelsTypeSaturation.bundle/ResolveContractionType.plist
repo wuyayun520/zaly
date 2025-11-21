@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessibleCubitKind</key>
+	<string>dynamicViewBound</string>
+	<key>alignmentExceptLevel</key>
+	<string>equipmentAndComposite</string>
+	<key>assetShapeSaturation</key>
+	<string>precisionAndComposite</string>
+	<key>bufferBesideLayer</key>
+	<string>graphicForSystem</string>
+	<key>euclideanTransitionState</key>
+	<string>widgetFacadeCenter</string>
+	<key>intermediateModalResponse</key>
+	<string>groupAdapterScale</string>
+	<key>protectedGrainType</key>
+	<string>semanticBitrateValidation</string>
+	<key>themeFormSize</key>
+	<string>delicateStreamRotation</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>buttonFunctionPadding</key>
+	<string>routeInActivity</string>
+	<key>intermediateChannelAppearance</key>
+	<string>textureOutsideKind</string>
+	<key>mobxForState</key>
+	<string>smartVectorCoord</string>
+	<key>modalStyleEdge</key>
+	<string>deferredDependencyTag</string>
+	<key>normalProtocolLeft</key>
+	<string>normalIntensityOffset</string>
+	<key>unactivatedFactoryVisibility</key>
+	<string>awaitFlyweightDirection</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>heapLikeCycle</key>
+	<string>methodVisitorKind</string>
+	<key>intensityAtFunction</key>
+	<string>storyboardVariableDensity</string>
+	<key>newestUtilDensity</key>
+	<string>viewSinceTier</string>
+	<key>nodeScopeKind</key>
+	<string>staticCanvasDelay</string>
+	<key>symbolVariableMode</key>
+	<string>oldHashHead</string>
+	<key>tabviewPrototypeTheme</key>
+	<string>semanticStoryboardEdge</string>
+	<key>widgetTaskTag</key>
+	<string>prismaticLoopOrientation</string>
+</dict>
+</plist>

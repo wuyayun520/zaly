@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>catalystByPattern</key>
+	<string>observerPrototypeSpacing</string>
+	<key>controllerLikeFacade</key>
+	<string>mediaqueryFlyweightDistance</string>
+	<key>cycleModeInset</key>
+	<string>rectAtBridge</string>
+	<key>globalIntensityFeedback</key>
+	<string>customChannelsContrast</string>
+	<key>singletonAtType</key>
+	<string>subsequentAnimationVelocity</string>
+	<key>symbolWithStage</key>
+	<string>masterIncludeJob</string>
+	<key>tabbarIncludeStructure</key>
+	<string>directlyEventInteraction</string>
+</dict>
+</plist>

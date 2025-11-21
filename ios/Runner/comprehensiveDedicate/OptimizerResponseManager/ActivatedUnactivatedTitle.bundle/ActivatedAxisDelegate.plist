@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationAlongStyle</key>
+	<string>gemJobTail</string>
+	<key>associatedLoopSaturation</key>
+	<string>priorityForPlatform</string>
+	<key>captionActionValidation</key>
+	<string>requiredCompleterSpeed</string>
+	<key>finalListviewLeft</key>
+	<string>cubitOrBuffer</string>
+	<key>futureThroughOperation</key>
+	<string>cursorTierFormat</string>
+	<key>numericalMobxDensity</key>
+	<string>viewLayerFlags</string>
+	<key>storyboardParamDelay</key>
+	<string>singletonAndCommand</string>
+	<key>subsequentCapsuleTop</key>
+	<string>specifyGrainIndex</string>
+</dict>
+</plist>

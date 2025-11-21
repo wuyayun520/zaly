@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>allocatorDuringProxy</key>
+	<string>toolFrameworkSkewx</string>
+	<key>completionDuringType</key>
+	<string>finalProviderOffset</string>
+	<key>deferredExceptionMode</key>
+	<string>explicitAppbarLocation</string>
+	<key>displayableResolverName</key>
+	<string>vectorAroundNumber</string>
+	<key>handlerOfAdapter</key>
+	<string>sceneThroughBuffer</string>
+	<key>otherGraphicPadding</key>
+	<string>masterAtStage</string>
+	<key>progressbarAboutEnvironment</key>
+	<string>grayscaleVisitorDepth</string>
+	<key>singleKernelDepth</key>
+	<string>pivotalButtonInterval</string>
+	<key>themeAroundFunction</key>
+	<string>concurrentDocumentBound</string>
+</dict>
+</plist>

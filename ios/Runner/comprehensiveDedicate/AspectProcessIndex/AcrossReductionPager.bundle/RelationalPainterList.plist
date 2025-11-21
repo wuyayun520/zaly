@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blocAtPrototype</key>
+	<string>reductionAboutPhase</string>
+	<key>displayableSingletonSize</key>
+	<string>commonSpotFeedback</string>
+	<key>factoryPlatformIndex</key>
+	<string>unsortedScreenBrightness</string>
+	<key>futureFunctionBrightness</key>
+	<string>resourceProxyFrequency</string>
+	<key>providerInsideActivity</key>
+	<string>controllerShapeState</string>
+	<key>resizableHeroCoord</key>
+	<string>monsterWithoutVisitor</string>
+	<key>routeVisitorDepth</key>
+	<string>musicProcessTension</string>
+	<key>variantObserverFrequency</key>
+	<string>scaffoldAndInterpreter</string>
+	<key>visibleDropdownbuttonPosition</key>
+	<string>resultDuringFlyweight</string>
+</dict>
+</plist>

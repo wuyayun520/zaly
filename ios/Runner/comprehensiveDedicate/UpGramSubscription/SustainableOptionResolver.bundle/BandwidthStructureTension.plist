@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationAtLayer</key>
+	<string>custompaintOrKind</string>
+	<key>containerTypeOffset</key>
+	<string>tickerVarName</string>
+	<key>elasticTopicStatus</key>
+	<string>switchAndScope</string>
+	<key>storageWithoutState</key>
+	<string>cardStyleOrientation</string>
+	<key>transitionContainBuffer</key>
+	<string>asynchronousChartStatus</string>
+</dict>
+</plist>

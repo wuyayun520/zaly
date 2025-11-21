@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>axisVersusLayer</key>
+	<string>cartesianCommandScale</string>
+	<key>completerKindAcceleration</key>
+	<string>vectorAlongEnvironment</string>
+	<key>inheritedTimerPosition</key>
+	<string>mainSliderTail</string>
+	<key>observerOutsideStyle</key>
+	<string>threadFunctionDuration</string>
+	<key>signNumberFrequency</key>
+	<string>aspectActionType</string>
+	<key>textStrategyColor</key>
+	<string>offsetSystemSpeed</string>
+	<key>transitionShapeTransparency</key>
+	<string>nativeObserverEdge</string>
+</dict>
+</plist>

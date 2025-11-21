@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cacheEnvironmentPressure</key>
+	<string>persistentAllocatorAcceleration</string>
+	<key>customizedConfigurationAppearance</key>
+	<string>signatureDecoratorBehavior</string>
+	<key>profileCommandShape</key>
+	<string>instructionAndFunction</string>
+	<key>sessionOrJob</key>
+	<string>skinIncludeStructure</string>
+	<key>usecaseAsBuffer</key>
+	<string>skirtThroughSystem</string>
+</dict>
+</plist>

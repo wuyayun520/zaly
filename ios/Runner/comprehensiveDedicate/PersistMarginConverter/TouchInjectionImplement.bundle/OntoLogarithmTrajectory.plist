@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>brushViaChain</key>
+	<string>factoryExceptContext</string>
+	<key>concreteInterfaceKind</key>
+	<string>queryFlyweightTransparency</string>
+	<key>fusedSubpixelRate</key>
+	<string>ignoredTransitionKind</string>
+	<key>granularMasterPosition</key>
+	<string>decorationJobCoord</string>
+	<key>injectionWithoutState</key>
+	<string>baselineModeFormat</string>
+	<key>priorSymbolCenter</key>
+	<string>profileOperationBorder</string>
+	<key>singleClipperSkewx</key>
+	<string>crucialRequestContrast</string>
+	<key>tensorChapterValidation</key>
+	<string>usecaseSystemMode</string>
+	<key>unaryAndAdapter</key>
+	<string>subtleFragmentTheme</string>
+</dict>
+</plist>

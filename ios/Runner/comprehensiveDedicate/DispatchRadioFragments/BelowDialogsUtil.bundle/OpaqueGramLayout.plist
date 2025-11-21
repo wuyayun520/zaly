@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>axisExceptKind</key>
+	<string>bufferSystemShade</string>
+	<key>futureProxyType</key>
+	<string>globalBaseOrientation</string>
+	<key>labelObserverTag</key>
+	<string>spriteContainAction</string>
+	<key>topicStrategyHue</key>
+	<string>sliderCycleHead</string>
+</dict>
+</plist>

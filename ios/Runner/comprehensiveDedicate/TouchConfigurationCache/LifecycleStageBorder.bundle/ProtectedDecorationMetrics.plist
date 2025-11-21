@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>containerFacadeTag</key>
+	<string>cycleTypeInset</string>
+	<key>futureUntilFacade</key>
+	<string>semanticCoordinatorVisibility</string>
+	<key>granularOperationType</key>
+	<string>previewTypeMode</string>
+	<key>mediumNotificationDelay</key>
+	<string>toolAndCycle</string>
+	<key>presenterTaskBrightness</key>
+	<string>widgetScopeForce</string>
+	<key>slashVersusDecorator</key>
+	<string>lostDelegateOpacity</string>
+	<key>stateByContext</key>
+	<string>riverpodCommandDirection</string>
+</dict>
+</plist>

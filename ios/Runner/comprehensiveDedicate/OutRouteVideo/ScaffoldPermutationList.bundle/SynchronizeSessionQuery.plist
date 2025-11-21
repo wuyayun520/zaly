@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>composableIsolateTheme</key>
+	<string>binaryCompositeState</string>
+	<key>effectMethodTheme</key>
+	<string>currentEffectInset</string>
+	<key>hardHistogramSkewx</key>
+	<string>batchUntilBridge</string>
+	<key>hardPageviewHue</key>
+	<string>particleContextLocation</string>
+	<key>immediateProjectionLocation</key>
+	<string>gridviewBridgeFrequency</string>
+	<key>paddingInterpreterOpacity</key>
+	<string>typicalTransformerFormat</string>
+	<key>positionedParamResponse</key>
+	<string>transitionContainAdapter</string>
+	<key>sampleWithoutMemento</key>
+	<string>offsetPerForm</string>
+</dict>
+</plist>

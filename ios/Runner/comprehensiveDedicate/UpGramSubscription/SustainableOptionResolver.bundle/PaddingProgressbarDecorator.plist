@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationAroundActivity</key>
+	<string>tappableNotifierSaturation</string>
+	<key>axisProxyCenter</key>
+	<string>anchorParameterAlignment</string>
+	<key>cycleAsStage</key>
+	<string>blocFrameworkDensity</string>
+	<key>navigatorFacadeHue</key>
+	<string>imageParamSize</string>
+	<key>operationEnvironmentVisibility</key>
+	<string>bitrateWithoutEnvironment</string>
+	<key>presenterStructureBorder</key>
+	<string>temporarySessionLocation</string>
+	<key>radioThroughScope</key>
+	<string>observerDuringOperation</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>arithmeticFormBorder</key>
+	<string>newestRemainderVisible</string>
+	<key>graphIncludeEnvironment</key>
+	<string>respectiveBuilderForce</string>
+	<key>graphInsidePrototype</key>
+	<string>profileAndBridge</string>
+	<key>mediumSpriteRate</key>
+	<string>swiftUntilVar</string>
+	<key>painterVersusTier</key>
+	<string>screenCommandFormat</string>
+	<key>permanentQueueHead</key>
+	<string>standalonePresenterName</string>
+	<key>screenWithoutSingleton</key>
+	<string>durationLikePattern</string>
+</dict>
+</plist>

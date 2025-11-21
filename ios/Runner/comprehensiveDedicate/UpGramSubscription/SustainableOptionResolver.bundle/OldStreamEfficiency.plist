@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>behaviorInMode</key>
+	<string>movementAsStrategy</string>
+	<key>binaryStageSpeed</key>
+	<string>brushEnvironmentDistance</string>
+	<key>completionProcessCenter</key>
+	<string>primaryDocumentAlignment</string>
+	<key>denseScrollMode</key>
+	<string>immutableTabbarPosition</string>
+	<key>featureWithStage</key>
+	<string>synchronousButtonStatus</string>
+	<key>greatBufferVisibility</key>
+	<string>frameForState</string>
+	<key>reusableKernelOpacity</key>
+	<string>captionAwayWork</string>
+	<key>storyboardCompositeAlignment</key>
+	<string>gestureAtProcess</string>
+</dict>
+</plist>

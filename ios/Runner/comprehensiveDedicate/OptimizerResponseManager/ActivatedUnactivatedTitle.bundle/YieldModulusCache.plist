@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>checkboxPlatformInteraction</key>
+	<string>inkwellAtScope</string>
+	<key>columnBeyondBuffer</key>
+	<string>smallUtilLeft</string>
+	<key>disabledExtensionVelocity</key>
+	<string>seamlessPromiseAlignment</string>
+	<key>equalizationStateSaturation</key>
+	<string>viewWithBuffer</string>
+	<key>gradientOperationCoord</key>
+	<string>statefulVarVisibility</string>
+	<key>pageviewSinceFunction</key>
+	<string>utilAlongFunction</string>
+	<key>permanentButtonTail</key>
+	<string>labelExceptShape</string>
+	<key>relationalCursorVisibility</key>
+	<string>ignoredAnchorTransparency</string>
+	<key>resultSinceComposite</key>
+	<string>backwardStampBottom</string>
+	<key>singletonFrameworkEdge</key>
+	<string>deferredSkinIndex</string>
+</dict>
+</plist>

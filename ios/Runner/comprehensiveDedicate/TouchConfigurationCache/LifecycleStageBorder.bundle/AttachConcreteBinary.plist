@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blocProcessDensity</key>
+	<string>opaqueBoxMode</string>
+	<key>gridTypeShade</key>
+	<string>textAsOperation</string>
+	<key>isolateFormTransparency</key>
+	<string>compositionalInterfaceContrast</string>
+	<key>rapidAppbarTop</key>
+	<string>cubitCommandMargin</string>
+	<key>rectValueOffset</key>
+	<string>coordinatorStructureBottom</string>
+	<key>secondReducerIndex</key>
+	<string>futureBridgeStatus</string>
+	<key>sortedOptimizerMomentum</key>
+	<string>synchronousStatelessIndex</string>
+	<key>visibleChannelInteraction</key>
+	<string>statelessTernaryHue</string>
+</dict>
+</plist>

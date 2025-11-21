@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>cardMediatorValidation</key>
+	<string>animatedSegueDuration</string>
+	<key>graphPerParam</key>
+	<string>secondAnimatedcontainerFrequency</string>
+	<key>nodeAndProxy</key>
+	<string>specifierObserverOffset</string>
+	<key>paddingViaKind</key>
+	<string>observerModeEdge</string>
+	<key>segmentAmongVisitor</key>
+	<string>marginPerKind</string>
+	<key>textureProxyStatus</key>
+	<string>interpolationKindDistance</string>
+</dict>
+</plist>

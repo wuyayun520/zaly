@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>borderPerObserver</key>
+	<string>channelFromSingleton</string>
+	<key>buttonProcessTransparency</key>
+	<string>ternaryMethodScale</string>
+	<key>drawerOrCommand</key>
+	<string>seamlessTitleTag</string>
+	<key>interpolationWithInterpreter</key>
+	<string>hashIncludeChain</string>
+	<key>symbolLayerCount</key>
+	<string>sinkVersusDecorator</string>
+</dict>
+</plist>

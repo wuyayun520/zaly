@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>custompaintBufferDistance</key>
+	<string>directModulusRate</string>
+	<key>featureTierRate</key>
+	<string>symmetricDecorationRate</string>
+	<key>ignoredAllocatorShade</key>
+	<string>gridviewAgainstVar</string>
+	<key>managerStateRotation</key>
+	<string>methodStageTransparency</string>
+	<key>matrixAboutKind</key>
+	<string>taskInsideMode</string>
+	<key>requestOfPattern</key>
+	<string>imageActivityBound</string>
+	<key>sensorBeyondOperation</key>
+	<string>serviceByShape</string>
+	<key>viewAmongPrototype</key>
+	<string>finalProviderTheme</string>
+</dict>
+</plist>

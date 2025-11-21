@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>backwardMobxFlags</key>
+	<string>isolateOrStyle</string>
+	<key>isolateFormEdge</key>
+	<string>flexibleAsyncHead</string>
+	<key>monsterExceptShape</key>
+	<string>lazyCubitHead</string>
+	<key>textureValueTransparency</key>
+	<string>widgetProcessIndex</string>
+</dict>
+</plist>

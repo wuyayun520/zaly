@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blocModeCount</key>
+	<string>normBesideFacade</string>
+	<key>eagerVariantKind</key>
+	<string>stackOutsideComposite</string>
+	<key>eventIncludeStage</key>
+	<string>tweenVersusCycle</string>
+	<key>groupWithNumber</key>
+	<string>signThanAction</string>
+	<key>interactorVersusLayer</key>
+	<string>requestMediatorBorder</string>
+	<key>iterativeTopicLocation</key>
+	<string>independentAsyncOffset</string>
+	<key>plateChainFrequency</key>
+	<string>controllerDespiteType</string>
+	<key>transitionDecoratorCount</key>
+	<string>substantialBoxTension</string>
+</dict>
+</plist>

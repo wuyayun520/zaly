@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>errorVarStyle</key>
+	<string>prismaticViewInterval</string>
+	<key>gridviewDespiteComposite</key>
+	<string>momentumAsActivity</string>
+	<key>pageviewStyleContrast</key>
+	<string>navigatorJobShape</string>
+</dict>
+</plist>

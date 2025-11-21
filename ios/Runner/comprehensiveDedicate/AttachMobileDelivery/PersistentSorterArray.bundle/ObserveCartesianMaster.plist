@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activeModalDelay</key>
+	<string>tableCommandTint</string>
+	<key>asyncFormLeft</key>
+	<string>temporaryPositionValidation</string>
+	<key>asynchronousPopupPosition</key>
+	<string>uniqueTaskValidation</string>
+	<key>behaviorSinceActivity</key>
+	<string>declarativeRadiusIndex</string>
+	<key>dynamicControllerCount</key>
+	<string>alignmentLevelTint</string>
+	<key>equalizationCycleShade</key>
+	<string>convolutionAndType</string>
+	<key>inheritedFlexOffset</key>
+	<string>relationalSpineHead</string>
+	<key>tableInsideJob</key>
+	<string>hashMediatorLeft</string>
+	<key>unactivatedGradientRate</key>
+	<string>positionedChainType</string>
+</dict>
+</plist>

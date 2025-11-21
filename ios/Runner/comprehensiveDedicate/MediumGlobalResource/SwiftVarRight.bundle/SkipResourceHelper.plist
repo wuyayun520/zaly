@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capsuleVersusActivity</key>
+	<string>dedicatedQuerySaturation</string>
+	<key>channelVersusBuffer</key>
+	<string>statelessEqualizationSaturation</string>
+	<key>cubitThroughJob</key>
+	<string>touchNearOperation</string>
+	<key>dynamicProfileSkewy</key>
+	<string>newestTransitionTail</string>
+	<key>futureWithoutLayer</key>
+	<string>currentBlocDelay</string>
+	<key>mainAccessoryHead</key>
+	<string>directlyTernaryCoord</string>
+	<key>semanticsOperationFeedback</key>
+	<string>interactorStateOrientation</string>
+	<key>synchronousChartScale</key>
+	<string>symmetricDescriptionState</string>
+	<key>temporaryPresenterRight</key>
+	<string>crucialQueueTag</string>
+</dict>
+</plist>

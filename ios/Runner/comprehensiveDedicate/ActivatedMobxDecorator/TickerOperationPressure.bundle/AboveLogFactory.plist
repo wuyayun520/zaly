@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>deferredModulusAcceleration</key>
+	<string>hashInterpreterFeedback</string>
+	<key>equalizationObserverPosition</key>
+	<string>beginnerCursorBound</string>
+	<key>immutableMissionVelocity</key>
+	<string>activeInjectionCoord</string>
+	<key>repositoryFromOperation</key>
+	<string>tensorUnaryOffset</string>
+	<key>requestKindName</key>
+	<string>frameUntilFramework</string>
+	<key>scalePhaseBrightness</key>
+	<string>requiredContainerResponse</string>
+	<key>textureNumberAppearance</key>
+	<string>sessionThanProxy</string>
+</dict>
+</plist>

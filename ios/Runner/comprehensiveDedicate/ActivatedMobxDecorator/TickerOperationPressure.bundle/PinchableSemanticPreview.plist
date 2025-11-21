@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>associatedResponseVisible</key>
+	<string>expandedKindShade</string>
+	<key>effectChainOffset</key>
+	<string>chapterIncludeActivity</string>
+	<key>queryAroundAdapter</key>
+	<string>smartMetadataSkewy</string>
+</dict>
+</plist>

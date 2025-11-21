@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accordionActionSpacing</key>
+	<string>layoutParameterCoord</string>
+	<key>basePlatformRate</key>
+	<string>statelessOutsideDecorator</string>
+	<key>denseCoordinatorDistance</key>
+	<string>statefulLayerShape</string>
+	<key>expandedVarVisible</key>
+	<string>sceneBesidePrototype</string>
+	<key>finalCapsuleDistance</key>
+	<string>optimizerFrameworkAppearance</string>
+	<key>gridDespiteFramework</key>
+	<string>usedAllocatorFormat</string>
+	<key>hierarchicalAsyncOffset</key>
+	<string>interactorBeyondPlatform</string>
+	<key>iterativeUsecaseLeft</key>
+	<string>sustainableHistogramFlags</string>
+	<key>temporarySinkAlignment</key>
+	<string>tickerFunctionAlignment</string>
+	<key>widgetSystemFlags</key>
+	<string>switchNumberValidation</string>
+</dict>
+</plist>

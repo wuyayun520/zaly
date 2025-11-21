@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asynchronousDependencyDistance</key>
+	<string>eagerLoopAppearance</string>
+	<key>inheritedLocalizationVisible</key>
+	<string>navigatorStateResponse</string>
+	<key>localizationDuringPlatform</key>
+	<string>explicitPreviewHead</string>
+	<key>nextStateDelay</key>
+	<string>transitionByActivity</string>
+	<key>permanentBlocCoord</key>
+	<string>localizationWithDecorator</string>
+	<key>queueViaActivity</key>
+	<string>backwardEqualizationEdge</string>
+	<key>spineProxyBrightness</key>
+	<string>operationViaLayer</string>
+	<key>subtleAllocatorShape</key>
+	<string>consumerVisitorSkewx</string>
+</dict>
+</plist>

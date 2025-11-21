@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commonNodeTint</key>
+	<string>utilForActivity</string>
+	<key>customRadiusFlags</key>
+	<string>tangentStateBrightness</string>
+	<key>descriptorByVariable</key>
+	<string>riverpodAndBridge</string>
+	<key>factoryAndFramework</key>
+	<string>textureOfParam</string>
+	<key>injectionOrTier</key>
+	<string>allocatorContainType</string>
+	<key>layoutAdapterFrequency</key>
+	<string>entropyPerSystem</string>
+	<key>logBeyondChain</key>
+	<string>asyncPositionMode</string>
+</dict>
+</plist>

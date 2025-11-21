@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>channelPerPhase</key>
+	<string>blocWithoutValue</string>
+	<key>keyErrorBound</key>
+	<string>euclideanTabbarInteraction</string>
+	<key>repositoryPerMethod</key>
+	<string>cupertinoTierOffset</string>
+	<key>resourceSingletonBrightness</key>
+	<string>missedGridviewValidation</string>
+	<key>sensorExceptChain</key>
+	<string>sizeAtLevel</string>
+	<key>techniqueDespiteContext</key>
+	<string>mobxPhaseSaturation</string>
+</dict>
+</plist>

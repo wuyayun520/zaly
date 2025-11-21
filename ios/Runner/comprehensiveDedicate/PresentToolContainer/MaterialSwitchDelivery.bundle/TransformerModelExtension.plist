@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>axisPhaseAppearance</key>
+	<string>declarativeScaleRotation</string>
+	<key>exceptionAtParameter</key>
+	<string>sineAlongStyle</string>
+	<key>routeExceptSingleton</key>
+	<string>dependencyOperationTag</string>
+	<key>temporaryProviderFeedback</key>
+	<string>reducerByTemple</string>
+</dict>
+</plist>

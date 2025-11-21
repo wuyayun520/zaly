@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>clipperPerMode</key>
+	<string>isolatePlatformCount</string>
+	<key>coordinatorOfValue</key>
+	<string>tickerLevelBound</string>
+	<key>lastEntropyBrightness</key>
+	<string>uniformLayerAlignment</string>
+	<key>screenAmongTier</key>
+	<string>tangentTaskCount</string>
+	<key>storyboardOperationCoord</key>
+	<string>consumerStyleOffset</string>
+	<key>widgetFormPressure</key>
+	<string>mobxLayerVelocity</string>
+</dict>
+</plist>

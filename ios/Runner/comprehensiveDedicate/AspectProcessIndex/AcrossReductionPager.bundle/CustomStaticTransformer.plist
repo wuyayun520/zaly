@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>actionNumberRotation</key>
+	<string>responseCommandIndex</string>
+	<key>configurationParameterCount</key>
+	<string>largePointVisible</string>
+	<key>methodShapeInteraction</key>
+	<string>constOverlayAlignment</string>
+	<key>providerJobContrast</key>
+	<string>resilientGrainBorder</string>
+	<key>significantColumnDepth</key>
+	<string>instructionDespiteScope</string>
+</dict>
+</plist>

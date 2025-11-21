@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>brushWithWork</key>
+	<string>pointLikeTask</string>
+	<key>configurationStructureSaturation</key>
+	<string>dependencyViaStyle</string>
+	<key>gridIncludeShape</key>
+	<string>interfacePerShape</string>
+	<key>petAtSystem</key>
+	<string>subscriptionPlatformPadding</string>
+	<key>uniqueAnimationVisibility</key>
+	<string>masterStyleTransparency</string>
+</dict>
+</plist>

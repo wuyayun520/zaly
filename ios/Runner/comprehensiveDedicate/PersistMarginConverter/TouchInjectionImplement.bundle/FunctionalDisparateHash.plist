@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dependencyStageDirection</key>
+	<string>stateAsType</string>
+	<key>equalizationKindFlags</key>
+	<string>symmetricPositionedTransparency</string>
+	<key>intensityInFacade</key>
+	<string>spotViaContext</string>
+	<key>iterativeParticleCount</key>
+	<string>viewParamInteraction</string>
+	<key>progressbarParameterPressure</key>
+	<string>draggableSymbolName</string>
+	<key>requestStrategyAppearance</key>
+	<string>convolutionIncludeTemple</string>
+	<key>shaderBeyondSystem</key>
+	<string>lostSlashCount</string>
+	<key>sinkChainDensity</key>
+	<string>boxIncludeStructure</string>
+</dict>
+</plist>

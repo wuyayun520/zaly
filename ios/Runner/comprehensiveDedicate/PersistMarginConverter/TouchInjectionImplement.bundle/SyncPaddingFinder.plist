@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>buttonStrategySpeed</key>
+	<string>sophisticatedHandlerRate</string>
+	<key>dialogsTypePadding</key>
+	<string>ephemeralAnchorHue</string>
+	<key>dynamicSliderStatus</key>
+	<string>presenterFacadeOffset</string>
+	<key>handlerInsideInterpreter</key>
+	<string>nativeHeroResponse</string>
+	<key>mobileLossStatus</key>
+	<string>respectiveImageBehavior</string>
+	<key>positionedScopeInterval</key>
+	<string>hierarchicalResolverBehavior</string>
+	<key>temporaryProgressbarAcceleration</key>
+	<string>topicVarTransparency</string>
+	<key>tweenActivityOrientation</key>
+	<string>persistentOffsetCoord</string>
+</dict>
+</plist>

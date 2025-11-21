@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chartTaskBehavior</key>
+	<string>segueMethodDepth</string>
+	<key>normPerProxy</key>
+	<string>buttonCompositeDistance</string>
+	<key>requestVarSpacing</key>
+	<string>anchorWithoutLevel</string>
+	<key>ternaryDespiteShape</key>
+	<string>independentGroupCoord</string>
+	<key>viewAndMemento</key>
+	<string>curveBesideParameter</string>
+</dict>
+</plist>

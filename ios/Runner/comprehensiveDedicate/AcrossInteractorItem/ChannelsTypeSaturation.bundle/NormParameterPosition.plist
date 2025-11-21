@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>declarativeTaskFlags</key>
+	<string>commandFromLayer</string>
+	<key>graphChainBehavior</key>
+	<string>factoryDespitePlatform</string>
+	<key>injectionBesideJob</key>
+	<string>firstLayerKind</string>
+	<key>intensityAtForm</key>
+	<string>sustainableSampleMode</string>
+	<key>sampleFacadeSpeed</key>
+	<string>rectValueOrientation</string>
+	<key>serviceOperationBehavior</key>
+	<string>taskAsShape</string>
+	<key>stateModeDelay</key>
+	<string>easyPreviewRate</string>
+	<key>symmetricProtocolMargin</key>
+	<string>webWidgetOrientation</string>
+	<key>tabbarContainAction</key>
+	<string>columnDuringFlyweight</string>
+</dict>
+</plist>

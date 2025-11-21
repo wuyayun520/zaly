@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dimensionFlyweightInset</key>
+	<string>gridviewStructureDistance</string>
+	<key>ignoredRepositoryInterval</key>
+	<string>animationWithoutValue</string>
+	<key>largeVectorBehavior</key>
+	<string>serviceVarDirection</string>
+	<key>materialPrototypeKind</key>
+	<string>prevContainerTint</string>
+	<key>rowOfFlyweight</key>
+	<string>reducerBesideKind</string>
+</dict>
+</plist>

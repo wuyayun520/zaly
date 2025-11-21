@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>challengePhaseDistance</key>
+	<string>uniformTitleHue</string>
+	<key>coordinatorMethodSaturation</key>
+	<string>statefulGradientDensity</string>
+	<key>enabledHashContrast</key>
+	<string>mutableIntegerDepth</string>
+	<key>ignoredCardSaturation</key>
+	<string>specifyAppbarDistance</string>
+	<key>rowProxyMode</key>
+	<string>layerShapeScale</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>delegateInsideProxy</key>
+	<string>singletonAtActivity</string>
+	<key>handlerEnvironmentName</key>
+	<string>priorityOfSingleton</string>
+	<key>methodChainInterval</key>
+	<string>futureMediatorOrigin</string>
+	<key>offsetSingletonInteraction</key>
+	<string>techniqueShapeSize</string>
+	<key>stepInChain</key>
+	<string>invisibleDependencyFeedback</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>callbackFlyweightKind</key>
+	<string>asynchronousSegmentBound</string>
+	<key>firstButtonStyle</key>
+	<string>isolateObserverInteraction</string>
+	<key>flexibleInteractorColor</key>
+	<string>injectionBufferSkewx</string>
+	<key>getxExceptPlatform</key>
+	<string>mobileViewInterval</string>
+	<key>sharedCosineSpacing</key>
+	<string>intuitiveAspectOpacity</string>
+	<key>storageWithoutPattern</key>
+	<string>newestAssetDuration</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationFunctionState</key>
+	<string>momentumThroughState</string>
+	<key>baselineModeCoord</key>
+	<string>baselineBesideVariable</string>
+	<key>discardedLayerDistance</key>
+	<string>scrollAwayMode</string>
+	<key>hierarchicalQueryInteraction</key>
+	<string>controllerOperationPressure</string>
+	<key>invisibleAwaitStyle</key>
+	<string>listviewIncludeObserver</string>
+	<key>logarithmInterpreterResponse</key>
+	<string>temporaryNavigationTop</string>
+</dict>
+</plist>

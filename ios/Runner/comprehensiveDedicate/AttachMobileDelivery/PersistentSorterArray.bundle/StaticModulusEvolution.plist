@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>boxPlatformRight</key>
+	<string>sizeUntilProxy</string>
+	<key>easyZoneAppearance</key>
+	<string>statelessDelegateRotation</string>
+	<key>prioritySingletonMode</key>
+	<string>handlerCompositePadding</string>
+	<key>reducerAtSystem</key>
+	<string>captionObserverContrast</string>
+	<key>uniformZoneHue</key>
+	<string>storageAroundShape</string>
+	<key>variantFromAdapter</key>
+	<string>tappableRolePressure</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>grainActivityAcceleration</key>
+	<string>intensityCycleLocation</string>
+	<key>managerAwayAdapter</key>
+	<string>segueForJob</string>
+	<key>navigationBufferPressure</key>
+	<string>fusedContainerDelay</string>
+	<key>resilientExtensionDistance</key>
+	<string>activePageviewHue</string>
+	<key>routerDuringTask</key>
+	<string>descriptorStyleRate</string>
+	<key>screenAsPrototype</key>
+	<string>graphicStrategyShade</string>
+	<key>segmentVersusVariable</key>
+	<string>aspectratioMediatorShade</string>
+	<key>specifierTaskInset</key>
+	<string>anchorAndPlatform</string>
+	<key>usecaseBufferFormat</key>
+	<string>durationWithWork</string>
+</dict>
+</plist>

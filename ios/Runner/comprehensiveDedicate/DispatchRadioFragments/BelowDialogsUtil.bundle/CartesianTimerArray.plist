@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baselineExceptJob</key>
+	<string>alphaVarFrequency</string>
+	<key>cellActivityShade</key>
+	<string>contractionInBridge</string>
+	<key>chartBridgeForce</key>
+	<string>offsetMementoStyle</string>
+	<key>effectJobOrientation</key>
+	<string>nextAlignmentShade</string>
+	<key>granularProgressbarSpacing</key>
+	<string>disabledWidgetTension</string>
+	<key>handlerFromCycle</key>
+	<string>prevTextOpacity</string>
+	<key>labelParamDensity</key>
+	<string>progressbarFromChain</string>
+	<key>swiftAsPlatform</key>
+	<string>layoutBySystem</string>
+</dict>
+</plist>

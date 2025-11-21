@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chapterAtForm</key>
+	<string>roleKindFeedback</string>
+	<key>equipmentExceptPhase</key>
+	<string>checklistAboutBridge</string>
+	<key>inactiveCoordinatorDistance</key>
+	<string>taskForVisitor</string>
+	<key>layoutAdapterBrightness</key>
+	<string>nativeDescriptorOrigin</string>
+	<key>listenerOfDecorator</key>
+	<string>temporaryTransitionSpeed</string>
+	<key>mutableMobileRate</key>
+	<string>lastRiverpodVisible</string>
+	<key>sliderValueAcceleration</key>
+	<string>indicatorSinceCommand</string>
+	<key>tensorRemainderInterval</key>
+	<string>discardedOverlayPressure</string>
+</dict>
+</plist>

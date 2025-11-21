@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commandCompositeEdge</key>
+	<string>statefulContainFacade</string>
+	<key>eagerCustompaintEdge</key>
+	<string>storeOfDecorator</string>
+	<key>stepWithoutAction</key>
+	<string>timerMethodBottom</string>
+	<key>subpixelWorkContrast</key>
+	<string>queueDecoratorTheme</string>
+	<key>usecaseViaTask</key>
+	<string>descriptionIncludeChain</string>
+</dict>
+</plist>

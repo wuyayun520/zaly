@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>asynchronousEqualizationBound</key>
+	<string>oldPositionBound</string>
+	<key>constraintSinceMemento</key>
+	<string>sliderPerPlatform</string>
+	<key>controllerContextBrightness</key>
+	<string>eagerCheckboxAppearance</string>
+	<key>crudeNavigatorMomentum</key>
+	<string>certificateScopeOrigin</string>
+	<key>cubitAmongDecorator</key>
+	<string>loopAdapterPadding</string>
+	<key>delegateBesideFunction</key>
+	<string>compositionalReducerStatus</string>
+	<key>screenTaskColor</key>
+	<string>documentFlyweightAlignment</string>
+</dict>
+</plist>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>blocInParameter</key>
+	<string>adaptiveGrayscaleShape</string>
+	<key>fusedNavigatorColor</key>
+	<string>ternaryOperationScale</string>
+	<key>inactiveResultLeft</key>
+	<string>desktopLayoutMode</string>
+	<key>interactorOperationShade</key>
+	<string>cycleAndShape</string>
+	<key>multiplicationParameterSkewx</key>
+	<string>histogramVarOrientation</string>
+	<key>reducerLayerTransparency</key>
+	<string>sharedIntensityKind</string>
+	<key>sampleThanJob</key>
+	<string>switchAboutFunction</string>
+	<key>timerParamSize</key>
+	<string>sortedAnchorCoord</string>
+	<key>transitionAroundComposite</key>
+	<string>stampStructureSpeed</string>
+</dict>
+</plist>

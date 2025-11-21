@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accessoryKindBrightness</key>
+	<string>functionalAxisIndex</string>
+	<key>allocatorNearKind</key>
+	<string>controllerViaChain</string>
+	<key>asyncRouterSpeed</key>
+	<string>precisionLikeSystem</string>
+	<key>cubeCycleLeft</key>
+	<string>loopViaFacade</string>
+	<key>factoryTempleCoord</key>
+	<string>firstObserverSpacing</string>
+	<key>pinchableTopicBorder</key>
+	<string>completionStructureLocation</string>
+	<key>progressbarModeHue</key>
+	<string>specifierSingletonVisibility</string>
+	<key>taskPrototypeTheme</key>
+	<string>matrixCycleDirection</string>
+	<key>transformerOfTask</key>
+	<string>screenTaskFeedback</string>
+</dict>
+</plist>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>apertureProxyType</key>
+	<string>loopAwayTier</string>
+	<key>completerExceptContext</key>
+	<string>equipmentSystemFeedback</string>
+	<key>deferredPositionRight</key>
+	<string>constCallbackAppearance</string>
+	<key>flexStrategySkewy</key>
+	<string>baseBesideInterpreter</string>
+	<key>inactiveTitleVisible</key>
+	<string>scaleAmongDecorator</string>
+	<key>routeStrategyContrast</key>
+	<string>liteGridTension</string>
+	<key>sophisticatedLoopShade</key>
+	<string>appbarParameterBound</string>
+	<key>staticDecorationPosition</key>
+	<string>smartPageviewOffset</string>
+</dict>
+</plist>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>convolutionBridgeMode</key>
+	<string>imageKindHue</string>
+	<key>disparateConstraintContrast</key>
+	<string>seamlessEventScale</string>
+	<key>gridPlatformOrientation</key>
+	<string>disabledCubitCoord</string>
+	<key>localizationIncludeBuffer</key>
+	<string>offsetTypeEdge</string>
+	<key>managerBesideValue</key>
+	<string>eventCompositeContrast</string>
+	<key>sizedboxSystemBrightness</key>
+	<string>equalizationThroughContext</string>
+</dict>
+</plist>

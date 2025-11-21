@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>callbackOperationRotation</key>
+	<string>stateVariableMode</string>
+	<key>referenceEnvironmentValidation</key>
+	<string>inkwellChainInterval</string>
+	<key>reusableCupertinoOpacity</key>
+	<string>basicGraphDistance</string>
+	<key>routeMediatorSkewy</key>
+	<string>localRowHead</string>
+	<key>semanticTransitionBrightness</key>
+	<string>referenceNearAction</string>
+	<key>temporarySineTop</key>
+	<string>stepShapeState</string>
+</dict>
+</plist>

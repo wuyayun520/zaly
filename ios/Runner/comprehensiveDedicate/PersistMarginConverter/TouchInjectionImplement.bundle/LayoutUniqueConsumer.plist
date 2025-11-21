@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>captionTempleOrigin</key>
+	<string>permissiveAllocatorFeedback</string>
+	<key>desktopTangentDirection</key>
+	<string>resolverInsideScope</string>
+	<key>exceptionContainFunction</key>
+	<string>asyncConsumerLocation</string>
+	<key>ignoredStepDepth</key>
+	<string>observerStageDepth</string>
+	<key>integerFromJob</key>
+	<string>signatureStructureAlignment</string>
+	<key>isolateTierTail</key>
+	<string>gateParamAlignment</string>
+	<key>operationInVisitor</key>
+	<string>singletonInsideStructure</string>
+</dict>
+</plist>

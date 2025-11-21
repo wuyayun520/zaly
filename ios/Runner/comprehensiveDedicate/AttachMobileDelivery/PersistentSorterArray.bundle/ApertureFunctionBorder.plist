@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>deferredBoxshadowValidation</key>
+	<string>channelsStructureVisibility</string>
+	<key>dropdownbuttonModeContrast</key>
+	<string>exponentPerParam</string>
+	<key>observerUntilLayer</key>
+	<string>graphVersusVar</string>
+	<key>profileByChain</key>
+	<string>inkwellFlyweightTail</string>
+	<key>viewNearParam</key>
+	<string>subscriptionStrategyInset</string>
+</dict>
+</plist>

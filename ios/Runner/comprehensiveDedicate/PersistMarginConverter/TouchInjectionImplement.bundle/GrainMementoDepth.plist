@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>advancedStateStatus</key>
+	<string>unsortedOperationCount</string>
+	<key>checkboxKindOrientation</key>
+	<string>futureMethodFeedback</string>
+	<key>dynamicStepInset</key>
+	<string>positionWithoutMemento</string>
+	<key>firstScreenPadding</key>
+	<string>protocolViaPlatform</string>
+	<key>immediateCurveMode</key>
+	<string>discardedMissionDuration</string>
+	<key>subtleCurveForce</key>
+	<string>lastDescriptorDirection</string>
+	<key>synchronousEventHue</key>
+	<string>pinchableTransformerTension</string>
+</dict>
+</plist>

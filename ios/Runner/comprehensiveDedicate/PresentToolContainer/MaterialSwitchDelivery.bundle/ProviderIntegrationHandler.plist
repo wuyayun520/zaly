@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activeLogarithmAcceleration</key>
+	<string>effectAndDecorator</string>
+	<key>apertureVersusCommand</key>
+	<string>constNibInterval</string>
+	<key>draggableImageTransparency</key>
+	<string>checklistShapeLocation</string>
+	<key>entityIncludeObserver</key>
+	<string>singletonContextIndex</string>
+	<key>fusedContainerPosition</key>
+	<string>spriteTempleTransparency</string>
+	<key>methodParameterSaturation</key>
+	<string>smartLocalizationContrast</string>
+	<key>reusableCoordinatorHead</key>
+	<string>taskCompositeFormat</string>
+	<key>smallActionVelocity</key>
+	<string>tensorBlocVelocity</string>
+	<key>titleDecoratorAppearance</key>
+	<string>certificateStageBorder</string>
+</dict>
+</plist>

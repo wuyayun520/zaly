@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>accordionDependencyOpacity</key>
+	<string>newestGateResponse</string>
+	<key>builderAsPhase</key>
+	<string>accessibleCatalystValidation</string>
+	<key>cartesianAllocatorAlignment</key>
+	<string>alignmentBufferRight</string>
+	<key>navigatorStructureVelocity</key>
+	<string>unsortedActionSkewy</string>
+	<key>permissiveBulletVisibility</key>
+	<string>eventThroughMode</string>
+	<key>segueSystemSpacing</key>
+	<string>commonViewPosition</string>
+	<key>sequentialSensorTension</key>
+	<string>disabledExponentFeedback</string>
+	<key>staticEntropyMomentum</key>
+	<string>basicConstraintMargin</string>
+	<key>tabbarProxyEdge</key>
+	<string>concurrentInkwellAppearance</string>
+</dict>
+</plist>

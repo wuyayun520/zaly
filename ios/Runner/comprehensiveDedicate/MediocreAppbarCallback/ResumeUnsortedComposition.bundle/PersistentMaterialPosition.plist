@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compositionalMediaqueryFlags</key>
+	<string>singleCapacitiesBound</string>
+	<key>gradientDuringJob</key>
+	<string>inactiveTransitionDepth</string>
+	<key>inkwellOrMemento</key>
+	<string>durationAsParameter</string>
+	<key>resolverOperationResponse</key>
+	<string>resultBufferStyle</string>
+	<key>swiftVarShape</key>
+	<string>ternaryWithProxy</string>
+</dict>
+</plist>

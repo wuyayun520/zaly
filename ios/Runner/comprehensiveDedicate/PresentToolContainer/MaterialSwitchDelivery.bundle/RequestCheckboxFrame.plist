@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animationOutsideMethod</key>
+	<string>matrixThroughComposite</string>
+	<key>difficultPreviewLocation</key>
+	<string>usageByStyle</string>
+	<key>offsetPerAdapter</key>
+	<string>observerScopeAlignment</string>
+	<key>pointIncludePlatform</key>
+	<string>sinkAgainstVisitor</string>
+	<key>zoneTierBottom</key>
+	<string>originalExponentFlags</string>
+</dict>
+</plist>

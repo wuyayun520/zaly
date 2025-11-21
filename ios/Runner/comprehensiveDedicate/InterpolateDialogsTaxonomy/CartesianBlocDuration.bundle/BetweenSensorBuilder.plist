@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>allocatorPlatformInteraction</key>
+	<string>requestAndMethod</string>
+	<key>composableHandlerDelay</key>
+	<string>callbackPerMode</string>
+	<key>controllerCommandShape</key>
+	<string>declarativeDurationShade</string>
+	<key>elasticSubpixelBrightness</key>
+	<string>allocatorExceptPlatform</string>
+	<key>modelProcessSpacing</key>
+	<string>sinkStructureTag</string>
+	<key>navigatorOperationBottom</key>
+	<string>retainedAppbarDensity</string>
+	<key>plateStrategySpacing</key>
+	<string>cubeAroundPattern</string>
+	<key>reactiveTernaryTop</key>
+	<string>cosineIncludeForm</string>
+</dict>
+</plist>

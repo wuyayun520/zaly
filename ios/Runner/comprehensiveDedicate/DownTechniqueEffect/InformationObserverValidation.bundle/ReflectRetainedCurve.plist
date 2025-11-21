@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>convolutionExceptParam</key>
+	<string>resolverNumberBorder</string>
+	<key>sceneScopeMode</key>
+	<string>frameVariableDepth</string>
+	<key>shaderNumberName</key>
+	<string>fragmentAndOperation</string>
+	<key>textSinceBridge</key>
+	<string>delegateNearComposite</string>
+</dict>
+</plist>

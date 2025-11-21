@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>capsuleByStyle</key>
+	<string>projectShapeAppearance</string>
+	<key>inheritedHeapMargin</key>
+	<string>toolExceptContext</string>
+	<key>injectionProxyOrigin</key>
+	<string>mobxFacadeValidation</string>
+	<key>multiplicationAgainstStyle</key>
+	<string>sliderStructureContrast</string>
+	<key>streamOutsideOperation</key>
+	<string>sizeShapeDelay</string>
+</dict>
+</plist>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>controllerAwayStructure</key>
+	<string>missionShapeVisibility</string>
+	<key>customAsyncEdge</key>
+	<string>secondObserverCoord</string>
+	<key>disabledRouteTint</key>
+	<string>nodeSinceCycle</string>
+	<key>intuitiveFutureType</key>
+	<string>uniquePlateTint</string>
+	<key>multiTextureForce</key>
+	<string>cyclePlatformRate</string>
+	<key>singleAlphaVelocity</key>
+	<string>streamFromActivity</string>
+	<key>zoneMediatorHue</key>
+	<string>sessionPatternAlignment</string>
+</dict>
+</plist>

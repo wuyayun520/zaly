@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activatedStepKind</key>
+	<string>gemAboutTier</string>
+	<key>animationInterpreterDensity</key>
+	<string>robustNibRight</string>
+	<key>backwardDelegateType</key>
+	<string>metadataParamHead</string>
+	<key>labelOperationInset</key>
+	<string>mainParticleVisibility</string>
+	<key>lossWithoutProxy</key>
+	<string>completerVersusPhase</string>
+	<key>singletonAgainstFacade</key>
+	<string>logFlyweightVisible</string>
+</dict>
+</plist>

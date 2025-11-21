@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>channelInFramework</key>
+	<string>opaqueBufferContrast</string>
+	<key>cosineAtLayer</key>
+	<string>projectionEnvironmentInteraction</string>
+	<key>declarativeCursorSkewx</key>
+	<string>stateJobHead</string>
+	<key>declarativeCycleFrequency</key>
+	<string>skirtExceptParameter</string>
+	<key>decorationBesidePattern</key>
+	<string>particleViaChain</string>
+	<key>listenerLayerSkewx</key>
+	<string>desktopContainerPressure</string>
+	<key>pageviewPatternVisibility</key>
+	<string>originalStreamRotation</string>
+	<key>resourceThanActivity</key>
+	<string>synchronousGroupRight</string>
+	<key>stateChainType</key>
+	<string>eventNumberTheme</string>
+	<key>webSemanticsInteraction</key>
+	<string>similarVectorDelay</string>
+</dict>
+</plist>

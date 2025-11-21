@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activeCatalystTag</key>
+	<string>managerForSingleton</string>
+	<key>delegateSinceDecorator</key>
+	<string>sharedHistogramCount</string>
+	<key>explicitGemFrequency</key>
+	<string>staticPreviewShape</string>
+	<key>queueAgainstBuffer</key>
+	<string>resourceVisitorFrequency</string>
+	<key>secondLabelPosition</key>
+	<string>cubitByAction</string>
+</dict>
+</plist>

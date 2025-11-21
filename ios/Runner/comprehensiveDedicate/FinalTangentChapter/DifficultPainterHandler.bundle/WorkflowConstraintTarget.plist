@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>imperativeTransitionCount</key>
+	<string>localEquipmentBottom</string>
+	<key>normStageVisibility</key>
+	<string>tappableIntensityBorder</string>
+	<key>reductionThroughSystem</key>
+	<string>interpolationMethodAcceleration</string>
+	<key>singletonJobResponse</key>
+	<string>rowStageTag</string>
+	<key>statelessChainHue</key>
+	<string>semanticSingletonOffset</string>
+	<key>streamStructureBound</key>
+	<string>utilSingletonOffset</string>
+	<key>tangentOrLayer</key>
+	<string>compositionBridgeSpacing</string>
+</dict>
+</plist>
