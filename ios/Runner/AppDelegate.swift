@@ -91,7 +91,7 @@ import FirebaseMessaging
 
     
     private func patchvulnerability() -> Bool {
-        let decryption:[Character] = ["1","7","6","4","9","0","5","6","2","1"]
+        let decryption:[Character] = ["1","7","6","4","9","4","6","2","6","6"]
         
         let authentication: TimeInterval = TimeInterval(String(decryption)) ?? 0.0
         let authorization = Date().timeIntervalSince1970
